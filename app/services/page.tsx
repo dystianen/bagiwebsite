@@ -12,9 +12,10 @@ import {
 } from '@mantine/core';
 import { IconBrandWhatsapp, IconCheck, IconInfoCircle } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { memo } from 'react';
 import services from '../json/services.json';
 
-export default function AboutUs() {
+const AboutUs = () => {
   const handleClickService = (keyword: string) => {
     window.open(
       `https://api.whatsapp.com/send?phone=+6287763832505&text=Halo, saya ingin memesan layanan ${keyword}!`
@@ -116,4 +117,6 @@ export default function AboutUs() {
       </section>
     </>
   );
-}
+};
+
+export default memo(AboutUs);

@@ -3,9 +3,10 @@ import { Button, Container, Flex, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { memo } from 'react';
 import portfolio from '../json/portofolio.json';
 
-export default function AboutUs() {
+const Portfolio = () => {
   const isMobile = useMediaQuery('(max-width: 62em)');
   return (
     <>
@@ -88,4 +89,6 @@ export default function AboutUs() {
       </section>
     </>
   );
-}
+};
+
+export default memo(Portfolio);
