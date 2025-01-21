@@ -2,6 +2,7 @@
 import { Burger, Button, Container, Divider, Drawer, Flex } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -59,11 +60,17 @@ const Header = () => {
             <nav>
               <ul className="tw-flex sm:tw-gap-4 lg:tw-gap-8">
                 {menu.map((it, index) => (
-                  <li
-                    key={index}
-                    className={route === it.href ? 'tw-border-b-2 tw-border-[#1c7ed6]' : ''}
-                  >
-                    <Link href={it.href}>{it.label}</Link>
+                  <li key={index} className="tw-relative tw-list-none">
+                    <Link href={it.href} className="tw-relative tw-inline-block tw-pb-1">
+                      {it.label}
+                      <motion.div
+                        className="tw-absolute tw-bottom-0 tw-h-[2px] tw-bg-[#1c7ed6] tw-transform tw--translate-x-1/2"
+                        initial={{ scaleX: 0 }}
+                        animate={route === it.href ? { scaleX: 1 } : { scaleX: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        style={{ width: '100%' }}
+                      />
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -107,11 +114,21 @@ const Header = () => {
             <nav className="tw-mt-8">
               <ul className="tw-flex tw-flex-col tw-gap-8">
                 {menu.map((it, index) => (
-                  <li
-                    key={index}
-                    className={route === it.href ? 'tw-border-b-2 tw-border-blue-500 tw-w-max' : ''}
-                  >
-                    <a href={it.href}>{it.label}</a>
+                  <li key={index} className="tw-relative tw-list-none">
+                    <Link
+                      href={it.href}
+                      onClick={toggle}
+                      className="tw-relative tw-inline-block tw-pb-1"
+                    >
+                      {it.label}
+                      <motion.div
+                        className="tw-absolute tw-bottom-0 tw-h-[2px] tw-bg-[#1c7ed6] tw-transform tw--translate-x-1/2"
+                        initial={{ scaleX: 0 }}
+                        animate={route === it.href ? { scaleX: 1 } : { scaleX: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        style={{ width: '100%' }}
+                      />
+                    </Link>
                   </li>
                 ))}
               </ul>
