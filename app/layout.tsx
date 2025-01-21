@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       'de-DE': '/de-DE'
     }
   },
-  title: 'BAGIWEBSITE | Jasa Pembuatan Website, Aplikasi, dan Solusi Digital',
+  title: 'BAGIWEBSITE | Jasa Pembuatan Website dan Aplikasi',
   description: 'Layanan pembuatan website, aplikasi, dan solusi digital lainnya.',
   openGraph: {
     images: '/assets/thumbnail/thumbnail_bagiwebsite.jpg'
