@@ -75,7 +75,7 @@ export default function AboutUs() {
                       leftSection={<IconLink />}
                       component="a"
                       href={it.href}
-                      target="_blank"
+                      target={it.href === '#' ? '_self' : '_blank'}
                     >
                       Buka Website
                     </Button>
