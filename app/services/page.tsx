@@ -10,7 +10,7 @@ import {
   SimpleGrid,
   Stack
 } from '@mantine/core';
-import { IconCheck, IconInfoCircle } from '@tabler/icons-react';
+import { IconBrandWhatsapp, IconCheck, IconInfoCircle } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import services from '../json/services.json';
 
@@ -94,13 +94,17 @@ export default function AboutUs() {
                       </ol>
                     </Stack>
                     <Stack>
-                      <div>
+                      {/* <div>
                         <p>Price :</p>
                         <h1 className="tw-text-lg tw-font-semibold">{it.price_range}</h1>
                         <span className="tw-text-amber-500 tw-italic">* Diskon {it.discount}</span>
-                      </div>
-                      <Button radius={'xl'} onClick={() => handleClickService(it.name)}>
-                        Pesan Sekarang
+                      </div> */}
+                      <Button
+                        radius={'xl'}
+                        leftSection={<IconBrandWhatsapp />}
+                        onClick={() => handleClickService(it.name)}
+                      >
+                        Hubungi Kami
                       </Button>
                     </Stack>
                   </Stack>

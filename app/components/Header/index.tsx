@@ -1,7 +1,7 @@
 'use client';
 import { Burger, Button, Container, Divider, Drawer, Flex } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconPhone } from '@tabler/icons-react';
+import { IconBrandWhatsapp } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -75,7 +75,7 @@ const Header = () => {
           size="md"
           variant="outline"
           radius={'xl'}
-          leftSection={<IconPhone />}
+          leftSection={<IconBrandWhatsapp />}
           display={{ base: 'none', sm: 'block' }}
           onClick={handleClickContactUs}
         >
@@ -121,7 +121,7 @@ const Header = () => {
               variant="outline"
               w={'max-content'}
               radius={'xl'}
-              leftSection={<IconPhone />}
+              leftSection={<IconBrandWhatsapp />}
               onClick={handleClickContactUs}
             >
               Contact Us

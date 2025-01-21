@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     canonical: '/',
     languages: {
       'en-US': '/en-US',
-      'de-DE': '/de-DE',
-    },
+      'de-DE': '/de-DE'
+    }
   },
-  title: 'BAGIWEBSITE',
+  title: 'BAGIWEBSITE | Jasa Pembuatan Website, Aplikasi, dan Solusi Digital',
   description: 'Layanan pembuatan website, aplikasi, dan solusi digital lainnya.',
   openGraph: {
-    images: '/assets/thumbnail/thumbnail_bagiwebsite.png'
+    images: '/assets/thumbnail/thumbnail_bagiwebsite.jpg'
   }
 };
 
