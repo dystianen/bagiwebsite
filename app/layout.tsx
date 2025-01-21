@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import theme from './config/theme';
 import './globals.css';
 
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   title: 'BAGIWEBSITE | Jasa Pembuatan Website, Aplikasi, dan Solusi Digital',
   description: 'Layanan pembuatan website, aplikasi, dan solusi digital lainnya.',
   openGraph: {
-    images: '/assets/thumbnail/thumbnail_bagiwebsite.jpg'
+    images: '/assets/thumbnail/thumbnail_bagiwebsite.png'
   }
 };
 
@@ -50,6 +51,7 @@ export default function RootLayout({
           <Header />
           <div className="tw-mt-28 lg:tw-mt-8">{children}</div>
           <Footer />
+          <ScrollToTop />
         </MantineProvider>
       </body>
     </html>

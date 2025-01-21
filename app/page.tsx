@@ -2,7 +2,7 @@
 
 import { Button, Card, Container, Divider, Flex, Grid, Image, SimpleGrid } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
+import { IconArrowDown, IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import Marquee from 'react-fast-marquee';
@@ -14,7 +14,7 @@ import whyUs from './json/whyus.json';
 export default function Home() {
   const isMobile = useMediaQuery('(max-width: 62em)');
   const refWhyUs = useRef<HTMLInputElement>(null);
-  const scrollToElement = () => {
+  const scrollToWhyUs = () => {
     if (refWhyUs.current != null) {
       window.scrollTo({
         top: refWhyUs.current.offsetTop - 100,
@@ -69,19 +69,27 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="tw-text-gray-500"
                 >
-                  Di Bagi Website, kami mengkhususkan diri dalam menciptakan solusi web yang
-                  inovatif dan mudah digunakan. Baik Anda memulai proyek baru atau memperbarui situs
-                  yang sudah ada, tim ahli kami siap memberikan hasil luar biasa yang mendorong
-                  pertumbuhan dan meningkatkan kehadiran online Anda.
+                  Di <strong>BAGIWEBSITE</strong>, kami menghadirkan solusi digital yang dirancang
+                  untuk menginspirasi dan memberikan dampak nyata. Apakah Anda memulai dari nol atau
+                  ingin mengubah platform lama, kami membantu Anda menciptakan pengalaman online
+                  yang memukau, meningkatkan keterlibatan, dan mendorong pertumbuhan bisnis Anda ke
+                  level berikutnya.
                 </motion.p>
 
                 <motion.div
                   initial={{ x: -100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
-                  transition={{
-                    duration: 0.5
-                  }}
                   viewport={{ once: true }}
+                  whileHover={{
+                    y: -5 // Tombol naik sedikit
+                  }}
+                  whileTap={{
+                    scale: 0.95 // Sedikit mengecil saat ditekan
+                  }}
+                  transition={{
+                    duration: 0.3, // Durasi yang cepat untuk efek melompat
+                    ease: 'easeInOut'
+                  }}
                 >
                   <Button
                     size="lg"
@@ -91,9 +99,23 @@ export default function Home() {
                       outline: '2px solid var(--mantine-primary-color-filled)',
                       outlineOffset: 'calc(.125rem* var(--mantine-scale))'
                     }}
-                    onClick={scrollToElement}
+                    onClick={scrollToWhyUs}
+                    rightSection={
+                      <motion.div
+                        animate={{
+                          y: [0, -5, 0] // Gerakan ke atas (-5px), kembali ke 0
+                        }}
+                        transition={{
+                          duration: 0.8, // Durasi animasi
+                          repeat: Infinity, // Ulang terus-menerus
+                          ease: 'easeInOut' // Animasi halus
+                        }}
+                      >
+                        <IconArrowDown />
+                      </motion.div>
+                    }
                   >
-                    Bangun Bersama Kami
+                    Lihat Keunggulan Kami
                   </Button>
                 </motion.div>
 
