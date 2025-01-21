@@ -89,6 +89,7 @@ const Home = () => {
                     duration: 0.3,
                     ease: 'easeInOut'
                   }}
+                  className="tw-w-max"
                 >
                   <Button
                     size="lg"
