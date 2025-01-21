@@ -1,17 +1,16 @@
 'use client';
-
 import { Button, Card, Container, Divider, Flex, Grid, Image, SimpleGrid } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconArrowDown, IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import ReviewCard from './components/ReviewCard';
 import portfolio from './json/portofolio.json';
 import review from './json/review.json';
 import whyUs from './json/whyus.json';
 
-export default function Home() {
+const Home = () => {
   const isMobile = useMediaQuery('(max-width: 62em)');
   const refWhyUs = useRef<HTMLInputElement>(null);
   const scrollToWhyUs = () => {
@@ -23,9 +22,9 @@ export default function Home() {
     }
   };
 
-  const halfLength = Math.ceil(portfolio.length / 2); // Membagi panjang array menjadi dua
-  const firstHalf = portfolio.slice(0, halfLength); // Bagian pertama
-  const secondHalf = portfolio.slice(halfLength); // Bagian kedua
+  const halfLength = Math.ceil(portfolio.length / 2);
+  const firstHalf = portfolio.slice(0, halfLength);
+  const secondHalf = portfolio.slice(halfLength);
 
   return (
     <>
@@ -81,13 +80,13 @@ export default function Home() {
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   whileHover={{
-                    y: -5 // Tombol naik sedikit
+                    y: -5
                   }}
                   whileTap={{
-                    scale: 0.95 // Sedikit mengecil saat ditekan
+                    scale: 0.95
                   }}
                   transition={{
-                    duration: 0.3, // Durasi yang cepat untuk efek melompat
+                    duration: 0.3,
                     ease: 'easeInOut'
                   }}
                 >
@@ -277,4 +276,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default memo(Home);

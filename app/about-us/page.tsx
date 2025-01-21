@@ -1,12 +1,11 @@
 'use client';
-
 import { Badge, Card, Container, Flex, Image, SimpleGrid, Text } from '@mantine/core';
 import { IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { memo } from 'react';
 import ourTeams from '../json/teams.json';
 
-export default function AboutUs() {
-  // const isMobile = useMediaQuery('(max-width: 62em)');
+const AboutUs = () => {
   return (
     <>
       <section className="tw-mt-32">
@@ -17,7 +16,6 @@ export default function AboutUs() {
             </h1>
           </Container>
           <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
-            {/* Adjust height as needed */}
             <Image
               src={'/assets/images/about_us.jpg'}
               alt="about-us"
@@ -25,8 +23,7 @@ export default function AboutUs() {
               h={'100%'}
               className="tw-object-cover"
             />
-            <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>{' '}
-            {/* Black transparent overlay */}
+            <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>
           </div>
         </Flex>
       </section>
@@ -171,4 +168,6 @@ export default function AboutUs() {
       </section>
     </>
   );
-}
+};
+
+export default memo(AboutUs);
