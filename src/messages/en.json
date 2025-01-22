@@ -278,5 +278,25 @@
     "content_sport_massage": "Sport Massage is an app designed to help users find the best sports massage services according to their needs. This app provides complete information about various types of sports massages, their benefits, and the locations of nearby service providers. In addition, users can easily and quickly book services through an intuitive platform. With a responsive design and advanced search features, Sport Massage provides a comfortable and efficient user experience. This project aims to support the recovery and fitness of athletes and active individuals, offering convenience in finding and enjoying quality sports massage services.",
     "content_asy_syifa": "Pesantren Asy-Syfa’ Landing Page is designed to introduce and promote the pesantren to prospective students and parents in an engaging and informative way. This page displays important information such as the pesantren's history, vision and mission, available facilities, and educational programs offered. With a clean and responsive design, this landing page is designed to provide a comfortable user experience and easy accessibility on various devices. This project aims to strengthen Pesantren Asy-Syfa’s presence in the digital world, providing clear information and attracting prospective students to join the pesantren.",
     "open_web": "Open Website"
+  },
+  "Footer": {
+    "desc": "We provide website, application and other digital solution creation services.",
+    "copyright": "All Rights Reserved",
+    "about": "About",
+    "features": "Features",
+    "works": "Works",
+    "career": "Career",
+    "customer_support": "Customer Support",
+    "delivery_details": "Delivery Details",
+    "terms_conditions": "Terms & Conditions",
+    "privacy_policy": "Privacy Policy",
+    "account": "Account",
+    "manage_deliveries": "Manage Deliveries",
+    "orders": "Orders",
+    "payments": "Payments",
+    "free_ebooks": "Free eBooks",
+    "development_tutorial": "Development Tutorial",
+    "how_to_blog": "How to - Blog",
+    "youtube_playlist": "Youtube Playlist"
   }
 }

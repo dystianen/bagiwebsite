@@ -1,8 +1,10 @@
 'use client';
 import { Card, Container, Flex, Grid } from '@mantine/core';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const Footer = () => {
+  const t = useTranslations('Footer');
   const sosmed = [
     {
       icon: '/assets/icons/instagram.png'
@@ -31,9 +33,7 @@ const Footer = () => {
           <Grid justify="space-between" gutter={{ base: 'xl' }} align="center">
             <Grid.Col span={{ base: 12, md: 4 }}>
               <div className="tw-w-60 tw-flex tw-flex-col tw-gap-4">
-                <p>
-                  Kami menyediakan layanan pembuatan website, aplikasi, dan solusi digital lainnya.
-                </p>
+                <p>{t('desc')}</p>
                 <Flex gap={16}>
                   {sosmed.map((it, index) => (
                     <Image key={index} src={it.icon} alt={it.icon} width={30} height={30} />
@@ -43,38 +43,38 @@ const Footer = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Works</a>
-                <a href="#">Career</a>
+                <a href="#">{t('about')}</a>
+                <a href="#">{t('features')}</a>
+                <a href="#">{t('works')}</a>
+                <a href="#">{t('career')}</a>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">Customer Support</a>
-                <a href="#">Delivery Details</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#">{t('customer_support')}</a>
+                <a href="#">{t('delivery_details')}</a>
+                <a href="#">{t('terms_conditions')}</a>
+                <a href="#">{t('privacy_policy')}</a>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">Account</a>
-                <a href="#">Manage Deliveries</a>
-                <a href="#">Orders</a>
-                <a href="#">Payments</a>
+                <a href="#">{t('account')}</a>
+                <a href="#">{t('manage_deliveries')}</a>
+                <a href="#">{t('orders')}</a>
+                <a href="#">{t('payments')}</a>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">Free eBooks</a>
-                <a href="#">Development Tutorial</a>
-                <a href="#">How to - Blog</a>
-                <a href="#">Youtube Playlist</a>
+                <a href="#">{t('free_ebooks')}</a>
+                <a href="#">{t('development_tutorial')}</a>
+                <a href="#">{t('how_to_blog')}</a>
+                <a href="#">{t('youtube_playlist')}</a>
               </div>
             </Grid.Col>
           </Grid>
-          <p className="tw-mt-6">BAGIWEBSITE &copy;2024, All Rights Reserved</p>
+          <p className="tw-mt-6">BAGIWEBSITE &copy;2024, {t('copyright')}</p>
         </Container>
       </Card>
     </footer>

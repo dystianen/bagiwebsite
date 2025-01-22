@@ -284,5 +284,27 @@
     "content_sport_massage": "Sport Massage adalah aplikasi yang dirancang untuk memfasilitasi pengguna dalam menemukan layanan pijat olahraga terbaik yang sesuai dengan kebutuhan mereka. Aplikasi ini menyediakan informasi lengkap mengenai berbagai jenis pijat olahraga, manfaatnya, serta lokasi penyedia layanan terdekat. Selain itu, pengguna dapat melakukan pemesanan layanan dengan mudah dan cepat melalui platform yang intuitif. Dengan desain yang responsif dan fitur pencarian yang canggih, Sport Massage memberikan pengalaman pengguna yang nyaman dan efisien. Proyek ini bertujuan untuk mendukung pemulihan dan kebugaran tubuh para atlet dan individu yang aktif, menawarkan kemudahan dalam mencari dan menikmati layanan pijat olahraga berkualitas.",
     "content_asy_syifa": "Landing Page Pesantren Asy-Syfa’ dirancang untuk memperkenalkan dan mempromosikan pesantren kepada calon santri dan orang tua dengan cara yang menarik dan informatif. Halaman ini menampilkan berbagai informasi penting, seperti sejarah pesantren, visi dan misi, fasilitas yang tersedia, serta program pendidikan yang ditawarkan. Dengan desain yang bersih dan responsif, landing page ini dirancang untuk memberikan pengalaman pengguna yang nyaman dan mudah diakses di berbagai perangkat. Proyek ini bertujuan untuk memperkuat kehadiran Pesantren Asy-Syfa’ di dunia digital, memberikan informasi yang jelas, dan menarik minat calon santri untuk bergabung dengan pesantren.",
     "open_web": "Buka Situs Web"
+  },
+
+  "Footer": {
+    "desc": "Kami menyediakan layanan pembuatan website, aplikasi, dan solusi digital lainnya.",
+    "copyright": "Hak Cipta Dilindungi Undang-Undang",
+
+    "about": "Tentang",
+    "features": "Fitur",
+    "works": "Karya",
+    "career": "Karir",
+    "customer_support": "Dukungan Pelanggan",
+    "delivery_details": "Detail Pengiriman",
+    "terms_conditions": "Syarat & Ketentuan",
+    "privacy_policy": "Kebijakan Privasi",
+    "account": "Akun",
+    "manage_deliveries": "Kelola Pengiriman",
+    "orders": "Pesanan",
+    "payments": "Pembayaran",
+    "free_ebooks": "eBook Gratis",
+    "development_tutorial": "Tutorial Pengembangan",
+    "how_to_blog": "Cara - Blog",
+    "youtube_playlist": "Playlist Youtube"
   }
 }
