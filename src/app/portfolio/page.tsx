@@ -72,7 +72,7 @@ const Portfolio = () => {
 
                   <Flex direction={'column'} align={'start'} gap={'sm'} w={'100%'}>
                     <h1 className="tw-text-2xl tw-font-bold">{it.title}</h1>
-                    <p className="tw-text-gray-500 tw-text-justify">{it.desc}</p>
+                    <p className="tw-text-gray-500 tw-text-justify">{t(it.desc)}</p>
                     <Button
                       radius={'xl'}
                       mt={'sm'}
@@ -81,7 +81,7 @@ const Portfolio = () => {
                       href={it.href}
                       target={it.href === '#' ? '_self' : '_blank'}
                     >
-                      Buka Website
+                      {t('open_web')}
                     </Button>
                   </Flex>
                 </Flex>

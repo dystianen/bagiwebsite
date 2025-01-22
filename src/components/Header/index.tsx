@@ -15,10 +15,9 @@ const Header = () => {
   const route = usePathname();
 
   const menu = [
-    { href: '/', label: 'Home' },
-    { href: '/about-us', label: 'About Us' },
-    { href: '/services', label: 'Services' },
-    { href: '/portfolio', label: 'Portfolio' }
+    { href: '/about-us', label: tg('about_us') },
+    { href: '/services', label: tg('services') },
+    { href: '/portfolio', label: tg('portfolio') }
   ];
 
   const handleClickContactUs = () => {
@@ -33,15 +32,17 @@ const Header = () => {
     >
       <Container size="xl" className="tw-flex tw-justify-between tw-items-center tw-h-20">
         <div className="tw-flex tw-gap-6 tw-items-center">
-          <Flex gap={4} align="end">
-            <Image
-              src="/assets/images/logo_bagiwebsite.png"
-              alt="BAGIWEBSITE"
-              width={30}
-              height={30}
-            />
-            <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITE</h2>
-          </Flex>
+          <Link href={'/'}>
+            <Flex gap={4} align="end">
+              <Image
+                src="/assets/images/logo_bagiwebsite.png"
+                alt="BAGIWEBSITE"
+                width={30}
+                height={30}
+              />
+              <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITE</h2>
+            </Flex>
+          </Link>
           <div className="tw-hidden md:tw-flex sm:tw-gap-4 lg:tw-gap-6">
             <Divider orientation="vertical" />
             <nav>
