@@ -1,7 +1,7 @@
 'use client';
 import { Button, Container, Flex, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconLink } from '@tabler/icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { memo } from 'react';
@@ -76,7 +76,7 @@ const Portfolio = () => {
                     <Button
                       radius={'xl'}
                       mt={'sm'}
-                      leftSection={<IconLink />}
+                      leftSection={<IconExternalLink />}
                       component="a"
                       href={it.href}
                       target={it.href === '#' ? '_self' : '_blank'}
