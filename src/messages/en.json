@@ -113,6 +113,139 @@
     "consultation": {
       "title": "Free Consultation",
       "content": "Not sure where to start? Our team of experts are ready to help you understand your project needs at no extra cost! Get the best advice before starting your project with us."
+    },
+
+    "service-1": {
+      "name": "Personal Portfolio Website Development",
+      "features": {
+        "responsive": "Responsive website design",
+        "profile_page": "Profile, services, gallery, and contact pages",
+        "basic_seo": "Basic SEO for search engine visibility",
+        "social_media_integration": "Social media integration"
+      },
+      "price_range": "Rp 1,500,000 - Rp 5,000,000",
+      "discount": "5% for orders above Rp 3,000,000"
+    },
+    "service-2": {
+      "name": "Business/Corporate Website Development",
+      "features": {
+        "professional_design": "Professional and responsive design",
+        "pages": "Homepage, about us, services, blog, and contact pages",
+        "contact_form": "Contact form with Google Maps integration",
+        "email_setup": "Corporate email setup",
+        "basic_seo": "Basic SEO"
+      },
+      "price_range": "Rp 5,000,000 - Rp 15,000,000",
+      "discount": "10% for packages above Rp 10,000,000"
+    },
+    "service-3": {
+      "name": "E-Commerce Website Development",
+      "features": {
+        "shopping_cart": "Shopping cart and checkout system",
+        "payment_integration": "Payment method integration",
+        "admin_dashboard": "Admin dashboard for product management",
+        "order_tracking": "Discount, coupon, and order tracking features",
+        "seo_optimization": "SEO and speed optimization"
+      },
+      "price_range": "Rp 10,000,000 - Rp 30,000,000",
+      "discount": "15% for projects above Rp 25,000,000"
+    },
+    "service-4": {
+      "name": "Promotional Landing Page",
+      "features": {
+        "conversion_design": "Conversion-focused design",
+        "single_page": "Single page with clear call-to-action",
+        "form_integration": "Registration or order form integration",
+        "analytics": "Page performance statistics (Google Analytics)"
+      },
+      "price_range": "Rp 1,000,000 - Rp 3,500,000",
+      "discount": "5% for orders of more than 2 landing pages"
+    },
+    "service-5": {
+      "name": "Blog/Informational Website Development",
+      "features": {
+        "blog_platform": "Blogging platform with appealing design",
+        "categories_search": "Category and search features",
+        "blog_seo": "SEO for blog articles",
+        "comments_social": "Comment system and social media integration"
+      },
+      "price_range": "Rp 3,000,000 - Rp 7,500,000",
+      "discount": "10% for orders above Rp 5,000,000"
+    },
+    "service-6": {
+      "name": "Custom Website Development",
+      "features": {
+        "custom_design": "Custom design and features tailored to requirements",
+        "integrated_system": "Integrated backend and frontend systems",
+        "api_integration": "API integration (if required)",
+        "security_testing": "Security testing"
+      },
+      "price_range": "Rp 15,000,000 - Rp 50,000,000",
+      "discount": "20% for large projects above Rp 40,000,000"
+    },
+    "service-7": {
+      "name": "Website Maintenance and Updates",
+      "features": {
+        "content_update": "Content, plugin, or system updates",
+        "data_backup": "Data backup and recovery",
+        "performance_monitoring": "Performance monitoring and bug fixes"
+      },
+      "price_range": "Rp 500,000 - Rp 2,000,000/month",
+      "discount": "1 free month for 1-year contract"
+    },
+    "service-8": {
+      "name": "Website Optimization",
+      "features": {
+        "seo": "SEO (On-Page & Off-Page)",
+        "speed_optimization": "Speed optimization (lazy loading, caching, etc.)",
+        "security": "Enhanced security"
+      },
+      "price_range": "Rp 3,000,000 - Rp 10,000,000",
+      "discount": "10% for complete optimization packages"
+    },
+    "service-9": {
+      "name": "Custom Management System Development (Web Apps)",
+      "features": {
+        "management_system": "CRM, ERP, or inventory management systems",
+        "secure_login": "Multi-level login with security authentication",
+        "dashboard": "Statistics and reporting dashboard"
+      },
+      "price_range": "Rp 25,000,000 - Rp 100,000,000",
+      "discount": "25% for projects above Rp 75,000,000"
+    },
+    "service-10": {
+      "name": "AWS Account Setup",
+      "features": {
+        "account_setup": "AWS account registration with basic configuration",
+        "security_config": "Account security setup (IAM roles, policies)",
+        "billing_alert": "Billing and cost alert configuration",
+        "aws_intro": "Introduction to basic AWS services (EC2, S3, etc.)"
+      },
+      "price_range": "Rp 1,000,000 - Rp 3,000,000",
+      "discount": "5% for more than 3 accounts setup"
+    },
+    "service-11": {
+      "name": "Website/Application Deployment Services",
+      "features": {
+        "server_deploy": "Application deployment to servers (AWS, GCP, or local VPS)",
+        "domain_ssl": "Domain and SSL configuration",
+        "ci_cd": "CI/CD pipeline setup (optional)",
+        "server_optimization": "Server optimization for maximum performance",
+        "monitoring": "Deployment monitoring and final testing"
+      },
+      "price_range": "Rp 2,000,000 - Rp 7,500,000",
+      "discount": "10% for deployment projects above Rp 5,000,000"
+    },
+    "service-12": {
+      "name": "Custom Service or Consultation Request",
+      "features": {
+        "custom_request": "Request or inquire about unavailable services",
+        "discussion": "Discussion to tailor specific needs",
+        "price_estimate": "Price estimation based on project complexity",
+        "tech_suggestion": "Technology suggestions suited to your needs"
+      },
+      "price_range": "Depending on requirements",
+      "discount": "Up to 10% for large projects"
     }
   },
 

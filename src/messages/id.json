@@ -113,6 +113,139 @@
     "consultation": {
       "title": "Konsultasi Gratis",
       "content": "Tidak yakin harus mulai dari mana? Tim ahli kami siap membantu Anda memahami kebutuhan proyek Anda tanpa biaya tambahan! Dapatkan saran terbaik sebelum memulai proyek Anda bersama kami."
+    },
+
+    "service-1": {
+      "name": "Personal Portfolio Website Development",
+      "features": {
+        "responsive": "Desain situs web responsif",
+        "profile_page": "Profil, layanan, galeri, dan halaman kontak",
+        "basic_seo": "SEO dasar untuk visibilitas mesin pencari",
+        "social_media_integration": "Integrasi media sosial"
+      },
+      "price_range": "Rp 1,500,000 - Rp 5,000,000",
+      "discount": "5% for orders above Rp 3,000,000"
+    },
+    "service-2": {
+      "name": "Pembuatan Website Bisnis/Corporate",
+      "features": {
+        "professional_design": "Desain profesional dan responsif",
+        "pages": "Halaman utama, tentang kami, layanan, blog, dan kontak",
+        "contact_form": "Formulir kontak dan integrasi Google Maps",
+        "email_setup": "Pengaturan email perusahaan",
+        "basic_seo": "SEO dasar"
+      },
+      "price_range": "Rp 5.000.000 - Rp 15.000.000",
+      "discount": "10% untuk paket di atas Rp 10.000.000"
+    },
+    "service-3": {
+      "name": "Pembuatan Toko Online (E-Commerce)",
+      "features": {
+        "shopping_cart": "Sistem keranjang belanja dan checkout",
+        "payment_integration": "Integrasi metode pembayaran",
+        "admin_dashboard": "Dashboard admin untuk pengelolaan produk",
+        "order_tracking": "Fitur diskon, kupon, dan pelacakan pesanan",
+        "seo_optimization": "Optimasi SEO dan kecepatan"
+      },
+      "price_range": "Rp 10.000.000 - Rp 30.000.000",
+      "discount": "15% untuk proyek di atas Rp 25.000.000"
+    },
+    "service-4": {
+      "name": "Landing Page Promosi",
+      "features": {
+        "conversion_design": "Desain fokus pada konversi",
+        "single_page": "Halaman tunggal dengan call-to-action jelas",
+        "form_integration": "Integrasi formulir pendaftaran atau pemesanan",
+        "analytics": "Statistik performa halaman (Google Analytics)"
+      },
+      "price_range": "Rp 1.000.000 - Rp 3.500.000",
+      "discount": "5% untuk pemesanan lebih dari 2 landing page"
+    },
+    "service-5": {
+      "name": "Pembuatan Blog/Website Informasi",
+      "features": {
+        "blog_platform": "Platform blogging dengan desain menarik",
+        "categories_search": "Fitur kategori dan pencarian",
+        "blog_seo": "SEO untuk artikel blog",
+        "comments_social": "Sistem komentar dan integrasi media sosial"
+      },
+      "price_range": "Rp 3.000.000 - Rp 7.500.000",
+      "discount": "10% untuk pemesanan di atas Rp 5.000.000"
+    },
+    "service-6": {
+      "name": "Custom Website",
+      "features": {
+        "custom_design": "Desain dan fitur sesuai kebutuhan khusus",
+        "integrated_system": "Sistem backend dan frontend yang terintegrasi",
+        "api_integration": "API integration (jika diperlukan)",
+        "security_testing": "Pengujian keamanan"
+      },
+      "price_range": "Rp 15.000.000 - Rp 50.000.000",
+      "discount": "20% untuk proyek besar di atas Rp 40.000.000"
+    },
+    "service-7": {
+      "name": "Maintenance dan Update Website",
+      "features": {
+        "content_update": "Update konten, plugin, atau sistem",
+        "data_backup": "Backup dan pemulihan data",
+        "performance_monitoring": "Pemantauan performa dan perbaikan bug"
+      },
+      "price_range": "Rp 500.000 - Rp 2.000.000/bulan",
+      "discount": "Gratis 1 bulan untuk kontrak 1 tahun"
+    },
+    "service-8": {
+      "name": "Optimasi Website",
+      "features": {
+        "seo": "SEO (On-Page & Off-Page)",
+        "speed_optimization": "Optimasi kecepatan (lazy loading, caching, dll.)",
+        "security": "Peningkatan keamanan"
+      },
+      "price_range": "Rp 3.000.000 - Rp 10.000.000",
+      "discount": "10% untuk optimasi paket lengkap"
+    },
+    "service-9": {
+      "name": "Pembuatan Sistem Manajemen Khusus (Web Apps)",
+      "features": {
+        "management_system": "Sistem CRM, ERP, atau manajemen inventaris",
+        "secure_login": "Login multi-level dengan otentikasi keamanan",
+        "dashboard": "Dashboard statistik dan laporan"
+      },
+      "price_range": "Rp 25.000.000 - Rp 100.000.000",
+      "discount": "25% untuk proyek di atas Rp 75.000.000"
+    },
+    "service-10": {
+      "name": "Pembuatan Akun AWS",
+      "features": {
+        "account_setup": "Registrasi akun AWS dengan konfigurasi dasar",
+        "security_config": "Pengaturan keamanan akun (IAM roles, policies)",
+        "billing_alert": "Konfigurasi billing dan alert biaya",
+        "aws_intro": "Pengenalan layanan AWS dasar (EC2, S3, dll.)"
+      },
+      "price_range": "Rp 1.000.000 - Rp 3.000.000",
+      "discount": "5% untuk pembuatan lebih dari 3 akun"
+    },
+    "service-11": {
+      "name": "Jasa Deploy Website/Aplikasi",
+      "features": {
+        "server_deploy": "Deploy aplikasi ke server (AWS, GCP, atau VPS lokal)",
+        "domain_ssl": "Konfigurasi domain dan SSL",
+        "ci_cd": "Pengaturan CI/CD pipeline (opsional)",
+        "server_optimization": "Optimasi server untuk performa maksimal",
+        "monitoring": "Monitoring deploy dan pengujian akhir"
+      },
+      "price_range": "Rp 2.000.000 - Rp 7.500.000",
+      "discount": "10% untuk proyek deploy di atas Rp 5.000.000"
+    },
+    "service-12": {
+      "name": "Request Jasa atau Konsultasi",
+      "features": {
+        "custom_request": "Bertanya atau request jasa yang belum tersedia",
+        "discussion": "Diskusi untuk menyesuaikan kebutuhan spesifik",
+        "price_estimate": "Estimasi harga sesuai kompleksitas proyek",
+        "tech_suggestion": "Saran teknologi yang sesuai dengan kebutuhan"
+      },
+      "price_range": "Tergantung pada kebutuhan",
+      "discount": "hingga 10% untuk proyek besar"
     }
   },
 

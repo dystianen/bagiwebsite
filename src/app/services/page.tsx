@@ -16,7 +16,7 @@ import { useTranslations } from 'next-intl';
 import { memo } from 'react';
 import services from '../../json/services.json';
 
-const AboutUs = () => {
+const Services = () => {
   const tg = useTranslations('Global');
   const t = useTranslations('Services');
 
@@ -76,7 +76,7 @@ const AboutUs = () => {
                 <Card key={index} shadow="md" radius="md" h={'100%'}>
                   <Stack justify="space-between" h={'100%'}>
                     <Stack>
-                      <h1 className="tw-text-xl tw-font-semibold">{it.name}</h1>
+                      <h1 className="tw-text-xl tw-font-semibold">{t(it.name)}</h1>
                       <ol>
                         {it.features.map((feature, idx) => (
                           <li key={idx}>
@@ -84,7 +84,7 @@ const AboutUs = () => {
                               <div>
                                 <IconCheck color="green" />
                               </div>
-                              {feature}
+                              {t(feature)}
                             </Group>
                           </li>
                         ))}
@@ -115,4 +115,4 @@ const AboutUs = () => {
   );
 };
 
-export default memo(AboutUs);
+export default memo(Services);
