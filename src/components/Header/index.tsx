@@ -3,12 +3,14 @@ import { Burger, Button, Container, Divider, Drawer, Flex, Group } from '@mantin
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import LanguagePicker from '../LanguagePicker';
 
 const Header = () => {
+  const tg = useTranslations('Global');
   const [opened, { toggle }] = useDisclosure();
   const route = usePathname();
 
@@ -73,7 +75,7 @@ const Header = () => {
             className="tw-hidden md:tw-block"
             onClick={handleClickContactUs}
           >
-            Contact Us
+            {tg('contact_us')}
           </Button>
           <Burger
             opened={opened}
@@ -128,7 +130,7 @@ const Header = () => {
               leftSection={<IconBrandWhatsapp />}
               onClick={handleClickContactUs}
             >
-              Contact Us
+              {tg('contact_us')}
             </Button>
           </Flex>
         </Drawer>

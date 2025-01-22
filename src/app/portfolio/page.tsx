@@ -3,18 +3,21 @@ import { Button, Container, Flex, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { memo } from 'react';
 import portfolio from '../../json/portofolio.json';
 
 const Portfolio = () => {
+  const t = useTranslations('Portfolio');
   const isMobile = useMediaQuery('(max-width: 62em)');
+
   return (
     <>
       <section className="tw-mt-32">
         <Flex gap={40} direction={'column'}>
           <Container size={'xl'}>
             <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-center tw-tracking-[0.4em]">
-              PORTFOLIO
+              {t('title')}
             </h1>
           </Container>
           <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
@@ -41,7 +44,7 @@ const Portfolio = () => {
             viewport={{ once: true }}
             className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em] tw-mb-14"
           >
-            PROJECTS
+            {t('projects')}
           </motion.h1>
 
           <Flex direction={'column'} gap={80} w={'100%'} pos={'relative'}>

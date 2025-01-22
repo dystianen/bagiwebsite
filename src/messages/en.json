@@ -1,4 +1,8 @@
 {
+  "Global": {
+    "contact_us": "Contact Us"
+  },
+
   "LocaleSwitcher": {
     "en": "English",
     "id": "Indonesia"
@@ -101,5 +105,19 @@
       "title": "Quotes",
       "content": "When we are still given the opportunity to wake up in the morning, it means that God is still giving us the opportunity to do the work that we have to do."
     }
+  },
+
+  "Services": {
+    "title": "SERVICES",
+    "content": "We offer a variety of website creation and management services designed to meet your needs. All of our services are equipped with the best features, competitive prices, and full support to ensure maximum results.",
+    "consultation": {
+      "title": "Free Consultation",
+      "content": "Not sure where to start? Our team of experts are ready to help you understand your project needs at no extra cost! Get the best advice before starting your project with us."
+    }
+  },
+
+  "Portfolio": {
+    "title": "PORTFOLIO",
+    "projects": "PROJECTS"
   }
 }

@@ -1,4 +1,8 @@
 {
+  "Global": {
+    "contact_us": "Hubungi Kami"
+  },
+
   "LocaleSwitcher": {
     "en": "English",
     "id": "Indonesia"
@@ -101,5 +105,19 @@
       "title": "Kutipan",
       "content": "Saat kita masih diberi kesempatan bangun di pagi hari, itu berarti Tuhan masih memberi kesempatan kepada kita untuk melakukan pekerjaan yang harus kita lakukan"
     }
+  },
+
+  "Services": {
+    "title": "LAYANAN",
+    "content": "Kami menawarkan berbagai layanan pembuatan dan pengelolaan website yang dirancang untuk memenuhi kebutuhan Anda, Semua layanan kami dilengkapi dengan fitur terbaik, harga kompetitif, dan dukungan penuh untuk memastikan hasil maksimal.",
+    "consultation": {
+      "title": "Konsultasi Gratis",
+      "content": "Tidak yakin harus mulai dari mana? Tim ahli kami siap membantu Anda memahami kebutuhan proyek Anda tanpa biaya tambahan! Dapatkan saran terbaik sebelum memulai proyek Anda bersama kami."
+    }
+  },
+
+  "Portfolio": {
+    "title": "PORTOFOLIO",
+    "projects": "PROYEK"
   }
 }
