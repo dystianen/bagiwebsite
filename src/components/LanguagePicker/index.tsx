@@ -65,7 +65,7 @@ export default function LanguagePicker() {
       withinPortal
     >
       <Menu.Target>
-        <Skeleton visible={loading} w={'max-content'} h={40}>
+        <Skeleton visible={loading} w={'max-content'} h={{ base: 35, md: 40 }}>
           <UnstyledButton className={classes.control} data-expanded={opened || undefined}>
             <Group gap="xs">
               <Image src={selected.image} width={22} height={22} alt={selected.label} />

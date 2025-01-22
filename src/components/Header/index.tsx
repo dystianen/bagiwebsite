@@ -63,7 +63,7 @@ const Header = () => {
           </div>
         </div>
 
-        <Group>
+        <Group align="center">
           <LanguagePicker />
           <Button
             size="md"
