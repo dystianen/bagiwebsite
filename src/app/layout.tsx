@@ -2,7 +2,7 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { getLocale, getMessages, getTranslations } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import Footer from '../components/Footer';
@@ -25,21 +25,25 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'id' }];
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://bagiwebsite.com'),
-  alternates: {
-    canonical: '/',
-    languages: {
-      en: '/en',
-      id: '/id'
+export async function generateMetadata(locale: string): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    metadataBase: new URL('https://bagiwebsite.com'),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: '/en',
+        id: '/id'
+      }
+    },
+    title: t('title'),
+    description: t('desc'),
+    openGraph: {
+      images: '/assets/thumbnail/thumbnail_bagiwebsite.png'
     }
-  },
-  title: 'BAGIWEBSITE | Jasa Pembuatan Website, Aplikasi, dan Solusi Digital',
-  description: 'Layanan pembuatan website, aplikasi, dan solusi digital lainnya.',
-  openGraph: {
-    images: '/assets/thumbnail/thumbnail_bagiwebsite.png'
-  }
-};
+  };
+}
 
 export default async function RootLayout({
   children
