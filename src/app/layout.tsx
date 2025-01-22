@@ -61,7 +61,7 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <MantineProvider theme={theme}>
           <NextIntlClientProvider messages={messages}>
-            <NextTopLoader />
+            <NextTopLoader showSpinner={false} />
             <Header />
             <div className="tw-mt-28 lg:tw-mt-8">{children}</div>
             <Footer />
