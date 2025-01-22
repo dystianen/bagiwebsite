@@ -2,11 +2,7 @@ import type { Config } from 'tailwindcss';
 
 export default {
   prefix: 'tw-',
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}'
-  ],
+  content: ['./src/app/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -14,7 +10,7 @@ export default {
         foreground: 'var(--foreground)'
       },
       backgroundImage: {
-        'pattern-wave': "url('../public/assets/backgrounds/pattern_wave.svg')"
+        'pattern-wave': "url('/assets/backgrounds/pattern_wave.svg')"
       }
     }
   },

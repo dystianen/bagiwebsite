@@ -3,14 +3,16 @@ import { Button, Card, Container, Divider, Flex, Grid, Image, SimpleGrid } from 
 import { useMediaQuery } from '@mantine/hooks';
 import { IconArrowDown, IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
-import ReviewCard from './components/ReviewCard';
-import portfolio from './json/portofolio.json';
-import review from './json/review.json';
-import whyUs from './json/whyus.json';
+import ReviewCard from '../components/ReviewCard';
+import portfolio from '../json/portofolio.json';
+import review from '../json/review.json';
+import whyUs from '../json/whyus.json';
 
 const Home = () => {
+  const t = useTranslations('HomePage');
   const isMobile = useMediaQuery('(max-width: 62em)');
   const refWhyUs = useRef<HTMLInputElement>(null);
   const scrollToWhyUs = () => {
@@ -45,7 +47,7 @@ const Home = () => {
                   viewport={{ once: true }}
                 >
                   <Card withBorder radius={'xl'} w={'max-content'} py={5}>
-                    IT Services & Solutions
+                    {t('services')}
                   </Card>
                 </motion.div>
                 <motion.h1
@@ -57,7 +59,7 @@ const Home = () => {
                   viewport={{ once: true }}
                   className="tw-text-3xl lg:tw-text-6xl tw-font-bold"
                 >
-                  Ubah Ide Anda Menjadi Sesuatu yang Menakjubkan
+                  {t('title')}
                 </motion.h1>
                 <motion.p
                   initial={{ scale: 0.6, opacity: 0 }}
@@ -68,11 +70,7 @@ const Home = () => {
                   viewport={{ once: true }}
                   className="tw-text-gray-500"
                 >
-                  Di <strong>BAGIWEBSITE</strong>, kami menghadirkan solusi digital yang dirancang
-                  untuk menginspirasi dan memberikan dampak nyata. Apakah Anda memulai dari nol atau
-                  ingin mengubah platform lama, kami membantu Anda menciptakan pengalaman online
-                  yang memukau, meningkatkan keterlibatan, dan mendorong pertumbuhan bisnis Anda ke
-                  level berikutnya.
+                  {t('desc')}
                 </motion.p>
 
                 <motion.div
@@ -103,19 +101,19 @@ const Home = () => {
                     rightSection={
                       <motion.div
                         animate={{
-                          y: [0, -5, 0] // Gerakan ke atas (-5px), kembali ke 0
+                          y: [0, -5, 0]
                         }}
                         transition={{
-                          duration: 0.8, // Durasi animasi
-                          repeat: Infinity, // Ulang terus-menerus
-                          ease: 'easeInOut' // Animasi halus
+                          duration: 0.8,
+                          repeat: Infinity,
+                          ease: 'easeInOut'
                         }}
                       >
                         <IconArrowDown />
                       </motion.div>
                     }
                   >
-                    Lihat Keunggulan Kami
+                    {t('see_advantages')}
                   </Button>
                 </motion.div>
 
@@ -135,17 +133,17 @@ const Home = () => {
                     >
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconUser size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">Individuals</h1>
+                        <h1 className="tw-text-lg">{t('individuals')}</h1>
                       </Flex>
                       <Divider orientation="vertical" />
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconBusinessplan size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">Bussiness</h1>
+                        <h1 className="tw-text-lg">{t('bussiness')}</h1>
                       </Flex>
                       <Divider orientation="vertical" />
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconBuildings size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">Companies</h1>
+                        <h1 className="tw-text-lg">{t('companies')}</h1>
                       </Flex>
                     </Flex>
                   </Card>
@@ -211,13 +209,9 @@ const Home = () => {
           >
             <Flex direction={'column'} align={'center'} mb={40} gap={16}>
               <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
-                Kenapa Memilih Kami?
+                {t('why_us')}
               </h1>
-              <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">
-                Kami menawarkan solusi digital yang profesional, kustom, dan menggunakan teknologi
-                terkini untuk memenuhi kebutuhan bisnis Anda. Dengan layanan lengkap dan dukungan
-                responsif, kami berkomitmen membantu Anda meraih kesuksesan.
-              </p>
+              <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">{t('desc_why_us')}</p>
             </Flex>
           </motion.div>
 
@@ -236,8 +230,8 @@ const Home = () => {
                 <Card shadow="sm" radius={'md'}>
                   <Flex gap={4} direction={'column'}>
                     <Image src={it.icon} alt="bagiwebsite" width={100} height={100} />
-                    <h1 className="tw-text-xl tw-font-bold">{it.title}</h1>
-                    <p className="tw-text-gray-500">{it.description}</p>
+                    <h1 className="tw-text-xl tw-font-bold">{t(it.title)}</h1>
+                    <p className="tw-text-gray-500">{t(it.description)}</p>
                   </Flex>
                 </Card>
               </motion.div>
@@ -258,18 +252,16 @@ const Home = () => {
           >
             <Flex direction={'column'} align={'center'} mb={40} gap={16}>
               <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
-                Apa Kata Mereka Tentang Kami?
+                {t('reviews.reviews_header.title')}
               </h1>
               <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">
-                Kami selalu berkomitmen untuk memberikan layanan terbaik kepada setiap klien.
-                Temukan bagaimana pengalaman mereka bekerja bersama BagiWebsite melalui ulasan jujur
-                dan testimoni yang menginspirasi. Kepuasan Anda adalah prioritas kami!
+                {t('reviews.reviews_header.description')}
               </p>
             </Flex>
 
             <Marquee gradient={!isMobile}>
               {review.map((it, index) => (
-                <ReviewCard key={index} name={it.name} rating={it.rating} comment={it.comment} />
+                <ReviewCard key={index} name={it.name} rating={it.rating} comment={t(it.comment)} />
               ))}
             </Marquee>
           </motion.div>

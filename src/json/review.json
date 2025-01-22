@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Andi Pratama",
+    "rating": 5,
+    "comment": "reviews.andi.comment"
+  },
+  {
+    "name": "Siti Aisyah",
+    "rating": 4,
+    "comment": "reviews.siti.comment"
+  },
+  {
+    "name": "Budi Santoso",
+    "rating": 5,
+    "comment": "reviews.budi.comment"
+  },
+  {
+    "name": "Lina Kartika",
+    "rating": 4,
+    "comment": "reviews.lina.comment"
+  },
+  {
+    "name": "Dian Permata",
+    "rating": 5,
+    "comment": "reviews.dian.comment"
+  },
+  {
+    "name": "Fahmi Rizky",
+    "rating": 3,
+    "comment": "reviews.fahmi.comment"
+  },
+  {
+    "name": "Rina Wahyuni",
+    "rating": 5,
+    "comment": "reviews.rina.comment"
+  },
+  {
+    "name": "Arman Setiawan",
+    "rating": 4,
+    "comment": "reviews.arman.comment"
+  },
+  {
+    "name": "Nina Lestari",
+    "rating": 5,
+    "comment": "reviews.nina.comment"
+  },
+  {
+    "name": "Fajar Nugraha",
+    "rating": 4,
+    "comment": "reviews.fajar.comment"
+  }
+]

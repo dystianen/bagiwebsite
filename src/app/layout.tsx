@@ -1,12 +1,14 @@
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import ScrollToTop from './components/ScrollToTop';
-import theme from './config/theme';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import ScrollToTop from '../components/ScrollToTop';
+import theme from '../config/theme';
 import './globals.css';
 
 const geistSans = Geist({
@@ -19,13 +21,17 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 });
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'id' }];
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://bagiwebsite.com'),
   alternates: {
     canonical: '/',
     languages: {
-      'en-US': '/en-US',
-      'de-DE': '/de-DE'
+      en: '/en',
+      id: '/id'
     }
   },
   title: 'BAGIWEBSITE | Jasa Pembuatan Website, Aplikasi, dan Solusi Digital',
@@ -35,23 +41,28 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en" data-mantine-color-scheme="light">
+    <html lang={locale} data-mantine-color-scheme="light">
       <head>
         <ColorSchemeScript />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <MantineProvider theme={theme}>
-          <NextTopLoader />
-          <Header />
-          <div className="tw-mt-28 lg:tw-mt-8">{children}</div>
-          <Footer />
-          <ScrollToTop />
+          <NextIntlClientProvider messages={messages}>
+            <NextTopLoader />
+            <Header />
+            <div className="tw-mt-28 lg:tw-mt-8">{children}</div>
+            <Footer />
+            <ScrollToTop />
+          </NextIntlClientProvider>
         </MantineProvider>
       </body>
     </html>

@@ -1,37 +1,22 @@
 'use client';
-import { Burger, Button, Container, Divider, Drawer, Flex } from '@mantine/core';
+import { Burger, Button, Container, Divider, Drawer, Flex, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import LanguagePicker from '../LanguagePicker';
 
 const Header = () => {
   const [opened, { toggle }] = useDisclosure();
   const route = usePathname();
 
   const menu = [
-    {
-      href: '/',
-      label: 'Home'
-    },
-    {
-      href: '/about-us',
-      label: 'About Us'
-    },
-    {
-      href: '/services',
-      label: 'Services'
-    },
-    {
-      href: '/portfolio',
-      label: 'Portfolio'
-    }
-    // {
-    //   href: '/blog',
-    //   label: 'Blog'
-    // }
+    { href: '/', label: 'Home' },
+    { href: '/about-us', label: 'About Us' },
+    { href: '/services', label: 'Services' },
+    { href: '/portfolio', label: 'Portfolio' }
   ];
 
   const handleClickContactUs = () => {
@@ -44,9 +29,9 @@ const Header = () => {
     <header
       className={`tw-fixed tw-w-full tw-top-0 tw-bg-white tw-z-10 ${opened ? '' : 'tw-shadow-sm'}`}
     >
-      <Container size={'xl'} className="tw-flex tw-justify-between tw-items-center tw-h-20">
+      <Container size="xl" className="tw-flex tw-justify-between tw-items-center tw-h-20">
         <div className="tw-flex tw-gap-6 tw-items-center">
-          <Flex gap={4} align={'end'}>
+          <Flex gap={4} align="end">
             <Image
               src="/assets/images/logo_bagiwebsite.png"
               alt="BAGIWEBSITE"
@@ -78,23 +63,25 @@ const Header = () => {
           </div>
         </div>
 
-        <Button
-          size="md"
-          variant="outline"
-          radius={'xl'}
-          leftSection={<IconBrandWhatsapp />}
-          display={{ base: 'none', sm: 'block' }}
-          onClick={handleClickContactUs}
-        >
-          Contact Us
-        </Button>
-
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          aria-label="Toggle navigation"
-          display={{ base: 'block', sm: 'none' }}
-        />
+        <Group>
+          <LanguagePicker />
+          <Button
+            size="md"
+            variant="outline"
+            radius="xl"
+            leftSection={<IconBrandWhatsapp />}
+            className="tw-hidden md:tw-block"
+            onClick={handleClickContactUs}
+          >
+            Contact Us
+          </Button>
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            aria-label="Toggle navigation"
+            className="tw-block md:tw-hidden"
+          />
+        </Group>
 
         <Drawer
           opened={opened}

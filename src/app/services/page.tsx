@@ -13,7 +13,7 @@ import {
 import { IconBrandWhatsapp, IconCheck, IconInfoCircle } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
-import services from '../json/services.json';
+import services from '../../json/services.json';
 
 const AboutUs = () => {
   const handleClickService = (keyword: string) => {

@@ -4,7 +4,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
-import portfolio from '../json/portofolio.json';
+import portfolio from '../../json/portofolio.json';
 
 const Portfolio = () => {
   const isMobile = useMediaQuery('(max-width: 62em)');

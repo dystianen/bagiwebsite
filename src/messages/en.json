@@ -1,0 +1,105 @@
+{
+  "LocaleSwitcher": {
+    "en": "English",
+    "id": "Indonesia"
+  },
+
+  "HomePage": {
+    "services": "IT Services & Solutions",
+    "title": "Turn Your Ideas Into Something Amazing",
+    "desc": "At BAGIWEBSITE, we deliver digital solutions designed to inspire and make a real impact. Whether you’re starting from scratch or looking to transform a legacy platform, we help you create immersive online experiences, increase engagement, and drive your business growth to the next level.",
+    "see_advantages": "See Our Advantages",
+    "individuals": "Individuals",
+    "bussiness": "Bussiness",
+    "companies": "Companies",
+    "why_us": "Why Choose Us?",
+    "desc_why_us": "We offer professional, customized, and state-of-the-art digital solutions to meet your business needs. With comprehensive services and responsive support, we are committed to helping you achieve success.",
+
+    "professionalExperience": {
+      "title": "Professional Experience",
+      "description": "We have a team of experts experienced in various fields of digital technology, ready to help you achieve your business goals."
+    },
+    "comprehensiveServices": {
+      "title": "Comprehensive Services",
+      "description": "From website creation, app development, to digital marketing solutions, we offer integrated end-to-end services."
+    },
+    "customization": {
+      "title": "Customization Tailored to Your Needs",
+      "description": "Every project is uniquely designed to suit your business needs and vision, ensuring results that meet expectations."
+    },
+    "responsiveSupport": {
+      "title": "Responsive Support",
+      "description": "Our team is always ready to assist you with quick support and precise solutions for every issue."
+    },
+    "competitivePricing": {
+      "title": "Competitive Pricing",
+      "description": "We offer high-quality services at competitive prices, ensuring the best value for your investment."
+    },
+    "satisfactionGuarantee": {
+      "title": "Satisfaction Guarantee",
+      "description": "Client satisfaction is our top priority. We work hard to ensure that you are happy with the final results we deliver."
+    },
+
+    "reviews": {
+      "reviews_header": {
+        "title": "What Do They Say About Us?",
+        "description": "We are always committed to providing the best service to every client. Discover how their experiences working with BAGIWEBSITE have been through honest reviews and inspiring testimonials. Your satisfaction is our priority!"
+      },
+      "andi": {
+        "comment": "BAGIWEBSITE's service is very professional! My website was completed on time with satisfying results."
+      },
+      "siti": {
+        "comment": "The design is cool and meets the requirements. However, there were some revisions at the beginning of the process."
+      },
+      "budi": {
+        "comment": "Very helpful! The BAGIWEBSITE team is responsive and provides the best solutions for my business needs."
+      },
+      "lina": {
+        "comment": "Great results, but the project timeline was slightly delayed. Overall, I'm satisfied."
+      },
+      "dian": {
+        "comment": "Affordable prices with excellent quality. I will definitely recommend BAGIWEBSITE!"
+      },
+      "fahmi": {
+        "comment": "The service is decent, but communication could be faster to avoid misunderstandings."
+      },
+      "rina": {
+        "comment": "The team is very skilled! My project was completed earlier than expected with perfect results."
+      },
+      "arman": {
+        "comment": "The process went smoothly. There were a few minor revisions, but the final result met expectations."
+      },
+      "nina": {
+        "comment": "Very satisfied with the service provided. The team is friendly and professional!"
+      },
+      "fajar": {
+        "comment": "My website turned out great and met my expectations. There were some technical issues, but they were quickly resolved."
+      }
+    }
+  },
+
+  "AboutUs": {
+    "vision": {
+      "title": "Vision",
+      "content": "To become a trusted partner in innovative digital solutions, helping businesses grow with the latest technology and delivering positive impacts to every client."
+    },
+    "mission": {
+      "title": "Mission",
+      "content": {
+        "provide_website": "Provide website creation, application development, and other digital solutions tailored to the business needs of our clients.",
+        "build_strong": "Build strong and sustainable partnerships with clients to support their growth and success in the digital world.",
+        "continuously": "Continuously deliver solutions with the latest and most innovative technologies to achieve the best results and enhance efficiency for every client.",
+        "offer_fast": "Offer fast and efficient customer service, ready to assist clients at every stage of project development and management.",
+        "focus_client": "Focus on client satisfaction by delivering accurate solutions, satisfying results, and the best value for their investment."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "BAGIWEBSITE is supported by a team of professionals experienced in digital technology. With expertise in website development, application creation, and digital solutions, we collaborate to create the best results that align with the needs and business objectives of our clients."
+    },
+    "quotes": {
+      "title": "Quotes",
+      "content": "When we are still given the opportunity to wake up in the morning, it means that God is still giving us the opportunity to do the work that we have to do."
+    }
+  }
+}

@@ -1,11 +1,15 @@
 'use client';
-import { Badge, Card, Container, Flex, Image, SimpleGrid, Text } from '@mantine/core';
+
+import { Badge, Card, Container, Flex, Group, Image, SimpleGrid, Text } from '@mantine/core';
 import { IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-import { memo } from 'react';
-import ourTeams from '../json/teams.json';
+import { useTranslations } from 'next-intl';
+import mission from '../../json/mission.json';
+import ourTeams from '../../json/teams.json';
 
-const AboutUs = () => {
+export default function AboutUs() {
+  const t = useTranslations('AboutUs');
+
   return (
     <>
       <section className="tw-mt-32">
@@ -16,6 +20,7 @@ const AboutUs = () => {
             </h1>
           </Container>
           <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
+            {/* Adjust height as needed */}
             <Image
               src={'/assets/images/about_us.jpg'}
               alt="about-us"
@@ -23,7 +28,8 @@ const AboutUs = () => {
               h={'100%'}
               className="tw-object-cover"
             />
-            <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>
+            <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>{' '}
+            {/* Black transparent overlay */}
           </div>
         </Flex>
       </section>
@@ -39,11 +45,10 @@ const AboutUs = () => {
             viewport={{ once: true }}
           >
             <Flex direction={'column'} align={'center'} mb={40} gap={16}>
-              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">Visi</h1>
-              <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">
-                Menjadi mitra terpercaya dalam solusi digital yang inovatif, membantu bisnis
-                berkembang dengan teknologi terkini dan memberikan dampak positif bagi setiap klien.
-              </p>
+              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
+                {t('vision.title')}
+              </h1>
+              <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">{t('vision.content')}</p>
             </Flex>
           </motion.div>
 
@@ -56,29 +61,17 @@ const AboutUs = () => {
             viewport={{ once: true }}
           >
             <Flex direction={'column'} align={'center'} mb={40} gap={16}>
-              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">Misi</h1>
+              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
+                {t('mission.title')}
+              </h1>
               <Card withBorder radius={'lg'}>
                 <ol className="tw-max-w-3xl tw-text-gray-500 tw-flex tw-flex-col tw-gap-4">
-                  <li>
-                    1. Memberikan layanan pembuatan website, aplikasi, dan solusi digital lainnya
-                    yang disesuaikan dengan kebutuhan bisnis klien.
-                  </li>
-                  <li>
-                    2. Membangun kemitraan yang kuat dan berkelanjutan dengan klien untuk mendukung
-                    pertumbuhan dan kesuksesan mereka di dunia digital.
-                  </li>
-                  <li>
-                    3. Selalu menghadirkan solusi dengan teknologi terbaru dan inovatif untuk
-                    memberikan hasil terbaik dan meningkatkan efisiensi bagi setiap klien.
-                  </li>
-                  <li>
-                    4. Menyediakan layanan pelanggan yang cepat dan efisien, siap membantu klien
-                    dalam setiap tahap pengembangan dan pengelolaan proyek.
-                  </li>
-                  <li>
-                    5. Fokus pada kepuasan klien dengan menyampaikan solusi yang tepat, hasil yang
-                    memuaskan, dan nilai terbaik untuk investasi mereka.
-                  </li>
+                  {mission.map((item, index) => (
+                    <Group key={index} wrap="nowrap" align="start">
+                      <span>{index + 1}</span>
+                      <span>{t(item)}</span>
+                    </Group>
+                  ))}
                 </ol>
               </Card>
             </Flex>
@@ -98,14 +91,9 @@ const AboutUs = () => {
             >
               <Flex direction={'column'} align={'center'} mb={40} gap={16}>
                 <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
-                  Tim Kami
+                  {t('team.title')}
                 </h1>
-                <p className="tw-max-w-3xl tw-text-gray-500 tw-text-center">
-                  BagiWebsite didukung oleh tim profesional yang berpengalaman di bidang teknologi
-                  digital. Dengan keahlian dalam pengembangan website, aplikasi, dan solusi digital,
-                  kami bekerja sama untuk menciptakan hasil terbaik yang sesuai dengan kebutuhan dan
-                  tujuan bisnis klien kami.
-                </p>
+                <p className="tw-max-w-3xl tw-text-gray-500 tw-text-center">{t('team.content')}</p>
               </Flex>
             </motion.div>
 
@@ -156,11 +144,10 @@ const AboutUs = () => {
             viewport={{ once: true }}
           >
             <Flex direction={'column'} justify={'center'} align={'center'} gap={16}>
-              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">Quotes</h1>
-              <p className="tw-max-w-4xl tw-text-center tw-text-gray-500">
-                Saat kita masih diberi kesempatan bangun di pagi hari, itu berarti Tuhan masih
-                memberi kesempatan kepada kita untuk melakukan pekerjaan yang harus kita lakukan
-              </p>
+              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
+                {t('quotes.title')}
+              </h1>
+              <p className="tw-max-w-4xl tw-text-center tw-text-gray-500">{t('quotes.content')}</p>
               <IconQuoteFilled size={30} />
             </Flex>
           </motion.div>
@@ -168,6 +155,4 @@ const AboutUs = () => {
       </section>
     </>
   );
-};
-
-export default memo(AboutUs);
+}
