@@ -46,13 +46,13 @@ export default function LanguagePicker() {
   const items = data.map((item) => (
     <Menu.Item
       key={item.label}
-      leftSection={<Image src={item.image} width={22} height={22} alt={item.label} />}
+      leftSection={<Image src={item.image} width={20} height={20} alt={item.label} />}
       onClick={() => onChange(item)}
       className={`${classes.menuItem} ${
         selected.value === item.value ? classes.activeMenuItem : ''
       }`}
     >
-      {item.label}
+      <span className={classes.label}>{item.label}</span>
     </Menu.Item>
   ));
 
