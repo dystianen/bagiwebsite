@@ -2,6 +2,7 @@
 import { Card, Container, Flex, Grid } from '@mantine/core';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   const t = useTranslations('Footer');
@@ -43,34 +44,34 @@ const Footer = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">{t('about')}</a>
-                <a href="#">{t('features')}</a>
-                <a href="#">{t('works')}</a>
-                <a href="#">{t('career')}</a>
+                <Link href="/about_us">{t('about')}</Link>
+                <Link href="/portfolio">{t('features')}</Link>
+                <Link href="#">{t('works')}</Link>
+                <Link href="#">{t('career')}</Link>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">{t('customer_support')}</a>
-                <a href="#">{t('delivery_details')}</a>
-                <a href="#">{t('terms_conditions')}</a>
-                <a href="#">{t('privacy_policy')}</a>
+                <Link href="#">{t('customer_support')}</Link>
+                <Link href="#">{t('delivery_details')}</Link>
+                <Link href="#">{t('terms_conditions')}</Link>
+                <Link href="#">{t('privacy_policy')}</Link>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">{t('account')}</a>
-                <a href="#">{t('manage_deliveries')}</a>
-                <a href="#">{t('orders')}</a>
-                <a href="#">{t('payments')}</a>
+                <Link href="#">{t('account')}</Link>
+                <Link href="#">{t('manage_deliveries')}</Link>
+                <Link href="#">{t('orders')}</Link>
+                <Link href="#">{t('payments')}</Link>
               </div>
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <a href="#">{t('free_ebooks')}</a>
-                <a href="#">{t('development_tutorial')}</a>
-                <a href="#">{t('how_to_blog')}</a>
-                <a href="#">{t('youtube_playlist')}</a>
+                <Link href="#">{t('free_ebooks')}</Link>
+                <Link href="#">{t('development_tutorial')}</Link>
+                <Link href="#">{t('how_to_blog')}</Link>
+                <Link href="#">{t('youtube_playlist')}</Link>
               </div>
             </Grid.Col>
           </Grid>
