@@ -43,13 +43,13 @@ const Header = () => {
               <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITE</h2>
             </Flex>
           </Link>
-          <div className="tw-hidden md:tw-flex sm:tw-gap-4 lg:tw-gap-6">
+          <div className="tw-hidden lg:tw-flex tw-items-center sm:tw-gap-4 lg:tw-gap-6">
             <Divider orientation="vertical" />
             <nav>
               <ul className="tw-flex sm:tw-gap-4 lg:tw-gap-8">
                 {menu.map((it, index) => (
                   <li key={index} className="tw-relative tw-list-none">
-                    <Link href={it.href} className="tw-relative tw-inline-block tw-pb-1">
+                    <Link href={it.href} className="tw-relative tw-inline-block">
                       {it.label}
                       <motion.div
                         className="tw-absolute tw-bottom-0 tw-h-[2px] tw-bg-[#1c7ed6] tw-transform tw--translate-x-1/2"
@@ -73,7 +73,7 @@ const Header = () => {
             variant="outline"
             radius="xl"
             leftSection={<IconBrandWhatsapp />}
-            className="tw-hidden md:tw-block"
+            className="tw-hidden lg:tw-block"
             onClick={handleClickContactUs}
           >
             {tg('contact_us')}
@@ -82,7 +82,7 @@ const Header = () => {
             opened={opened}
             onClick={toggle}
             aria-label="Toggle navigation"
-            className="tw-block md:tw-hidden"
+            className="tw-block lg:tw-hidden"
           />
         </Group>
 
