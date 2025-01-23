@@ -30,13 +30,6 @@ export async function generateMetadata(locale: string): Promise<Metadata> {
 
   return {
     metadataBase: new URL('https://bagiwebsite.com'),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: '/en',
-        id: '/id'
-      }
-    },
     title: t('title'),
     description: t('desc'),
     openGraph: {
