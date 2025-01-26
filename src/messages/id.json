@@ -8,7 +8,8 @@
     "about_us": "Tentang Kami",
     "services": "Layanan",
     "portfolio": "Portofolio",
-    "contact_us": "Hubungi Kami"
+    "contact_us": "Hubungi Kami",
+    "more_detail": "Lebih Detail"
   },
 
   "Header": {
@@ -57,6 +58,17 @@
     "satisfactionGuarantee": {
       "title": "Jaminan Kepuasan",
       "description": "Kepuasan klien adalah prioritas utama kami. Kami bekerja keras untuk memastikan bahwa Anda puas dengan hasil akhir yang kami berikan."
+    },
+
+    "our_services": {
+      "title": "Layanan Digital Terbaik untuk Mendukung Pertumbuhan Bisnis Anda",
+      "description": "Kami menyediakan solusi IT yang komprehensif, mulai dari pembuatan website hingga pengembangan aplikasi yang dirancang khusus untuk memenuhi kebutuhan bisnis Anda. Dengan fokus pada desain yang responsif, optimasi SEO, fitur-fitur canggih, dan dukungan teknis, kami membantu Anda menjadikan teknologi sebagai keunggulan kompetitif.",
+      "question-1": "Apakah desain website Anda responsif dan sesuai dengan merek bisnis?",
+      "question-2": "Apakah website Anda sudah dioptimalkan untuk mesin pencari (SEO)?",
+      "question-3": "Apakah fitur yang Anda butuhkan (pembayaran, chat, dll.) sudah terintegrasi?",
+      "question-4": "Apakah ada dukungan teknis dan pembaruan rutin untuk website Anda?",
+      "question-5": "Apakah Anda dapat melacak performa website dengan analitik real-time?",
+      "question-6": "Apakah konten website Anda relevan dan menarik bagi audiens?"
     },
 
     "reviews": {

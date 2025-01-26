@@ -1,5 +1,5 @@
 'use client';
-import { Card, Container, Flex, Grid } from '@mantine/core';
+import { Card, Container, Flex, Grid, Tooltip } from '@mantine/core';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,13 +8,29 @@ const Footer = () => {
   const t = useTranslations('Footer');
   const sosmed = [
     {
-      icon: '/assets/icons/instagram.png'
+      icon: '/assets/icons/whatsapp.png',
+      label: 'Whatsapp',
+      href: 'https://api.whatsapp.com?phone=+6287763832505'
     },
     {
-      icon: '/assets/icons/facebook.png'
+      icon: '/assets/icons/gmail.png',
+      label: 'Email',
+      href: 'mailto:websitebagi@gmail.com'
     },
     {
-      icon: '/assets/icons/linkedin.png'
+      icon: '/assets/icons/instagram.png',
+      label: 'Instagram',
+      href: '#'
+    },
+    {
+      icon: '/assets/icons/facebook.png',
+      label: 'Facebook',
+      href: '#'
+    },
+    {
+      icon: '/assets/icons/linkedin.png',
+      label: 'Linkedin',
+      href: '#'
     }
   ];
 
@@ -37,7 +53,11 @@ const Footer = () => {
                 <p>{t('desc')}</p>
                 <Flex gap={16}>
                   {sosmed.map((it, index) => (
-                    <Image key={index} src={it.icon} alt={it.icon} width={30} height={30} />
+                    <Link key={index} href={it.href}>
+                      <Tooltip label={it.label} withArrow>
+                        <Image src={it.icon} alt={it.icon} width={30} height={30} />
+                      </Tooltip>
+                    </Link>
                   ))}
                 </Flex>
               </div>

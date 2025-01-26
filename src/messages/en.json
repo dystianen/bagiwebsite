@@ -8,7 +8,8 @@
     "about_us": "About Us",
     "services": "Services",
     "portfolio": "Portfolio",
-    "contact_us": "Contact Us"
+    "contact_us": "Contact Us",
+    "more_detail": "More Detail"
   },
 
   "LocaleSwitcher": {
@@ -49,7 +50,17 @@
     },
     "satisfactionGuarantee": {
       "title": "Satisfaction Guarantee",
-      "description": "Client satisfaction is our top priority. We work hard to ensure that you are happy with the final results we deliver."
+      "description": "Client satisfaction is our priority, and we strive to ensure you're happy with the results."
+    },
+    "our_services": {
+      "title": "The Best Digital Services to Support Your Business Growth",
+      "description": "The Best Digital Services to Support Your Business GrowthWe provide comprehensive IT solutions, from website creation to application development that are specifically designed to meet your business needs. With a focus on responsive design, SEO optimization, advanced features, and technical support, we help you make technology your competitive advantage.",
+      "question-1": "Is your website design responsive and in line with your business brand?",
+      "question-2": "Is your website optimized for search engines (SEO)?",
+      "question-3": "Are the features you need (payments, chat, etc.) integrated?",
+      "question-4": "Is there technical support and regular updates for your website?",
+      "question-5": "Are you able to track your website performance with real-time analytics?",
+      "question-6": "Is your website content relevant and engaging to your audience?"
     },
 
     "reviews": {

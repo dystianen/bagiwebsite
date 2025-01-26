@@ -1,18 +1,41 @@
 'use client';
-import { Button, Card, Container, Divider, Flex, Grid, Image, SimpleGrid } from '@mantine/core';
+import {
+  Button,
+  Card,
+  Container,
+  Divider,
+  Flex,
+  Grid,
+  Image,
+  List,
+  SimpleGrid,
+  Stack,
+  ThemeIcon
+} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconArrowDown, IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
+import {
+  IconArrowDown,
+  IconArrowRight,
+  IconBuildings,
+  IconBusinessplan,
+  IconCircleCheck,
+  IconUser
+} from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import ReviewCard from '../components/ReviewCard';
+import highlightServices from '../json/highlight_services.json';
 import portfolio from '../json/portofolio.json';
 import review from '../json/review.json';
 import whyUs from '../json/whyus.json';
 
 const Home = () => {
+  const router = useRouter();
   const t = useTranslations('HomePage');
+  const tg = useTranslations('Global');
   const isMobile = useMediaQuery('(max-width: 62em)');
   const refWhyUs = useRef<HTMLInputElement>(null);
   const scrollToWhyUs = () => {
@@ -27,6 +50,10 @@ const Home = () => {
   const halfLength = Math.ceil(portfolio.length / 2);
   const firstHalf = portfolio.slice(0, halfLength);
   const secondHalf = portfolio.slice(halfLength);
+
+  const handleMoreDetailServices = () => {
+    router.push('/services');
+  };
 
   return (
     <>
@@ -237,6 +264,68 @@ const Home = () => {
               </motion.div>
             ))}
           </SimpleGrid>
+        </Container>
+      </section>
+
+      <section>
+        <Container size={'xl'} w={'100%'}>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 1
+            }}
+            viewport={{ once: true }}
+          >
+            <Card shadow="sm" p="xl" radius="md" className="tw-bg-slate-50">
+              <Flex direction={{ base: 'column', md: 'row' }} align="start" gap={'xl'}>
+                <Image src={'/assets/images/services.jpeg'} w={350} radius={'md'} alt="Services" />
+                <Stack align="start" gap="lg">
+                  <h1 className="tw-text-2xl md:tw-text-4xl tw-font-semibold">
+                    {t('our_services.title')}
+                  </h1>
+                  <p className="tw-max-w-2xl ">{t('our_services.description')}</p>
+
+                  <List
+                    spacing="lg"
+                    size="lg"
+                    center
+                    icon={
+                      <ThemeIcon color="lime" size={24} radius="xl">
+                        <IconCircleCheck size={16} />
+                      </ThemeIcon>
+                    }
+                  >
+                    {highlightServices.map((item, index) => (
+                      <List.Item key={index}>{t(item)}</List.Item>
+                    ))}
+                  </List>
+
+                  <Button
+                    radius={'xl'}
+                    px={'xl'}
+                    rightSection={
+                      <motion.div
+                        animate={{
+                          x: [0, 5, 0]
+                        }}
+                        transition={{
+                          duration: 0.8,
+                          repeat: Infinity,
+                          ease: 'easeInOut'
+                        }}
+                      >
+                        <IconArrowRight />
+                      </motion.div>
+                    }
+                    onClick={handleMoreDetailServices}
+                  >
+                    {tg('more_detail')}
+                  </Button>
+                </Stack>
+              </Flex>
+            </Card>
+          </motion.div>
         </Container>
       </section>
 
