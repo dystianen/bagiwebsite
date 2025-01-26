@@ -284,11 +284,11 @@ const Home = () => {
                   <h1 className="tw-text-2xl md:tw-text-4xl tw-font-semibold">
                     {t('our_services.title')}
                   </h1>
-                  <p className="tw-max-w-2xl ">{t('our_services.description')}</p>
+                  <p className="tw-max-w-2xl tw-text-gray-500">{t('our_services.description')}</p>
 
                   <List
-                    spacing="lg"
-                    size="lg"
+                    spacing="md"
+                    className="tw-text-gray-500"
                     center
                     icon={
                       <ThemeIcon color="lime" size={24} radius="xl">
@@ -302,6 +302,7 @@ const Home = () => {
                   </List>
 
                   <Button
+                    mt={'lg'}
                     radius={'xl'}
                     px={'xl'}
                     rightSection={
