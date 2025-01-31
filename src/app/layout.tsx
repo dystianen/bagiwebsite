@@ -40,7 +40,7 @@ export async function generateMetadata(locale: string): Promise<Metadata> {
     title: t('title'),
     description: t('desc'),
     openGraph: {
-      images: '/assets/thumbnail/thumbnail_bagiwebsite.png'
+      images: '/assets/thumbnail/bagiwebsite.png'
     }
   };
 }

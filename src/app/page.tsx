@@ -193,30 +193,54 @@ const Home = () => {
                   className="tw-h-auto lg:tw-h-[100dvh]"
                   gap={10}
                 >
-                  <Marquee direction={isMobile ? 'right' : 'down'} style={{ overflowX: 'visible' }}>
+                  <Marquee
+                    direction={isMobile ? 'right' : 'down'}
+                    style={{ overflowX: 'visible' }}
+                    className="tw-w-full tw-h-max"
+                  >
                     {firstHalf.map((it, index: number) => (
-                      <Image
+                      <Card
                         key={index}
-                        src={it.img}
-                        alt="bagiwebsite-profesional-group"
-                        className="md:tw-rounded-lg tw-shadow-lg !tw-object-contain tw-bg-white"
-                        w={{ base: 150, md: 200, lg: 300 }}
-                        h={{ base: 'auto', lg: 280 }}
-                        loading="lazy"
-                      />
+                        p={0}
+                        h={{ base: 'max-content', md: 280 }}
+                        radius={'md'}
+                        shadow="sm"
+                        className="tw-flex tw-justify-center tw-items-center"
+                      >
+                        <Image
+                          src={it.img}
+                          alt={it.title}
+                          className="!tw-object-contain"
+                          w={{ base: 150, md: 200, lg: 300 }}
+                          h={{ base: 'auto', lg: 260 }}
+                          loading="lazy"
+                        />
+                      </Card>
                     ))}
                   </Marquee>
-                  <Marquee direction={isMobile ? 'left' : 'up'} style={{ overflowX: 'visible' }}>
+                  <Marquee
+                    direction={isMobile ? 'left' : 'up'}
+                    style={{ overflowX: 'visible' }}
+                    className="tw-w-full tw-h-max"
+                  >
                     {secondHalf.map((it, index: number) => (
-                      <Image
+                      <Card
                         key={index}
-                        src={it.img}
-                        alt="bagiwebsite-profesional-group"
-                        className="md:tw-rounded-lg tw-shadow-lg !tw-object-contain tw-bg-white"
-                        w={{ base: 150, md: 200, lg: 300 }}
-                        h={{ base: 'auto', lg: 280 }}
-                        loading="lazy"
-                      />
+                        p={0}
+                        h={{ base: 'max-content', md: 280 }}
+                        radius={'md'}
+                        shadow="sm"
+                        className="tw-flex tw-justify-center tw-items-center"
+                      >
+                        <Image
+                          src={it.img}
+                          alt={it.title}
+                          className="!tw-object-contain"
+                          w={{ base: 150, md: 200, lg: 300 }}
+                          h={{ base: 'auto', lg: 260 }}
+                          loading="lazy"
+                        />
+                      </Card>
                     ))}
                   </Marquee>
                 </Flex>
