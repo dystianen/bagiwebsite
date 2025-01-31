@@ -6,11 +6,12 @@ import {
   Container,
   Divider,
   Flex,
-  Group,
+  List,
   SimpleGrid,
-  Stack
+  Stack,
+  ThemeIcon
 } from '@mantine/core';
-import { IconBrandWhatsapp, IconCheck, IconInfoCircle } from '@tabler/icons-react';
+import { IconBrandWhatsapp, IconCircleCheck, IconInfoCircle } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { memo } from 'react';
@@ -77,33 +78,28 @@ const Services = () => {
                   <Stack justify="space-between" h={'100%'}>
                     <Stack>
                       <h1 className="tw-text-xl tw-font-semibold">{t(it.name)}</h1>
-                      <ol>
-                        {it.features.map((feature, idx) => (
-                          <li key={idx}>
-                            <Group wrap="nowrap" align="start" gap={'xs'}>
-                              <div>
-                                <IconCheck color="green" />
-                              </div>
-                              {t(feature)}
-                            </Group>
-                          </li>
-                        ))}
-                      </ol>
-                    </Stack>
-                    <Stack>
-                      {/* <div>
-                        <p>Price :</p>
-                        <h1 className="tw-text-lg tw-font-semibold">{it.price_range}</h1>
-                        <span className="tw-text-amber-500 tw-italic">* Diskon {it.discount}</span>
-                      </div> */}
-                      <Button
-                        radius={'xl'}
-                        leftSection={<IconBrandWhatsapp />}
-                        onClick={() => handleClickService(it.name)}
+                      <List
+                        spacing="md"
+                        className="tw-text-gray-500"
+                        center
+                        icon={
+                          <ThemeIcon color="lime" size={24} radius="xl">
+                            <IconCircleCheck size={16} />
+                          </ThemeIcon>
+                        }
                       >
-                        {tg('contact_us')}
-                      </Button>
+                        {it.features.map((item, index) => (
+                          <List.Item key={index}>{t(item)}</List.Item>
+                        ))}
+                      </List>
                     </Stack>
+                    <Button
+                      radius={'xl'}
+                      leftSection={<IconBrandWhatsapp />}
+                      onClick={() => handleClickService(it.name)}
+                    >
+                      {tg('contact_us')}
+                    </Button>
                   </Stack>
                 </Card>
               </motion.div>

@@ -267,7 +267,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
+      <section className="tw-bg-slate-50 tw-py-8">
         <Container size={'xl'} w={'100%'}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -277,55 +277,61 @@ const Home = () => {
             }}
             viewport={{ once: true }}
           >
-            <Card shadow="sm" p="xl" radius="md" className="tw-bg-slate-50">
-              <Flex direction={{ base: 'column', md: 'row' }} align="start" gap={'xl'}>
-                <Image src={'/assets/images/services.jpeg'} w={350} radius={'md'} alt="Services" />
-                <Stack align="start" gap="lg">
-                  <h1 className="tw-text-2xl md:tw-text-4xl tw-font-semibold">
-                    {t('our_services.title')}
-                  </h1>
-                  <p className="tw-max-w-2xl tw-text-gray-500">{t('our_services.description')}</p>
+            <Flex
+              direction={{ base: 'column', md: 'row' }}
+              align={{ base: 'center', md: 'start' }}
+              gap={60}
+            >
+              <Image
+                src={'/assets/images/highlight_services.png'}
+                w={350}
+                radius={'md'}
+                alt="Services"
+              />
+              <Stack align="start" gap="lg">
+                <h1 className="tw-text-2xl md:tw-text-4xl tw-font-semibold">
+                  {t('our_services.title')}
+                </h1>
+                <p className="tw-max-w-2xl tw-text-gray-500">{t('our_services.description')}</p>
 
-                  <List
-                    spacing="md"
-                    className="tw-text-gray-500"
-                    center
-                    icon={
-                      <ThemeIcon color="lime" size={24} radius="xl">
-                        <IconCircleCheck size={16} />
-                      </ThemeIcon>
-                    }
-                  >
-                    {highlightServices.map((item, index) => (
-                      <List.Item key={index}>{t(item)}</List.Item>
-                    ))}
-                  </List>
+                <List
+                  spacing="md"
+                  className="tw-text-gray-500"
+                  center
+                  icon={
+                    <ThemeIcon color="lime" size={24} radius="xl">
+                      <IconCircleCheck size={16} />
+                    </ThemeIcon>
+                  }
+                >
+                  {highlightServices.map((item, index) => (
+                    <List.Item key={index}>{t(item)}</List.Item>
+                  ))}
+                </List>
 
-                  <Button
-                    mt={'lg'}
-                    radius={'xl'}
-                    px={'xl'}
-                    rightSection={
-                      <motion.div
-                        animate={{
-                          x: [0, 5, 0]
-                        }}
-                        transition={{
-                          duration: 0.8,
-                          repeat: Infinity,
-                          ease: 'easeInOut'
-                        }}
-                      >
-                        <IconArrowRight />
-                      </motion.div>
-                    }
-                    onClick={handleMoreDetailServices}
-                  >
-                    {tg('more_detail')}
-                  </Button>
-                </Stack>
-              </Flex>
-            </Card>
+                <Button
+                  radius={'xl'}
+                  px={'xl'}
+                  rightSection={
+                    <motion.div
+                      animate={{
+                        x: [0, 5, 0]
+                      }}
+                      transition={{
+                        duration: 0.8,
+                        repeat: Infinity,
+                        ease: 'easeInOut'
+                      }}
+                    >
+                      <IconArrowRight />
+                    </motion.div>
+                  }
+                  onClick={handleMoreDetailServices}
+                >
+                  {tg('more_detail')}
+                </Button>
+              </Stack>
+            </Flex>
           </motion.div>
         </Container>
       </section>
