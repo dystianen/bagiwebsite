@@ -1,4 +1,4 @@
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
@@ -54,12 +54,12 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} data-mantine-color-scheme="light">
+    <html lang={locale} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} defaultColorScheme="light">
           <NextIntlClientProvider messages={messages}>
             <NextTopLoader showSpinner={false} />
             <Header />

@@ -8,11 +8,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import LanguagePicker from '../LanguagePicker';
+import ToggleThemes from '../ToggleThemes';
 
 const Header = () => {
   const tg = useTranslations('Global');
-  const [opened, { toggle }] = useDisclosure();
   const route = usePathname();
+  const [opened, { toggle }] = useDisclosure();
 
   const menu = [
     { href: '/about-us', label: tg('about_us') },
@@ -28,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={`tw-fixed tw-w-full tw-top-0 tw-bg-white tw-z-10 ${opened ? '' : 'tw-shadow-sm'}`}
+      className={`tw-fixed tw-w-full tw-top-0 tw-z-10 tw-bg-[var(--mantine-color-body)] ${opened ? '' : 'tw-shadow-sm'}`}
     >
       <Container size="xl" className="tw-flex tw-justify-between tw-items-center tw-h-20">
         <div className="tw-flex tw-gap-6 tw-items-center">
@@ -67,6 +68,7 @@ const Header = () => {
         </div>
 
         <Group align="center">
+          <ToggleThemes />
           <LanguagePicker />
           <Button
             size="md"

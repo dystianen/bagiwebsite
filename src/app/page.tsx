@@ -10,6 +10,7 @@ import {
   List,
   SimpleGrid,
   Stack,
+  Text,
   ThemeIcon
 } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
@@ -23,7 +24,7 @@ import {
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'nextjs-toploader/app';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import ReviewCard from '../components/ReviewCard';
@@ -37,6 +38,7 @@ const Home = () => {
   const t = useTranslations('HomePage');
   const tg = useTranslations('Global');
   const isMobile = useMediaQuery('(max-width: 62em)');
+
   const refWhyUs = useRef<HTMLInputElement>(null);
   const scrollToWhyUs = () => {
     if (refWhyUs.current != null) {
@@ -267,7 +269,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="tw-bg-slate-50 tw-py-8">
+      <Card className={'tw-py-8'}>
         <Container size={'xl'} w={'100%'}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -309,59 +311,71 @@ const Home = () => {
                   ))}
                 </List>
 
-                <Button
-                  radius={'xl'}
-                  px={'xl'}
-                  rightSection={
-                    <motion.div
-                      animate={{
-                        x: [0, 5, 0]
-                      }}
-                      transition={{
-                        duration: 0.8,
-                        repeat: Infinity,
-                        ease: 'easeInOut'
-                      }}
-                    >
-                      <IconArrowRight />
-                    </motion.div>
-                  }
-                  onClick={handleMoreDetailServices}
+                <motion.div
+                  whileHover={{
+                    scale: 1.1
+                  }}
+                  whileTap={{
+                    scale: 1.1
+                  }}
+                  transition={{
+                    duration: 0.2,
+                    ease: 'easeInOut'
+                  }}
                 >
-                  {tg('more_detail')}
-                </Button>
+                  <Button
+                    radius={'xl'}
+                    px={'xl'}
+                    rightSection={
+                      <motion.div
+                        animate={{
+                          x: [0, 5, 0]
+                        }}
+                        transition={{
+                          duration: 0.8,
+                          repeat: Infinity,
+                          ease: 'easeInOut'
+                        }}
+                      >
+                        <IconArrowRight />
+                      </motion.div>
+                    }
+                    onClick={handleMoreDetailServices}
+                  >
+                    {tg('more_detail')}
+                  </Button>
+                </motion.div>
               </Stack>
             </Flex>
           </motion.div>
         </Container>
-      </section>
+      </Card>
 
       <section className="tw-h-[500px] tw-my-10 tw-flex tw-items-center tw-w-full">
-        <Container size={'xl'} w={'100%'}>
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1
-            }}
-            viewport={{ once: true }}
-          >
-            <Flex direction={'column'} align={'center'} mb={40} gap={16}>
-              <h1 className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
-                {t('reviews.reviews_header.title')}
-              </h1>
-              <p className="tw-max-w-2xl tw-text-center tw-text-gray-500">
-                {t('reviews.reviews_header.description')}
-              </p>
-            </Flex>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1
+          }}
+          viewport={{ once: true }}
+          style={{ width: '100%' }}
+        >
+          <Flex direction={'column'} align={'center'} mb={40} gap={16}>
+            <Text className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
+              {t('reviews.reviews_header.title')}
+            </Text>
+            <Text className="tw-max-w-2xl tw-text-center tw-text-gray-500">
+              {t('reviews.reviews_header.description')}
+            </Text>
+          </Flex>
 
-            <Marquee gradient={!isMobile}>
-              {review.map((it, index) => (
-                <ReviewCard key={index} name={it.name} rating={it.rating} comment={t(it.comment)} />
-              ))}
-            </Marquee>
-          </motion.div>
-        </Container>
+          <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
+            {review.map((it, index) => (
+              <ReviewCard key={index} name={it.name} rating={it.rating} comment={t(it.comment)} />
+            ))}
+          </Marquee>
+        </motion.div>
       </section>
     </>
   );

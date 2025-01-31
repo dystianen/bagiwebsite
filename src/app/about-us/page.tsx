@@ -133,7 +133,7 @@ export default function AboutUs() {
           </Flex>
         </Container>
       </section>
-      <section className=" tw-flex tw-w-full tw-items-center tw-bg-slate-50 tw-py-10">
+      <Card className={`tw-flex tw-w-full tw-items-center  tw-py-10`}>
         <Container size={'xl'} w={'100%'}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -152,7 +152,7 @@ export default function AboutUs() {
             </Flex>
           </motion.div>
         </Container>
-      </section>
+      </Card>
     </>
   );
 }

@@ -5,7 +5,10 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'standalone'
+  output: 'standalone',
+  sassOptions: {
+    implementation: 'sass-embedded'
+  }
 };
 
 export default withNextIntl(nextConfig);
