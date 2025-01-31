@@ -51,7 +51,7 @@ const Services = () => {
                 title={t('consultation.title')}
                 icon={<IconInfoCircle />}
               >
-                <p className="tw-text-black/80">{t('consultation.content')}</p>
+                {t('consultation.content')}
               </Alert>
             </motion.div>
           </Flex>
