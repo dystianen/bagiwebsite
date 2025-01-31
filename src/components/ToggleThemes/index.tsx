@@ -15,7 +15,6 @@ const ToggleThemes = () => {
 
   return (
     <ActionIcon variant="transparent" color="gray" aria-label="Themes" onClick={toggleColorScheme}>
-      {/* {computedColorScheme === 'dark' ? <IconSun /> : <IconMoon />} */}
       <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />
       <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
     </ActionIcon>
