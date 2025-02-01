@@ -33,7 +33,12 @@ const Header = () => {
     >
       <Container size="xl" className="tw-flex tw-justify-between tw-items-center tw-h-20">
         <div className="tw-flex tw-gap-6 tw-items-center">
-          <Link href={'/'}>
+          <Link
+            href={'/'}
+            onClick={() => {
+              if (opened) toggle();
+            }}
+          >
             <Flex gap={4} align="end">
               <Image
                 src="/assets/images/logo_bagiwebsite.png"
