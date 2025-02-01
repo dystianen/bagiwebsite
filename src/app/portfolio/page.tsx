@@ -51,8 +51,8 @@ const Portfolio = () => {
             {portfolio.map((it, index) => (
               <motion.div
                 key={index}
-                initial={{ scale: 0.9, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 transition={{
                   duration: 1,
                   delay: 0.5
