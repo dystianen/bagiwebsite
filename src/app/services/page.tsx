@@ -96,7 +96,7 @@ const Services = () => {
                     <Button
                       radius={'xl'}
                       leftSection={<IconBrandWhatsapp />}
-                      onClick={() => handleClickService(it.name)}
+                      onClick={() => handleClickService(t(it.name))}
                     >
                       {tg('contact_us')}
                     </Button>

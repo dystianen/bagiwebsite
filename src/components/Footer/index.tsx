@@ -53,7 +53,7 @@ const Footer = () => {
                 <p>{t('desc')}</p>
                 <Flex gap={16}>
                   {sosmed.map((it, index) => (
-                    <Link key={index} href={it.href}>
+                    <Link key={index} href={it.href} target="_blank">
                       <Tooltip label={it.label} withArrow>
                         <Image src={it.icon} alt={it.icon} width={30} height={30} />
                       </Tooltip>
