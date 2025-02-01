@@ -23,7 +23,7 @@ const Header = () => {
 
   const handleClickContactUs = () => {
     window.open(
-      'https://api.whatsapp.com/send?phone=+6287763832505&text=Halo, saya ingin mengetahui informasi lebih lanjut mengenai layanan dari bagiwebsite.com!'
+      'https://wa.me/+6287763832505?text=Halo, saya ingin mengetahui informasi lebih lanjut mengenai layanan dari bagiwebsite.com!'
     );
   };
 
