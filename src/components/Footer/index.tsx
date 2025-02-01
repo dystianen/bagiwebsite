@@ -10,7 +10,7 @@ const Footer = () => {
     {
       icon: '/assets/icons/whatsapp.png',
       label: 'Whatsapp',
-      href: 'https://api.whatsapp.com?phone=+6287763832505'
+      href: 'https://wa.me/+6287763832505'
     },
     {
       icon: '/assets/icons/gmail.png',
