@@ -36,7 +36,7 @@ const Footer = () => {
 
   return (
     <footer className="tw-pt-5">
-      <Card className="tw-border-t tw-border-gray-300 tw-py-8 tw-rounded-none">
+      <Card className="tw-border-t tw-border-gray-300 tw-py-8 tw-rounded-none tw-bg-[var(--mantine-color-body)]">
         <Container p={0} size={'xl'} className="tw-flex tw-flex-col tw-gap-2 tw-w-full">
           <Flex gap={4} align={'center'}>
             <Image
