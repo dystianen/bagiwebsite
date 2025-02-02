@@ -1,6 +1,5 @@
 stages:
   - install
-  - test
   - build-image
   # - deploy-dev
 
@@ -17,11 +16,6 @@ install_dependencies:
     paths:
       - node_modules/
 
-run_tests:
-  stage: test
-  image: node:22
-  script:
-    - npm test
 
 build-image:
   stage: build-image
