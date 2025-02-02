@@ -5,7 +5,6 @@ COPY package.json ./
 
 RUN npm install --legacy-peer-deps
 
-# Salin seluruh kode aplikasi
 COPY . .
 
 # Build aplikasi
