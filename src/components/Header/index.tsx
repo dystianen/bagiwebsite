@@ -46,7 +46,7 @@ const Header = () => {
                 width={30}
                 height={30}
               />
-              <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITE</h2>
+              <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITEE</h2>
             </Flex>
           </Link>
           <div className="tw-hidden lg:tw-flex tw-items-center sm:tw-gap-4 lg:tw-gap-6">
