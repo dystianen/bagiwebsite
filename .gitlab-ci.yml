@@ -1,7 +1,7 @@
 stages:
   - install
   - build-image
-  # - deploy-dev
+  - deploy-images
 
 cache:
   paths:
@@ -32,20 +32,20 @@ build-image:
   only:
     - main
 
-# deploy-dev:
-#   stage: deploy-dev
-#   image: docker:latest
-#   services:
-#     - docker:dind
-#   before_script:
-#     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
-#   script:
-#     - docker pull "$CI_REGISTRY_IMAGE":"$CI_COMMIT_SHORT_SHA"
-#     - docker rm -f compro-bagiwebsite || true
-#     - docker run -d -p 3001:3000 --restart always --name compro-bagiwebsite "$CI_REGISTRY_IMAGE":"$CI_COMMIT_SHORT_SHA"
-#   after_script:
-#     - echo "Deploy Image Success"
-#   tags:
-#     - bagiwebsite
-#   only:
-#     - main
+deploy-image:
+  stage: deploy-image
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  script:
+    - docker pull "$CI_REGISTRY_IMAGE":"$CI_COMMIT_SHORT_SHA"
+    - docker rm -f compro-bagiwebsite || true
+    - docker run -d -p 3001:3000 --restart always --name compro-bagiwebsite "$CI_REGISTRY_IMAGE":"$CI_COMMIT_SHORT_SHA"
+  after_script:
+    - echo "Deploy Image Success"
+  tags:
+    - bagiwebsite
+  only:
+    - main
