@@ -18,6 +18,12 @@
     "href": "https://imagine.bagiwebsite.com"
   },
   {
+    "title": "Ivanami Store - Fashion",
+    "desc": "content_ivanami",
+    "img": "/assets/thumbnail/ivanami.png",
+    "href": "https://ivanamistore.bagiwebsite.com"
+  },
+  {
     "title": "IDI Cabang Tangerang",
     "desc": "content_idi",
     "img": "/assets/thumbnail/IDI.png",
@@ -48,6 +54,12 @@
     "href": "https://battle-pintar.vercel.app"
   },
   {
+    "title": "Absensi Karyawan",
+    "desc": "content_absensi",
+    "img": "/assets/thumbnail/absensi.png",
+    "href": "https://absensi.bagiwebsite.com"
+  },
+  {
     "title": "SPPBE Dashbord System",
     "desc": "content_sppbe",
     "img": "/assets/thumbnail/sppbe.png",
@@ -64,12 +76,6 @@
     "desc": "content_open_banking",
     "img": "/assets/thumbnail/open-banking.png",
     "href": "#"
-  },
-  {
-    "title": "Absensi Karyawan",
-    "desc": "content_absensi",
-    "img": "/assets/thumbnail/absensi.png",
-    "href": "https://absensi.bagiwebsite.com"
   },
   {
     "title": "GMP Coin",
