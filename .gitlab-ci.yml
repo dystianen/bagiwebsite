@@ -1,7 +1,7 @@
 stages:
   - install
   - build-image
-  - deploy-images
+  - deploy-image
 
 cache:
   paths:
