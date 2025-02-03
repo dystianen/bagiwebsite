@@ -64,7 +64,7 @@ const Footer = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 6, md: 2 }}>
               <div className="tw-flex tw-flex-col tw-gap-2">
-                <Link href="/about_us">{t('about')}</Link>
+                <Link href="/about-us">{t('about')}</Link>
                 <Link href="/portfolio">{t('features')}</Link>
                 <Link href="#">{t('works')}</Link>
                 <Link href="#">{t('career')}</Link>
