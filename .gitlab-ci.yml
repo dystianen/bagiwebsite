@@ -11,11 +11,10 @@ install_dependencies:
   stage: install
   image: node:22
   script:
-    - npm install
+    - bun install
   artifacts:
     paths:
       - node_modules/
-
 
 build-image:
   stage: build-image
