@@ -9,7 +9,7 @@ cache:
 
 install_dependencies:
   stage: install
-  image: node:22
+  image: oven/bun
   script:
     - bun install
   artifacts:
