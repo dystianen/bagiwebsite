@@ -1,14 +1,25 @@
 'use client';
-
-import { Badge, Card, Container, Flex, Group, Image, SimpleGrid, Text } from '@mantine/core';
+import { Badge, Box, Card, Container, Flex, Group, Image, SimpleGrid, Text } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Marquee from 'react-fast-marquee';
 import mission from '../../json/mission.json';
 import ourTeams from '../../json/teams.json';
 
 export default function AboutUs() {
   const t = useTranslations('AboutUs');
+  const isMobile = useMediaQuery('(max-width: 62em)');
+
+  const partners = [
+    '/assets/images/logo_kelaspintar.svg',
+    '/assets/images/logo_pengenumroh.png',
+    '/assets/images/logo_idi.png',
+    '/assets/images/logo_pertamina.png',
+    '/assets/images/logo_stms.png',
+    '/assets/images/logo_astra.png'
+  ];
 
   return (
     <>
@@ -78,7 +89,7 @@ export default function AboutUs() {
           </motion.div>
         </Container>
       </section>
-      <section className=" tw-flex tw-w-full tw-items-center tw-py-10">
+      <section className="tw-flex tw-w-full tw-items-center tw-py-10">
         <Container size={'xl'} w={'100%'}>
           <Flex direction={'column'} justify={'center'} align={'center'} gap={16}>
             <motion.div
@@ -133,6 +144,34 @@ export default function AboutUs() {
           </Flex>
         </Container>
       </section>
+
+      <section className="tw-my-10 tw-flex tw-items-center tw-w-full">
+        <Container size={'xl'}>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 1
+            }}
+            viewport={{ once: true }}
+            style={{ width: '100%' }}
+          >
+            <Flex direction={'column'} align={'center'} mb={40} gap={16}>
+              <Text className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
+                {t('mitra.title')}
+              </Text>
+            </Flex>
+            <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
+              {partners.map((item, index) => (
+                <Box key={index} w={300}>
+                  <Image src={item} w={200} h={100} className="tw-object-contain" alt={item} />
+                </Box>
+              ))}
+            </Marquee>
+          </motion.div>
+        </Container>
+      </section>
+
       <Card className={`tw-flex tw-w-full tw-items-center  tw-py-10`}>
         <Container size={'xl'} w={'100%'}>
           <motion.div
