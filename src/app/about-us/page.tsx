@@ -146,7 +146,7 @@ export default function AboutUs() {
       </section>
 
       <section className="tw-my-10 tw-flex tw-items-center tw-w-full">
-        <Container size={'xl'}>
+        <Container size={'xl'} w={'100%'}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
