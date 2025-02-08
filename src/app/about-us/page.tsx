@@ -145,7 +145,7 @@ export default function AboutUs() {
         </Container>
       </section>
 
-      <section className="tw-my-10 tw-flex tw-items-center tw-w-full">
+      <section className="tw-flex tw-items-center tw-w-full tw-h-[300px] md:tw-h-[400px]">
         <Container size={'xl'} w={'100%'}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -163,7 +163,7 @@ export default function AboutUs() {
             </Flex>
             <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
               {partners.map((item, index) => (
-                <Box key={index} w={300}>
+                <Box key={index} w={{ base: 250, md: 300 }}>
                   <Image src={item} w={200} h={100} className="tw-object-contain" alt={item} />
                 </Box>
               ))}
