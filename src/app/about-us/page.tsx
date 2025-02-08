@@ -1,7 +1,18 @@
 'use client';
-import { Badge, Box, Card, Container, Flex, Group, Image, SimpleGrid, Text } from '@mantine/core';
+import {
+  ActionIcon,
+  Badge,
+  Box,
+  Card,
+  Container,
+  Flex,
+  Group,
+  Image,
+  SimpleGrid,
+  Text
+} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconQuoteFilled } from '@tabler/icons-react';
+import { IconBrandLinkedin, IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Marquee from 'react-fast-marquee';
@@ -134,7 +145,17 @@ export default function AboutUs() {
                     </Card.Section>
 
                     <Flex direction={'column'} gap={5} mt={'sm'}>
-                      <Text fw={600}>{it.name}</Text>
+                      <Group justify="space-between">
+                        <Text fw={600}>{it.name}</Text>
+                        <ActionIcon
+                          variant="transparent"
+                          component="a"
+                          href={it.linkedin}
+                          target="_blank"
+                        >
+                          <IconBrandLinkedin />
+                        </ActionIcon>
+                      </Group>
                       <Badge color="pink">{it.position}</Badge>
                     </Flex>
                   </Card>

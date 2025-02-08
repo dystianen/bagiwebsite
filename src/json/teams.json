@@ -2,21 +2,25 @@
   {
     "image": "/assets/images/zulpan.jpg",
     "name": "Zulfan Nanda",
-    "position": "Chief Executive Officer"
+    "position": "Chief Executive Officer",
+    "linkedin": "#"
   },
   {
     "image": "/assets/images/tian.jpg",
     "name": "Dystian En Y",
-    "position": "Chief Technology  Officer"
+    "position": "Chief Technology  Officer",
+    "linkedin": "https://www.linkedin.com/in/dystian-en/"
   },
   {
     "image": "/assets/images/roby.jpg",
     "name": "Roby Rosa",
-    "position": "Chief Operating Officer"
+    "position": "Chief Operating Officer",
+    "linkedin": "https://www.linkedin.com/in/roby-rosa-392a852a7/"
   },
   {
     "image": "/assets/images/ficry.jpg",
     "name": "Fickry Pratama",
-    "position": "Chief Marketing  Officer"
+    "position": "Chief Marketing  Officer",
+    "linkedin": "https://www.linkedin.com/in/fickrypratama/"
   }
 ]
