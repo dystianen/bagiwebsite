@@ -59,10 +59,10 @@ deploy-image:
     - docker pull "$DOCKER_IMAGE"
 
     # 2️⃣ Hentikan container lama jika ada
-    - docker rm -f compro-bagiwebsite || true
+    - docker rm -f bagiwebste-compro || true
 
     # 3️⃣ Jalankan container baru dengan auto-restart
-    - docker run -d -p 3001:3000 --restart always --name compro-bagiwebsite "$DOCKER_IMAGE"
+    - docker run -d -p 3001:3000 --restart always --name bagiwebsite-compro "$DOCKER_IMAGE"
 
   after_script:
     - echo "✅ Deploy Image Success 🚀"
