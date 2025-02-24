@@ -60,6 +60,12 @@
     "href": "https://absensi.bagiwebsite.com"
   },
   {
+    "title": "Ditaman",
+    "desc": "content_ditaman",
+    "img": "/assets/thumbnail/ditaman.png",
+    "href": "https://ditaman.id"
+  },
+  {
     "title": "SPPBE Dashbord System",
     "desc": "content_sppbe",
     "img": "/assets/thumbnail/sppbe.png",
