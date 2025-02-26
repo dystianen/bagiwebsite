@@ -48,13 +48,7 @@ const Portfolio = () => {
 
       <section className="tw-my-10 tw-flex tw-w-full">
         <Container size={'xl'} w={'100%'}>
-          <Flex
-            direction={isMobile ? 'column' : 'row'}
-            justify="space-between"
-            align={isMobile ? 'start' : 'end'}
-            mb={{ base: 40, md: 60 }}
-            gap={'md'}
-          >
+          <Group justify="space-between" align="end" mb={{ base: 40, md: 60 }}>
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -73,17 +67,17 @@ const Portfolio = () => {
                 size={'xl'}
                 onClick={() => setLayout('gallery')}
               >
-                <IconLayoutGrid size={32} />
+                <IconLayoutGrid size={24} />
               </ActionIcon>
               <ActionIcon
                 variant={layout === 'details' ? 'light' : 'transparent'}
                 size={'xl'}
                 onClick={() => setLayout('details')}
               >
-                <IconListDetails size={32} />
+                <IconListDetails size={24} />
               </ActionIcon>
             </Group>
-          </Flex>
+          </Group>
 
           {layout === 'details' && (
             <Flex direction={'column'} gap={80} w={'100%'} pos={'relative'}>
