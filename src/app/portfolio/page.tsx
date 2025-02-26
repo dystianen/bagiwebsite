@@ -48,7 +48,7 @@ const Portfolio = () => {
 
       <section className="tw-my-10 tw-flex tw-w-full">
         <Container size={'xl'} w={'100%'}>
-          <Group justify="space-between">
+          <Group justify="space-between" align="end" mb={60}>
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -56,7 +56,7 @@ const Portfolio = () => {
                 duration: 1
               }}
               viewport={{ once: true }}
-              className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em] tw-mb-14"
+              className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em]"
             >
               {t('projects')}
             </motion.h1>
