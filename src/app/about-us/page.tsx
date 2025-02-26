@@ -24,12 +24,12 @@ export default function AboutUs() {
   const isMobile = useMediaQuery('(max-width: 62em)');
 
   const partners = [
-    '/assets/images/logo_kelaspintar.svg',
-    '/assets/images/logo_pengenumroh.png',
-    '/assets/images/logo_idi.png',
-    '/assets/images/logo_pertamina.png',
-    '/assets/images/logo_stms.png',
-    '/assets/images/logo_astra.png'
+    'https://cdn.bagiwebsite.com/assets/images/logo_kelaspintar.svg',
+    'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.png',
+    'https://cdn.bagiwebsite.com/assets/images/logo_idi.png',
+    'https://cdn.bagiwebsite.com/assets/images/logo_pertamina.png',
+    'https://cdn.bagiwebsite.com/assets/images/logo_stms.png',
+    'https://cdn.bagiwebsite.com/assets/images/logo_astra.png'
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function AboutUs() {
           <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
             {/* Adjust height as needed */}
             <Image
-              src={'/assets/images/about_us.jpg'}
+              src={'https://cdn.bagiwebsite.com/assets/images/about_us.jpg'}
               alt="about-us"
               w={'100%'}
               h={'100%'}

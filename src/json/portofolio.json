@@ -2,109 +2,109 @@
   {
     "title": "Kelas Pintar",
     "desc": "content_kelas_pintar",
-    "img": "/assets/thumbnail/kp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/kp.png",
     "href": "https://kelaspintar.id"
   },
   {
     "title": "Pengen Umroh",
     "desc": "content_pengen_umroh",
-    "img": "/assets/thumbnail/pengen_umroh.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/pengen_umroh.png",
     "href": "https://pengenumroh.com"
   },
   {
     "title": "Ecommerce Shoes - IMAGINE",
     "desc": "content_imagine",
-    "img": "/assets/thumbnail/ecommerce_shoes.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ecommerce_shoes.png",
     "href": "https://imagine.bagiwebsite.com"
   },
   {
     "title": "Ivanami Store - Fashion",
     "desc": "content_ivanami",
-    "img": "/assets/thumbnail/ivanami.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ivanami.png",
     "href": "https://ivanamistore.bagiwebsite.com"
   },
   {
     "title": "IDI Cabang Tangerang",
     "desc": "content_idi",
-    "img": "/assets/thumbnail/IDI.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/IDI.png",
     "href": "https://idicabangtangerang.org"
   },
   {
     "title": "Training Management System - Sehati",
     "desc": "content_sehati",
-    "img": "/assets/thumbnail/sehati.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/sehati.png",
     "href": "https://tms.sehati.co.id"
   },
   {
     "title": "Landing Page - Staycation",
     "desc": "content_staycation",
-    "img": "/assets/thumbnail/staycation.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/staycation.png",
     "href": "https://staycation-hotel.vercel.app"
   },
   {
     "title": "Landing Page - Trustlink",
     "desc": "content_trustlink",
-    "img": "/assets/thumbnail/trustlink.png",
-    "href": "https://trustlink.bagiwebsite.com"
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/trustlink.png",
+    "href": "https://www.withtrustlink.com"
   },
   {
     "title": "Battle Tryout - Kelas Pintar",
     "desc": "content_battle_tryout",
-    "img": "/assets/thumbnail/battle-pintar.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/battle-pintar.png",
     "href": "https://battle-pintar.vercel.app"
   },
   {
     "title": "Absensi Karyawan",
     "desc": "content_absensi",
-    "img": "/assets/thumbnail/absensi.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/absensi.png",
     "href": "https://absensi.bagiwebsite.com"
   },
   {
     "title": "Ditaman",
     "desc": "content_ditaman",
-    "img": "/assets/thumbnail/ditaman.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ditaman.png",
     "href": "https://ditaman.id"
   },
   {
     "title": "SPPBE Dashbord System",
     "desc": "content_sppbe",
-    "img": "/assets/thumbnail/sppbe.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/sppbe.png",
     "href": "#"
   },
   {
     "title": "Perpustakaan - SIPERPUS",
     "desc": "content_siperpus",
-    "img": "/assets/thumbnail/siperpus.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/siperpus.png",
     "href": "#"
   },
   {
     "title": "Open Banking App",
     "desc": "content_open_banking",
-    "img": "/assets/thumbnail/open-banking.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/open-banking.png",
     "href": "#"
   },
   {
     "title": "GMP Coin",
     "desc": "content_gmp",
-    "img": "/assets/thumbnail/gmp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/gmp.png",
     "href": "#"
   },
   {
     "title": "CariParkir BOTS",
     "desc": "content_cariparkir",
-    "img": "/assets/thumbnail/cp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/cp.png",
     "href": "#"
   },
   {
     "title": "Sport Massage",
     "desc": "content_sport_massage",
-    "img": "/assets/thumbnail/massage.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/massage.png",
     "href": "#"
   },
   {
     "title": "Landing Page Asy-Syfa’",
     "desc": "content_asy_syifa",
-    "img": "/assets/thumbnail/syfa.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/syfa.png",
     "href": "#"
   }
 ]

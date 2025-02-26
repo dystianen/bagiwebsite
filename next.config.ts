@@ -8,6 +8,17 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   sassOptions: {
     implementation: 'sass-embedded'
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.bagiwebsite.com',
+        port: '',
+        pathname: '/assets/**',
+        search: ''
+      }
+    ]
   }
 };
 

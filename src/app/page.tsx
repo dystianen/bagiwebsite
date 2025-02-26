@@ -309,7 +309,7 @@ const Home = () => {
               gap={60}
             >
               <Image
-                src={'/assets/images/highlight_services.png'}
+                src={'https://cdn.bagiwebsite.com/assets/images/highlight_services.png'}
                 w={350}
                 radius={'md'}
                 alt="Services"

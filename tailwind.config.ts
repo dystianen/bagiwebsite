@@ -10,7 +10,7 @@ export default {
         foreground: 'var(--foreground)'
       },
       backgroundImage: {
-        'pattern-wave': "url('/assets/backgrounds/pattern_wave.svg')"
+        'pattern-wave': "url('https://cdn.bagiwebsite.com/assets/backgrounds/pattern_wave.svg')"
       }
     }
   },

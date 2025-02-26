@@ -22,7 +22,7 @@ const Portfolio = () => {
           </Container>
           <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
             <Image
-              src={'/assets/images/about_us.jpg'}
+              src={'https://cdn.bagiwebsite.com/assets/images/about_us.jpg'}
               alt="about-us"
               w={'100%'}
               h={'100%'}

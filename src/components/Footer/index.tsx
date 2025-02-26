@@ -8,27 +8,27 @@ const Footer = () => {
   const t = useTranslations('Footer');
   const sosmed = [
     {
-      icon: '/assets/icons/whatsapp.png',
+      icon: 'https://cdn.bagiwebsite.com/assets/icons/whatsapp.png',
       label: 'Whatsapp',
       href: 'https://wa.me/+6287763832505'
     },
     {
-      icon: '/assets/icons/gmail.png',
+      icon: 'https://cdn.bagiwebsite.com/assets/icons/gmail.png',
       label: 'Email',
       href: 'mailto:websitebagi@gmail.com'
     },
     {
-      icon: '/assets/icons/instagram.png',
+      icon: 'https://cdn.bagiwebsite.com/assets/icons/instagram.png',
       label: 'Instagram',
       href: '#'
     },
     {
-      icon: '/assets/icons/facebook.png',
+      icon: 'https://cdn.bagiwebsite.com/assets/icons/facebook.png',
       label: 'Facebook',
       href: '#'
     },
     {
-      icon: '/assets/icons/linkedin.png',
+      icon: 'https://cdn.bagiwebsite.com/assets/icons/linkedin.png',
       label: 'Linkedin',
       href: '#'
     }
@@ -40,7 +40,7 @@ const Footer = () => {
         <Container p={0} size={'xl'} className="tw-flex tw-flex-col tw-gap-2 tw-w-full">
           <Flex gap={4} align={'center'}>
             <Image
-              src="/assets/images/logo_bagiwebsite.png"
+              src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png"
               alt="BAGIWEBSITE"
               width={30}
               height={30}
