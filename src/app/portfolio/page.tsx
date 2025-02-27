@@ -124,7 +124,7 @@ const Portfolio = () => {
           )}
 
           {layout === 'gallery' && (
-            <SimpleGrid cols={{ base: 2, sm: 2, md: 3, lg: 4 }}>
+            <SimpleGrid cols={{ base: 2, sm: 3, md: 3, lg: 4 }}>
               {portfolio.map((it, index) => (
                 <motion.div
                   key={index}
@@ -138,7 +138,7 @@ const Portfolio = () => {
                   className="tw-relative"
                 >
                   <div className="tw-overflow-hidden tw-rounded-sm tw-shadow-xl tw-relative tw-group">
-                    <Box w={400} h={250}>
+                    <Box w={{ base: 200, sm: 350, md: 400 }} h={{ base: 150, sm: 200, md: 250 }}>
                       <Image
                         src={it.img}
                         alt={it.title}
