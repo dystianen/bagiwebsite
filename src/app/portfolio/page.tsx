@@ -2,7 +2,6 @@
 import {
   ActionIcon,
   Anchor,
-  Box,
   Button,
   Container,
   Flex,
@@ -152,19 +151,21 @@ const Portfolio = () => {
                       className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
                     />
 
-                    <div className="tw-h-32 tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-bg-gradient-to-t tw-from-black/80 tw-to-transparent tw-text-white tw-px-4 tw-py-4 tw-rounded-b-lg">
-                      <Box w={'max-content'} h={'100%'}>
-                        <Anchor href={it.href} target="_blank" underline="never" c="white">
-                          <Group align="end" h={'100%'}>
-                            <Group align="start" gap={isTablet ? 4 : 8}>
-                              <IconExternalLink size={isMobile ? 18 : 24} color="white" />
-                              <h1 className="tw-text-[10px] md:tw-text-base tw-font-semibold tw-text-none tw-no-underline tw-mt-[4px]">
-                                {it.title}
-                              </h1>
-                            </Group>
-                          </Group>
-                        </Anchor>
-                      </Box>
+                    <div className="md:tw-h-32 tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-bg-gradient-to-t tw-from-black/80 tw-to-transparent tw-text-white tw-p-2 md:tw-p-4 tw-flex tw-items-end">
+                      <Anchor
+                        href={it.href}
+                        target="_blank"
+                        underline="never"
+                        c="white"
+                        w={'max-content'}
+                      >
+                        <Group gap={isTablet ? 4 : 8}>
+                          <IconExternalLink size={isMobile ? 18 : 24} color="white" />
+                          <h1 className="tw-text-[10px] md:tw-text-base tw-font-semibold tw-text-none tw-no-underline tw-mt-[4px]">
+                            {it.title}
+                          </h1>
+                        </Group>
+                      </Anchor>
                     </div>
                   </div>
                 </motion.div>
