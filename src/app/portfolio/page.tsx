@@ -160,8 +160,8 @@ const Portfolio = () => {
                         w={'max-content'}
                       >
                         <Group gap={isTablet ? 4 : 8}>
-                          <IconExternalLink size={isMobile ? 18 : 24} color="white" />
-                          <h1 className="tw-text-[10px] md:tw-text-base tw-font-semibold tw-text-none tw-no-underline tw-mt-[4px]">
+                          <IconExternalLink size={isMobile ? 18 : 20} color="white" />
+                          <h1 className="tw-text-[10px] md:tw-text-sm tw-font-semibold tw-text-none tw-no-underline tw-mt-[5px]">
                             {it.title}
                           </h1>
                         </Group>
