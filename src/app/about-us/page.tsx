@@ -34,26 +34,45 @@ export default function AboutUs() {
 
   return (
     <>
-      <section className="tw-mt-32">
-        <Flex gap={40} direction={'column'}>
-          <Container size={'xl'}>
-            <h1 className="tw-text-3xl md:tw-text-6xl lg:tw-text-8xl tw-text-center tw-tracking-[0.4em]">
-              BAGIWEBSITE
-            </h1>
-          </Container>
-          <div className="tw-relative tw-h-[700px] lg:tw-h-[600px]">
-            {/* Adjust height as needed */}
+      {isMobile ? (
+        <section className="tw-h-[calc(100dvh-80px)] tw-flex tw-flex-col tw-justify-center tw-mt-32">
+          <Flex gap={40} direction={'column'} className="tw-h-full">
+            <Container size={'xl'}>
+              <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-center tw-tracking-[0.4em]">
+                BAGIWEBSITE
+              </h1>
+            </Container>
+            <div className="tw-relative tw-flex-1">
+              <Image
+                src={'https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg'}
+                alt="about-us"
+                fill
+                className="tw-object-cover tw-object-top"
+              />
+              <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-40"></div>
+            </div>
+          </Flex>
+        </section>
+      ) : (
+        <section className="tw-h-[calc(100dvh-30px)] tw-flex tw-items-center tw-justify-center">
+          <div className="tw-relative tw-w-full tw-h-full">
             <Image
-              src={'https://cdn.bagiwebsite.com/assets/images/about_us.jpg'}
+              src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
               alt="about-us"
               fill
-              className="tw-object-cover"
+              className="tw-object-cover tw-object-top"
             />
-            <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>{' '}
-            {/* Black transparent overlay */}
+            <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
+
+            {/* Teks di tengah gambar */}
+            <div className="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
+              <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-white tw-text-center tw-tracking-[0.4em]">
+                BAGIWEBSITE
+              </h1>
+            </div>
           </div>
-        </Flex>
-      </section>
+        </section>
+      )}
 
       <section className="tw-my-10 tw-flex tw-w-full">
         <Container size={'xl'} w={'100%'}>
