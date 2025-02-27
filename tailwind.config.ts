@@ -13,7 +13,7 @@ export default {
         'pattern-wave': "url('https://cdn.bagiwebsite.com/assets/backgrounds/pattern_wave.svg')"
       },
       screens: {
-        xxs: { max: '25em' } // 400px
+        xxs: { max: '24em' } // 400px
       }
     }
   },
