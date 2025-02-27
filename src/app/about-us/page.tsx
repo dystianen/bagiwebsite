@@ -7,7 +7,6 @@ import {
   Container,
   Flex,
   Group,
-  Image,
   SimpleGrid,
   Text
 } from '@mantine/core';
@@ -15,6 +14,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { IconBrandLinkedin, IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import mission from '../../json/mission.json';
 import ourTeams from '../../json/teams.json';
@@ -46,8 +46,7 @@ export default function AboutUs() {
             <Image
               src={'https://cdn.bagiwebsite.com/assets/images/about_us.jpg'}
               alt="about-us"
-              w={'100%'}
-              h={'100%'}
+              fill
               className="tw-object-cover"
             />
             <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>{' '}
@@ -133,15 +132,17 @@ export default function AboutUs() {
                 >
                   <Card shadow="sm" radius="md" p={{ base: 'xs', md: 'sm', lg: 'md' }}>
                     <Card.Section>
-                      <Image
-                        src={it.image}
-                        h={{ base: 150, md: 300 }}
-                        w={{ base: '100%', md: 300 }}
-                        alt="Norway"
-                        style={{
-                          filter: 'grayscale(40%)'
-                        }}
-                      />
+                      <Box h={{ base: 180, md: 300 }} w={{ base: '100%', md: 300 }} pos="relative">
+                        <Image
+                          src={it.image}
+                          alt={it.name}
+                          fill
+                          objectFit="cover"
+                          style={{
+                            filter: 'grayscale(40%)'
+                          }}
+                        />
+                      </Box>
                     </Card.Section>
 
                     <Flex direction={'column'} gap={5} mt={{ base: 'xs', md: 'sm' }}>
@@ -185,7 +186,13 @@ export default function AboutUs() {
             <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
               {partners.map((item, index) => (
                 <Box key={index} w={{ base: 250, md: 300 }}>
-                  <Image src={item} w={200} h={100} className="tw-object-contain" alt={item} />
+                  <Image
+                    src={item}
+                    width={200}
+                    height={100}
+                    className="tw-object-contain"
+                    alt={item}
+                  />
                 </Box>
               ))}
             </Marquee>

@@ -6,8 +6,8 @@ import {
   Divider,
   Flex,
   Grid,
-  Image,
   List,
+  Image as MantineImage,
   SimpleGrid,
   Stack,
   Text,
@@ -24,6 +24,7 @@ import {
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useRouter } from 'nextjs-toploader/app';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
@@ -207,7 +208,7 @@ const Home = () => {
                         shadow="sm"
                         className="tw-flex tw-justify-center tw-items-center"
                       >
-                        <Image
+                        <MantineImage
                           src={it.img}
                           alt={it.title}
                           className="!tw-object-contain"
@@ -232,7 +233,7 @@ const Home = () => {
                         shadow="sm"
                         className="tw-flex tw-justify-center tw-items-center"
                       >
-                        <Image
+                        <MantineImage
                           src={it.img}
                           alt={it.title}
                           className="!tw-object-contain"
@@ -282,7 +283,7 @@ const Home = () => {
               >
                 <Card shadow="sm" radius={'md'}>
                   <Flex gap={4} direction={'column'}>
-                    <Image src={it.icon} alt="bagiwebsite" width={100} height={100} />
+                    <Image src={it.icon} alt="bagiwebsite" width={400} height={400} />
                     <h1 className="tw-text-xl tw-font-bold">{t(it.title)}</h1>
                     <p className="tw-text-gray-500">{t(it.description)}</p>
                   </Flex>
@@ -310,8 +311,8 @@ const Home = () => {
             >
               <Image
                 src={'https://cdn.bagiwebsite.com/assets/images/highlight_services.png'}
-                w={350}
-                radius={'md'}
+                width={350}
+                height={400}
                 alt="Services"
               />
               <Stack align="start" gap="lg">

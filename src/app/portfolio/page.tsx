@@ -1,18 +1,10 @@
 'use client';
-import {
-  ActionIcon,
-  Anchor,
-  Button,
-  Container,
-  Flex,
-  Group,
-  Image,
-  SimpleGrid
-} from '@mantine/core';
+import { ActionIcon, Anchor, Box, Button, Container, Flex, Group, SimpleGrid } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconExternalLink, IconLayoutGrid, IconListDetails } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { memo, useState } from 'react';
 import portfolio from '../../json/portofolio.json';
 
@@ -37,8 +29,7 @@ const Portfolio = () => {
             <Image
               src={'https://cdn.bagiwebsite.com/assets/images/about_us.jpg'}
               alt="about-us"
-              w={'100%'}
-              h={'100%'}
+              fill
               className="tw-object-cover"
             />
             <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-50"></div>{' '}
@@ -93,11 +84,13 @@ const Portfolio = () => {
                   viewport={{ once: true }}
                 >
                   <Flex gap={'xl'} direction={isTablet ? 'column' : 'row'} align={'center'}>
-                    <div className="sm:tw-w-[600px] tw-overflow-hidden tw-rounded-xl tw-shadow-xl">
+                    <div className="tw-overflow-hidden tw-rounded-xl tw-shadow-xl">
                       <Image
                         src={it.img}
                         alt={it.title}
-                        className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-105"
+                        width={600}
+                        height={300}
+                        className="tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-105"
                       />
                     </div>
 
@@ -144,12 +137,15 @@ const Portfolio = () => {
                   viewport={{ once: true }}
                   className="tw-relative"
                 >
-                  <div className="xs:tw-w-[800px] tw-overflow-hidden tw-rounded-sm tw-shadow-xl tw-relative tw-group">
-                    <Image
-                      src={it.img}
-                      alt={it.title}
-                      className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
-                    />
+                  <div className="tw-overflow-hidden tw-rounded-sm tw-shadow-xl tw-relative tw-group">
+                    <Box w={400} h={250}>
+                      <Image
+                        src={it.img}
+                        alt={it.title}
+                        fill
+                        className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
+                      />
+                    </Box>
 
                     <div className="md:tw-h-32 tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-bg-gradient-to-t tw-from-black/80 tw-to-transparent tw-text-white tw-p-2 md:tw-p-4 tw-flex tw-items-end">
                       <Anchor
