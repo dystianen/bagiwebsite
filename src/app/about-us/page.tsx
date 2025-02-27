@@ -34,45 +34,25 @@ export default function AboutUs() {
 
   return (
     <>
-      {isMobile ? (
-        <section className="tw-h-[calc(100dvh-80px)] tw-flex tw-flex-col tw-justify-center tw-mt-32">
-          <Flex gap={40} direction={'column'} className="tw-h-full">
-            <Container size={'xl'}>
-              <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-center tw-tracking-[0.4em]">
-                BAGIWEBSITE
-              </h1>
-            </Container>
-            <div className="tw-relative tw-flex-1">
-              <Image
-                src={'https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg'}
-                alt="about-us"
-                fill
-                className="tw-object-cover tw-object-top"
-              />
-              <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black tw-opacity-40"></div>
-            </div>
-          </Flex>
-        </section>
-      ) : (
-        <section className="tw-h-[calc(100dvh-30px)] tw-flex tw-items-center tw-justify-center">
-          <div className="tw-relative tw-w-full tw-h-full">
-            <Image
-              src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
-              alt="about-us"
-              fill
-              className="tw-object-cover tw-object-top"
-            />
-            <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
+      <section className="tw-flex tw-flex-col md:tw-justify-center tw-h-[calc(100dvh-80px)] md:tw-h-[calc(100dvh-30px)]">
+        {/* Wrapper untuk mobile dan desktop */}
+        <div className="tw-container tw-mx-auto tw-text-center tw-mb-10 md:tw-mb-0 md:tw-absolute md:tw-inset-0 md:tw-flex md:tw-items-center md:tw-justify-center md:tw-z-10">
+          <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-white tw-tracking-[0.4em]">
+            BAGIWEBSITE
+          </h1>
+        </div>
 
-            {/* Teks di tengah gambar */}
-            <div className="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
-              <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-white tw-text-center tw-tracking-[0.4em]">
-                BAGIWEBSITE
-              </h1>
-            </div>
-          </div>
-        </section>
-      )}
+        {/* Gambar */}
+        <div className="tw-relative tw-flex-1 md:tw-h-full">
+          <Image
+            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
+            alt="about-us"
+            fill
+            className="tw-object-cover tw-object-top"
+          />
+          <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
+        </div>
+      </section>
 
       <section className="tw-my-10 tw-flex tw-w-full">
         <Container size={'xl'} w={'100%'}>

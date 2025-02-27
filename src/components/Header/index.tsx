@@ -29,9 +29,12 @@ const Header = () => {
 
   return (
     <header
-      className={`tw-fixed tw-w-full tw-top-0 tw-z-10 tw-bg-[var(--mantine-color-body)] ${opened ? '' : 'tw-shadow-sm'}`}
+      className={`tw-fixed tw-w-full tw-top-0 tw-z-50 tw-bg-[var(--mantine-color-body)] ${opened ? '' : 'tw-shadow-sm'}`}
     >
-      <Container size="xl" className="tw-flex tw-justify-between tw-items-center tw-h-24">
+      <Container
+        size="xl"
+        className="tw-flex tw-justify-between tw-items-center tw-h-20 md:tw-h-24"
+      >
         <div className="tw-flex tw-gap-6 tw-items-center">
           <Link
             href={'/'}
