@@ -92,7 +92,7 @@ const Portfolio = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  <Flex gap={'xl'} direction={isTablet ? 'column' : 'row'}>
+                  <Flex gap={'xl'} direction={isTablet ? 'column' : 'row'} align={'center'}>
                     <div className="sm:tw-w-[600px] tw-overflow-hidden tw-rounded-xl tw-shadow-xl">
                       <Image
                         src={it.img}
@@ -144,7 +144,7 @@ const Portfolio = () => {
                   viewport={{ once: true }}
                   className="tw-relative"
                 >
-                  <div className="xs:tw-w-[800px] tw-overflow-hidden tw-rounded-md tw-shadow-xl tw-relative tw-group">
+                  <div className="xs:tw-w-[800px] tw-overflow-hidden tw-rounded-sm tw-shadow-xl tw-relative tw-group">
                     <Image
                       src={it.img}
                       alt={it.title}
