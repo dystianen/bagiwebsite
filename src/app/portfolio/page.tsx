@@ -21,7 +21,8 @@ type TLayout = 'gallery' | 'details';
 
 const Portfolio = () => {
   const t = useTranslations('Portfolio');
-  const isMobile = useMediaQuery('(max-width: 62em)');
+  const isTablet = useMediaQuery('(max-width: 62em)'); // 992px
+  const isMobile = useMediaQuery('(max-width: 46em)'); // 768px
   const [layout, setLayout] = useState<TLayout>('gallery');
 
   return (
@@ -47,8 +48,8 @@ const Portfolio = () => {
       </section>
 
       <section className="tw-my-10 tw-flex tw-w-full">
-        <Container size={'xl'} w={'100%'}>
-          <Group justify="space-between" align="end" mb={{ base: 40, md: 60 }}>
+        <Container size={'xl'} w={'100%'} mih={400}>
+          <Group justify="space-between" align="end" mb={{ base: 30, md: 60 }}>
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -61,17 +62,17 @@ const Portfolio = () => {
               {t('projects')}
             </motion.h1>
 
-            <Group>
+            <Group mb={8}>
               <ActionIcon
                 variant={layout === 'gallery' ? 'light' : 'transparent'}
-                size={'xl'}
+                size={'lg'}
                 onClick={() => setLayout('gallery')}
               >
                 <IconLayoutGrid size={24} />
               </ActionIcon>
               <ActionIcon
                 variant={layout === 'details' ? 'light' : 'transparent'}
-                size={'xl'}
+                size={'lg'}
                 onClick={() => setLayout('details')}
               >
                 <IconListDetails size={24} />
@@ -92,7 +93,7 @@ const Portfolio = () => {
                   }}
                   viewport={{ once: true }}
                 >
-                  <Flex gap={'xl'} direction={isMobile ? 'column' : 'row'}>
+                  <Flex gap={'xl'} direction={isTablet ? 'column' : 'row'}>
                     <div className="sm:tw-w-[600px] tw-overflow-hidden tw-rounded-xl tw-shadow-xl">
                       <Image
                         src={it.img}
@@ -103,13 +104,13 @@ const Portfolio = () => {
 
                     <Flex
                       direction={'column'}
-                      align={isMobile ? 'start' : 'center'}
+                      align={isTablet ? 'start' : 'center'}
                       gap={'sm'}
                       w={'100%'}
                     >
                       <h1 className="tw-text-2xl tw-font-bold">{it.title}</h1>
                       <p
-                        className={`tw-text-gray-500 ${isMobile ? 'tw-text-left' : 'tw-text-center'}`}
+                        className={`tw-text-gray-500 ${isTablet ? 'tw-text-left' : 'tw-text-center'}`}
                       >
                         {t(it.desc)}
                       </p>
@@ -131,7 +132,7 @@ const Portfolio = () => {
           )}
 
           {layout === 'gallery' && (
-            <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }}>
+            <SimpleGrid cols={{ base: 2, sm: 2, md: 3, lg: 4 }}>
               {portfolio.map((it, index) => (
                 <motion.div
                   key={index}
@@ -151,14 +152,16 @@ const Portfolio = () => {
                       className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
                     />
 
-                    <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-bg-gradient-to-t tw-from-black/80 tw-to-transparent tw-text-white tw-px-4 tw-py-4 tw-rounded-b-lg">
-                      <Box w={'max-content'}>
+                    <div className="tw-h-32 tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-bg-gradient-to-t tw-from-black/80 tw-to-transparent tw-text-white tw-px-4 tw-py-4 tw-rounded-b-lg">
+                      <Box w={'max-content'} h={'100%'}>
                         <Anchor href={it.href} target="_blank" underline="never" c="white">
-                          <Group align="center">
-                            <h1 className="tw-font-semibold tw-text-none tw-no-underline">
-                              {it.title}
-                            </h1>
-                            <IconExternalLink color="white" />
+                          <Group align="end" h={'100%'}>
+                            <Group align="start" gap={isTablet ? 4 : 8}>
+                              <IconExternalLink size={isMobile ? 18 : 24} color="white" />
+                              <h1 className="tw-text-[10px] md:tw-text-base tw-font-semibold tw-text-none tw-no-underline tw-mt-[4px]">
+                                {it.title}
+                              </h1>
+                            </Group>
                           </Group>
                         </Anchor>
                       </Box>

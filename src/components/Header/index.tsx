@@ -1,5 +1,5 @@
 'use client';
-import { Burger, Button, Container, Divider, Drawer, Flex, Group } from '@mantine/core';
+import { Burger, Button, Container, Divider, Drawer, Flex, Group, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
@@ -73,8 +73,11 @@ const Header = () => {
         </div>
 
         <Group align="center">
-          <ToggleThemes />
-          <LanguagePicker />
+          <Group className="xxs:tw-hidden tw-flex">
+            <ToggleThemes />
+            <LanguagePicker />
+          </Group>
+
           <Button
             size="md"
             variant="outline"
@@ -130,16 +133,22 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
-            <Button
-              size="md"
-              variant="outline"
-              w={'max-content'}
-              radius={'xl'}
-              leftSection={<IconBrandWhatsapp />}
-              onClick={handleClickContactUs}
-            >
-              {tg('contact_us')}
-            </Button>
+            <Stack>
+              <Group className="xxs:tw-flex tw-hidden">
+                <ToggleThemes />
+                <LanguagePicker />
+              </Group>
+              <Button
+                size="md"
+                variant="outline"
+                w={'max-content'}
+                radius={'xl'}
+                leftSection={<IconBrandWhatsapp />}
+                onClick={handleClickContactUs}
+              >
+                {tg('contact_us')}
+              </Button>
+            </Stack>
           </Flex>
         </Drawer>
       </Container>
