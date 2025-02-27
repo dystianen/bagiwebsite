@@ -7,7 +7,6 @@ import {
   Flex,
   Grid,
   List,
-  Image as MantineImage,
   SimpleGrid,
   Stack,
   Text,
@@ -57,6 +56,16 @@ const Home = () => {
   const handleMoreDetailServices = () => {
     router.push('/services');
   };
+
+  const renderProps = isMobile
+    ? {
+        widthImage: 150,
+        heightImage: 150
+      }
+    : {
+        widthImage: 300,
+        heightImage: 260
+      };
 
   return (
     <>
@@ -184,9 +193,7 @@ const Home = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 1.5
-                }}
+                transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
               >
                 <Flex
@@ -204,16 +211,16 @@ const Home = () => {
                         key={index}
                         p={0}
                         h={{ base: 'max-content', md: 280 }}
-                        radius={'md'}
+                        radius="md"
                         shadow="sm"
                         className="tw-flex tw-justify-center tw-items-center"
                       >
-                        <MantineImage
+                        <Image
                           src={it.img}
                           alt={it.title}
-                          className="!tw-object-contain"
-                          w={{ base: 150, md: 200, lg: 300 }}
-                          h={{ base: 'auto', lg: 260 }}
+                          width={renderProps.widthImage}
+                          height={renderProps.heightImage}
+                          objectFit="contain"
                           loading="lazy"
                         />
                       </Card>
@@ -229,16 +236,16 @@ const Home = () => {
                         key={index}
                         p={0}
                         h={{ base: 'max-content', md: 280 }}
-                        radius={'md'}
+                        radius="md"
                         shadow="sm"
                         className="tw-flex tw-justify-center tw-items-center"
                       >
-                        <MantineImage
+                        <Image
                           src={it.img}
                           alt={it.title}
-                          className="!tw-object-contain"
-                          w={{ base: 150, md: 200, lg: 300 }}
-                          h={{ base: 'auto', lg: 260 }}
+                          width={renderProps.widthImage}
+                          height={renderProps.heightImage}
+                          objectFit="contain"
                           loading="lazy"
                         />
                       </Card>
