@@ -37,7 +37,7 @@ export default function AboutUs() {
       <section className="tw-flex tw-flex-col md:tw-justify-center tw-h-[calc(100vh-100px)] md:tw-h-screen">
         {/* Wrapper untuk mobile dan desktop */}
         <div className="tw-container tw-mx-auto tw-text-center tw-mb-10 md:tw-mb-0 md:tw-absolute md:tw-inset-0 md:tw-flex md:tw-items-center md:tw-justify-center md:tw-z-10">
-          <h1 className="tw-text-3xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em]">
+          <h1 className="tw-text-3xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em] tw-text-white">
             BAGIWEBSITE
           </h1>
         </div>
