@@ -221,7 +221,7 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           objectFit="contain"
-                          loading="lazy"
+                          priority
                         />
                       </Card>
                     ))}
@@ -246,7 +246,7 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           objectFit="contain"
-                          loading="lazy"
+                          priority
                         />
                       </Card>
                     ))}

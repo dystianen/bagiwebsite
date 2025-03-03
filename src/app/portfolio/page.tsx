@@ -32,6 +32,7 @@ const Portfolio = () => {
             src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
             alt="about-us"
             fill
+            priority
             className="tw-object-cover tw-object-top"
           />
           <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
