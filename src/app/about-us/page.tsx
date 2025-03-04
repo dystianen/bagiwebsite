@@ -184,17 +184,13 @@ export default function AboutUs() {
               </Text>
             </Flex>
             <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
-              {partners.map((item, index) => (
-                <Box key={index} w={{ base: 250, md: 300 }}>
-                  <Image
-                    src={item}
-                    width={200}
-                    height={100}
-                    className="tw-object-contain"
-                    alt={item}
-                  />
-                </Box>
-              ))}
+              <Flex gap={120} align="center">
+                {partners.map((item, index) => (
+                  <Box key={index} w={{ base: 200, md: 250, lg: 280 }} h={100} pos="relative">
+                    <Image src={item} fill style={{ objectFit: 'contain' }} alt={item} />
+                  </Box>
+                ))}
+              </Flex>
             </Marquee>
           </motion.div>
         </Container>
