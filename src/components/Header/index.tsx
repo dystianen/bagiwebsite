@@ -45,11 +45,11 @@ const Header = () => {
             <Flex gap={4} align="end">
               <Image
                 src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png"
-                alt="BAGIWEBSITE"
+                alt="BagiWebsite"
                 width={30}
                 height={30}
               />
-              <h2 className="tw-font-bold tw-text-2xl">BAGIWEBSITE</h2>
+              <h2 className="tw-font-bold tw-text-2xl">BagiWebsite</h2>
             </Flex>
           </Link>
           <div className="tw-hidden lg:tw-flex tw-items-center sm:tw-gap-4 lg:tw-gap-6">

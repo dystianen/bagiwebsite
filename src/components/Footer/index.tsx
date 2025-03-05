@@ -41,11 +41,11 @@ const Footer = () => {
           <Flex gap={4} align={'center'}>
             <Image
               src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png"
-              alt="BAGIWEBSITE"
+              alt="BagiWebsite"
               width={30}
               height={30}
             />
-            <h1 className="tw-font-bold tw-text-xl">BAGIWEBSITE</h1>
+            <h1 className="tw-font-bold tw-text-xl">BagiWebsite</h1>
           </Flex>
           <Grid justify="space-between" gutter={{ base: 'xl' }} align="center">
             <Grid.Col span={{ base: 12, md: 4 }}>
@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
             </Grid.Col>
           </Grid>
-          <p className="tw-mt-6">BAGIWEBSITE &copy;2024, {t('copyright')}</p>
+          <p className="tw-mt-6">BagiWebsite &copy;2024, {t('copyright')}</p>
         </Container>
       </Card>
     </footer>

@@ -38,7 +38,10 @@ export async function generateMetadata(locale: string): Promise<Metadata> {
         id: '/id'
       }
     },
-    title: t('title'),
+    title: {
+      default: t('title'),
+      template: '%s | BagiWebsite'
+    },
     description: t('desc'),
     openGraph: {
       images: 'https://cdn.bagiwebsite.com/assets/thumbnail/thumbnail_bagiwebsite.png'
