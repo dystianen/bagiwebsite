@@ -44,7 +44,7 @@ export async function generateMetadata({
     },
     title: {
       default: t('title'),
-      template: '%s | BagiWebsite'
+      template: '%s | BAGIWEBSITE'
     },
     description: t('desc'),
     openGraph: {

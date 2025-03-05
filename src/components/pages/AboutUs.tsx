@@ -38,7 +38,7 @@ export default function AboutUs() {
         {/* Wrapper untuk mobile dan desktop */}
         <div className="tw-container tw-mx-auto tw-text-center tw-mb-10 md:tw-mb-0 md:tw-absolute md:tw-inset-0 md:tw-flex md:tw-items-center md:tw-justify-center md:tw-z-10">
           <h1 className="tw-text-3xl md:tw-text-6xl lg:tw-text-8xl tw-tracking-[0.4em] tw-text-white">
-            BagiWebsite
+            BAGIWEBSITE
           </h1>
         </div>
 
