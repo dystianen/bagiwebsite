@@ -19,7 +19,7 @@ import Marquee from 'react-fast-marquee';
 import mission from '../../json/mission.json';
 import ourTeams from '../../json/teams.json';
 
-export default function AboutUsComp() {
+export default function AboutUs() {
   const t = useTranslations('AboutUs');
   const isMobile = useMediaQuery('(max-width: 62em)');
 

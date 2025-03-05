@@ -10,7 +10,7 @@ import portfolio from '../../json/portofolio.json';
 
 type TLayout = 'gallery' | 'details';
 
-const PortfolioComp = () => {
+const Portfolio = () => {
   const t = useTranslations('Portfolio');
   const isTablet = useMediaQuery('(max-width: 62em)'); // 992px
   const isMobile = useMediaQuery('(max-width: 46em)'); // 768px
@@ -176,4 +176,4 @@ const PortfolioComp = () => {
   );
 };
 
-export default memo(PortfolioComp);
+export default memo(Portfolio);

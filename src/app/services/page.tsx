@@ -1,14 +1,11 @@
-import ServicesComp from '@/src/components/pages/ServicesComp';
-import { Metadata } from 'next';
+import ServicesComp from '@/src/components/pages/Services';
 import { getTranslations } from 'next-intl/server';
-import { FC } from 'react';
 
-export async function generateMetadata(locale: string): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Global' });
 
   return { title: t('services') };
 }
 
-const Services: FC = () => <ServicesComp />;
-
-export default Services;
+export default ServicesComp;

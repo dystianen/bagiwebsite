@@ -26,8 +26,12 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'id' }];
 }
 
-export async function generateMetadata(locale: string): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
+export async function generateMetadata({
+  params
+}: {
+  params: { lang: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.lang, namespace: 'Metadata' });
 
   return {
     metadataBase: new URL('https://bagiwebsite.com'),

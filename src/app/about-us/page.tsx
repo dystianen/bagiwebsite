@@ -1,13 +1,11 @@
-import AboutUsComp from '@/src/components/pages/AboutUsComp';
-import { Metadata } from 'next';
+import AboutUs from '@/src/components/pages/AboutUs';
 import { getTranslations } from 'next-intl/server';
-import { FC } from 'react';
 
-export async function generateMetadata(locale: string): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Global' });
+
   return { title: t('about_us') };
 }
-
-const AboutUs: FC = () => <AboutUsComp />;
 
 export default AboutUs;

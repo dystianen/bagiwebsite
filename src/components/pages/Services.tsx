@@ -17,7 +17,7 @@ import { useTranslations } from 'next-intl';
 import { memo } from 'react';
 import services from '../../json/services.json';
 
-const ServicesComp = () => {
+const Services = () => {
   const tg = useTranslations('Global');
   const t = useTranslations('Services');
 
@@ -111,4 +111,4 @@ const ServicesComp = () => {
   );
 };
 
-export default memo(ServicesComp);
+export default memo(Services);
