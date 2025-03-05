@@ -13,25 +13,11 @@ import {
 import { useMediaQuery } from '@mantine/hooks';
 import { IconBrandLinkedin, IconQuoteFilled } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import mission from '../../json/mission.json';
 import ourTeams from '../../json/teams.json';
-
-export async function generateMetadata({
-  params
-}: {
-  params: { lang: string };
-}): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.lang, namespace: 'Global' });
-
-  return {
-    title: t('about_us')
-  };
-}
 
 export default function AboutUsComp() {
   const t = useTranslations('AboutUs');

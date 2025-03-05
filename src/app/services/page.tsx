@@ -4,11 +4,11 @@ import { getTranslations } from 'next-intl/server';
 import { FC } from 'react';
 
 export async function generateMetadata({
-  params
+  params: { lang }
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.lang, namespace: 'Global' });
+  const t = await getTranslations({ locale: lang, namespace: 'Global' });
 
   return { title: t('services') };
 }
