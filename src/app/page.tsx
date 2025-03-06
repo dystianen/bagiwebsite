@@ -221,7 +221,10 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           objectFit="contain"
-                          priority
+                          priority={index === 0}
+                          loading={index === 0 ? 'eager' : 'lazy'}
+                          placeholder="blur"
+                          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                         />
                       </Card>
                     ))}
@@ -246,7 +249,10 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           objectFit="contain"
-                          priority
+                          priority={index === 0}
+                          loading={index === 0 ? 'eager' : 'lazy'}
+                          placeholder="blur"
+                          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                         />
                       </Card>
                     ))}
@@ -290,7 +296,13 @@ const Home = () => {
               >
                 <Card shadow="sm" radius={'md'}>
                   <Flex gap={4} direction={'column'}>
-                    <Image src={it.icon} alt="bagiwebsite" width={400} height={400} />
+                    <Image
+                      src={it.icon}
+                      alt="bagiwebsite"
+                      width={640}
+                      height={427}
+                      blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                    />
                     <h1 className="tw-text-xl tw-font-bold">{t(it.title)}</h1>
                     <p className="tw-text-gray-500">{t(it.description)}</p>
                   </Flex>

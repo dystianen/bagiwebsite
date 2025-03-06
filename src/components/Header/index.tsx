@@ -45,7 +45,8 @@ const Header = () => {
             <Flex gap={4} align="end">
               <Image
                 src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png"
-                alt="BAGIWEBSITE"
+                blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                alt="logo-bagiwebsite"
                 width={30}
                 height={30}
               />

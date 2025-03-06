@@ -44,6 +44,7 @@ const Footer = () => {
               alt="BAGIWEBSITE"
               width={30}
               height={30}
+              blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
             />
             <h1 className="tw-font-bold tw-text-xl">BAGIWEBSITE</h1>
           </Flex>
@@ -55,7 +56,13 @@ const Footer = () => {
                   {sosmed.map((it, index) => (
                     <Link key={index} href={it.href} target="_blank">
                       <Tooltip label={it.label} withArrow>
-                        <Image src={it.icon} alt={it.icon} width={30} height={30} />
+                        <Image
+                          src={it.icon}
+                          alt={it.icon}
+                          width={30}
+                          height={30}
+                          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                        />
                       </Tooltip>
                     </Link>
                   ))}

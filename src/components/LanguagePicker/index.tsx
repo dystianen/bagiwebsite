@@ -46,7 +46,15 @@ export default function LanguagePicker() {
   const items = data.map((item) => (
     <Menu.Item
       key={item.label}
-      leftSection={<Image src={item.image} width={20} height={20} alt={item.label} />}
+      leftSection={
+        <Image
+          src={item.image}
+          width={20}
+          height={20}
+          alt={item.label}
+          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+        />
+      }
       onClick={() => onChange(item)}
       className={`${classes.menuItem} ${
         selected.value === item.value ? classes.activeMenuItem : ''
@@ -61,12 +69,12 @@ export default function LanguagePicker() {
       onOpen={() => setOpened(true)}
       onClose={() => setOpened(false)}
       radius="md"
-      width={isMobile ? 'max-content' : 'target'}
+      width={isMobile ? 200 : 'target'}
       withinPortal
     >
       <Menu.Target>
         <Skeleton visible={loading} w={'max-content'} h={32}>
-          <UnstyledButton className={classes.control} data-expanded={opened || undefined}>
+          <UnstyledButton className={classes.control} aria-expanded={opened}>
             <Group gap="xs">
               <Image src={selected.image} width={20} height={20} alt={selected.label} />
               {!isMobile && <span className={classes.label}>{selected.label}</span>}

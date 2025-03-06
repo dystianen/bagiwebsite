@@ -34,6 +34,7 @@ const Portfolio = () => {
             fill
             priority
             className="tw-object-cover tw-object-top"
+            blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
           />
           <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
         </div>
@@ -93,6 +94,7 @@ const Portfolio = () => {
                         width={600}
                         height={300}
                         className="tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-105"
+                        blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                       />
                     </div>
 
@@ -146,6 +148,8 @@ const Portfolio = () => {
                         alt={it.title}
                         fill
                         className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
+                        priority={index < 3}
+                        blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                       />
                     </Box>
 

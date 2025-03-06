@@ -17,9 +17,24 @@ const ReviewCard = ({ name, rating, comment }: TReviewCard) => {
       m={8}
     >
       <Flex direction={{ base: 'column', md: 'row' }} gap={16}>
-      <Avatar key={name} name={name} color="initials" allowedInitialsColors={['green', 'cyan', 'grape', 'lime', 'blue', 'red', 'indigo', 'orange', 'pink']} />
+        <Avatar
+          key={name}
+          name={name}
+          color="initials"
+          allowedInitialsColors={[
+            'green',
+            'cyan',
+            'grape',
+            'lime',
+            'blue',
+            'red',
+            'indigo',
+            'orange',
+            'pink'
+          ]}
+        />
         <Flex direction={'column'} gap={6}>
-          <h5 className="tw-font-bold">{name}</h5>
+          <p className="tw-font-bold tw-text-lg">{name}</p>
           <Rating value={rating} readOnly />
           <p>{comment}</p>
         </Flex>

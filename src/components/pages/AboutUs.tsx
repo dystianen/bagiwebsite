@@ -46,6 +46,7 @@ export default function AboutUs() {
         <div className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
             src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
+            blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
             alt="about-us"
             fill
             priority
@@ -141,6 +142,7 @@ export default function AboutUs() {
                           style={{
                             filter: 'grayscale(40%)'
                           }}
+                          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                         />
                       </Box>
                     </Card.Section>
@@ -187,7 +189,13 @@ export default function AboutUs() {
               <Flex gap={120} align="center">
                 {partners.map((item, index) => (
                   <Box key={index} w={{ base: 200, md: 250, lg: 280 }} h={100} pos="relative">
-                    <Image src={item} fill style={{ objectFit: 'contain' }} alt={item} />
+                    <Image
+                      src={item}
+                      fill
+                      style={{ objectFit: 'contain' }}
+                      alt={item}
+                      blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                    />
                   </Box>
                 ))}
               </Flex>

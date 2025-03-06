@@ -1,4 +1,4 @@
-import AboutUsComp from '@/src/components/pages/AboutUs';
+import Portfolio from '@/src/components/pages/Portfolio';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -8,4 +8,4 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t('portfolio') };
 }
 
-export default AboutUsComp;
+export default Portfolio;
