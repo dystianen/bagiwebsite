@@ -74,7 +74,7 @@ export default function LanguagePicker() {
     >
       <Menu.Target>
         <Skeleton visible={loading} w={'max-content'} h={32}>
-          <UnstyledButton className={classes.control} aria-expanded={opened}>
+          <UnstyledButton className={classes.control}>
             <Group gap="xs">
               <Image src={selected.image} width={20} height={20} alt={selected.label} />
               {!isMobile && <span className={classes.label}>{selected.label}</span>}
