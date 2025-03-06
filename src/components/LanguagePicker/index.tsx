@@ -69,7 +69,7 @@ export default function LanguagePicker() {
       onOpen={() => setOpened(true)}
       onClose={() => setOpened(false)}
       radius="md"
-      width={isMobile ? 200 : 'target'}
+      width={isMobile ? 130 : 'target'}
       withinPortal
       aria-haspopup="menu"
       aria-expanded={opened}
