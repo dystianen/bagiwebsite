@@ -22,7 +22,6 @@ const data: TData[] = [
 
 export default function LanguagePicker() {
   const isMobile = useMediaQuery('(max-width: 48em)');
-  const [opened, setOpened] = useState(false);
   const [selected, setSelected] = useState<TData>(data[0]);
   const [loading, setLoading] = useState(true);
 
@@ -65,18 +64,12 @@ export default function LanguagePicker() {
   ));
 
   return (
-    <Menu
-      onOpen={() => setOpened(true)}
-      onClose={() => setOpened(false)}
-      radius="md"
-      width={isMobile ? 200 : 'target'}
-      withinPortal
-    >
+    <Menu radius="md" width={isMobile ? 200 : 'target'} withinPortal>
       <Menu.Target>
         <Skeleton visible={loading} w={'max-content'} h={32}>
           <UnstyledButton className={classes.control}>
             <Group gap="xs">
-              <Image src={selected.image} width={20} height={20} alt={selected.label} />
+              <Image src={selected.image} width={20} height={20} alt="" aria-hidden="true" />
               {!isMobile && <span className={classes.label}>{selected.label}</span>}
             </Group>
             <IconChevronDown size={16} className={classes.icon} stroke={1.5} />
