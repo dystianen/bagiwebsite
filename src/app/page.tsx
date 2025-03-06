@@ -69,7 +69,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="tw-bg-pattern-wave tw-bg-cover">
+      <section className="tw-bg-pattern-wave tw-bg-cover tw-bg-no-repeat">
         <Container
           size={'xl'}
           className="tw-flex tw-justify-center tw-gap-4 tw-items-center tw-overflow-hidden"
