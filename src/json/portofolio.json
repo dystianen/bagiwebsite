@@ -6,12 +6,6 @@
     "href": "https://kelaspintar.id"
   },
   {
-    "title": "Ivanami Store - Fashion",
-    "desc": "content_ivanami",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ivanami.png",
-    "href": "https://ivanamistore.bagiwebsite.com"
-  },
-  {
     "title": "Pengen Umroh",
     "desc": "content_pengen_umroh",
     "img": "https://cdn.bagiwebsite.com/assets/thumbnail/pengen_umroh.png",
@@ -22,6 +16,12 @@
     "desc": "content_imagine",
     "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ecommerce_shoes.png",
     "href": "https://imagine.bagiwebsite.com"
+  },
+  {
+    "title": "Ivanami Store - Fashion",
+    "desc": "content_ivanami",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ivanami.png",
+    "href": "https://ivanamistore.bagiwebsite.com"
   },
   {
     "title": "IDI Cabang Tangerang",
