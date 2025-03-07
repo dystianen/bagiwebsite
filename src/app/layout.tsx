@@ -70,7 +70,7 @@ export default async function RootLayout({
         <GoogleAnalytics gaId="G-7F3R2VC5Q5" />
         <MantineProvider theme={theme} defaultColorScheme="dark">
           <NextIntlClientProvider messages={messages}>
-            <NextTopLoader showSpinner={false} />
+            <NextTopLoader showSpinner={false} color={'#1859c5'} />
             <Header />
             <div className="tw-mt-28 lg:tw-mt-8">{children}</div>
             <Footer />
