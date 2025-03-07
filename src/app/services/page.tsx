@@ -5,7 +5,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Global' });
 
-  return { title: t('services') };
+  return {
+    title: t('services'),
+    alternates: {
+      canonical: 'https://bagiwebsite.com/services'
+    }
+  };
 }
 
 export default ServicesComp;
