@@ -7,6 +7,7 @@ import {
   Container,
   Flex,
   Group,
+  Image as MantineImage,
   SimpleGrid,
   Text
 } from '@mantine/core';
@@ -148,8 +149,10 @@ export default function AboutUs() {
                     </Card.Section>
 
                     <Flex direction={'column'} gap={5} mt={{ base: 'xs', md: 'sm' }}>
-                      <Group justify="space-between">
-                        <Text fw={600}>{it.name}</Text>
+                      <Group justify="space-between" wrap="nowrap">
+                        <Text fz={{ base: 12, md: 16 }} fw={600}>
+                          {it.name}
+                        </Text>
                         <ActionIcon
                           variant="transparent"
                           component="a"
@@ -159,7 +162,9 @@ export default function AboutUs() {
                           <IconBrandLinkedin />
                         </ActionIcon>
                       </Group>
-                      <Badge color="pink">{it.position}</Badge>
+                      <Badge color="pink">
+                        <Text fz={{ base: 8, md: 12 }}>{it.position}</Text>
+                      </Badge>
                     </Flex>
                   </Card>
                 </motion.div>
@@ -186,19 +191,16 @@ export default function AboutUs() {
               </Text>
             </Flex>
             <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
-              <Flex gap={120} align="center">
-                {partners.map((item, index) => (
-                  <Box key={index} w={{ base: 200, md: 250, lg: 280 }} h={100} pos="relative">
-                    <Image
-                      src={item}
-                      fill
-                      style={{ objectFit: 'contain' }}
-                      alt={item}
-                      blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
-                    />
-                  </Box>
-                ))}
-              </Flex>
+              {partners.map((item, index) => (
+                <MantineImage
+                  key={index}
+                  className="tw-object-contain"
+                  src={item}
+                  alt={item}
+                  h={{ base: 50 }}
+                  mr={40}
+                />
+              ))}
             </Marquee>
           </motion.div>
         </Container>
