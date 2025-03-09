@@ -62,7 +62,7 @@ const Header = () => {
                     <Link href={it.href} className="tw-relative tw-inline-block">
                       {it.label}
                       <motion.div
-                        className="tw-absolute tw-bottom-0 tw-h-[2px] tw-bg-[#1c7ed6] tw-transform tw--translate-x-1/2"
+                        className="tw-absolute tw-bottom-0 tw-h-[2px] tw-bg-[#1859c5] tw-transform tw--translate-x-1/2"
                         initial={{ scaleX: 0 }}
                         animate={route === it.href ? { scaleX: 1 } : { scaleX: 0 }}
                         transition={{ duration: 0.3, ease: 'easeInOut' }}
