@@ -1,4 +1,4 @@
-import Portfolio from '@/src/components/pages/Portfolio';
+import Portfolio from '@/src/components/pages/portfolio';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
