@@ -1,4 +1,5 @@
 'use client';
+import services from '@/json/services.json';
 import {
   Alert,
   Button,
@@ -15,7 +16,6 @@ import { IconBrandWhatsapp, IconCircleCheck, IconInfoCircle } from '@tabler/icon
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { memo } from 'react';
-import services from '../../json/services.json';
 
 const Services = () => {
   const tg = useTranslations('Global');

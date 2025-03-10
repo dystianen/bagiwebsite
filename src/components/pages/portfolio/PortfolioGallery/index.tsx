@@ -1,10 +1,10 @@
 'use client';
+import portfolio from '@/json/portofolio.json';
 import { Anchor, Box, Group, SimpleGrid } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconExternalLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import portfolio from '../../../../json/portofolio.json';
 
 const PortfolioGallery = () => {
   const isTablet = useMediaQuery('(max-width: 62em)'); // 992px

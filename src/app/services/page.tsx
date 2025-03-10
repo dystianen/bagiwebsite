@@ -1,4 +1,4 @@
-import ServicesComp from '@/src/components/pages/Services';
+import ServicesComp from '@/components/pages/Services';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

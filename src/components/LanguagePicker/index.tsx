@@ -1,6 +1,6 @@
 'use client';
-import { Locale } from '@/src/i18n/config';
-import { getUserLocale, setUserLocale } from '@/src/services/locale';
+import { Locale } from '@/i18n/config';
+import { getUserLocale, setUserLocale } from '@/services/locale';
 import { Group, Menu, Skeleton, UnstyledButton } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';

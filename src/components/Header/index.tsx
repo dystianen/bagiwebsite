@@ -1,4 +1,6 @@
 'use client';
+import LanguagePicker from '@/components/LanguagePicker';
+import ToggleThemes from '@/components/ToggleThemes';
 import { Burger, Button, Container, Divider, Drawer, Flex, Group, Stack } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
@@ -7,8 +9,6 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import LanguagePicker from '../LanguagePicker';
-import ToggleThemes from '../ToggleThemes';
 
 const Header = () => {
   const tg = useTranslations('Global');

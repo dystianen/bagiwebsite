@@ -1,11 +1,11 @@
 'use client';
+import portfolio from '@/json/portofolio.json';
 import { Button, Flex } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconExternalLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import portfolio from '../../../../json/portofolio.json';
 
 const PortfolioDetails = () => {
   const t = useTranslations('Portfolio');

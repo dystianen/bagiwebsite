@@ -1,3 +1,7 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import ScrollToTop from '@/components/ScrollToTop';
+import theme from '@/config/theme';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -6,10 +10,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages, getTranslations } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import ScrollToTop from '../components/ScrollToTop';
-import theme from '../config/theme';
 import './globals.css';
 
 const geistSans = Geist({

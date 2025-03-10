@@ -1,4 +1,9 @@
 'use client';
+import SkeletonWhyUs from '@/components/pages/home/WhyUs/SkeletonWhyUs';
+import ReviewCard from '@/components/ReviewCard';
+import highlightServices from '@/json/highlight_services.json';
+import portfolio from '@/json/portofolio.json';
+import review from '@/json/review.json';
 import {
   Button,
   Card,
@@ -27,13 +32,8 @@ import Image from 'next/image';
 import { useRouter } from 'nextjs-toploader/app';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
-import SkeletonWhyUs from '../components/pages/home/WhyUs/SkeletonWhyUs';
-import ReviewCard from '../components/ReviewCard';
-import highlightServices from '../json/highlight_services.json';
-import portfolio from '../json/portofolio.json';
-import review from '../json/review.json';
 
-const WhyChooseUs = dynamic(() => import('../components/pages/home/WhyUs'), {
+const WhyChooseUs = dynamic(() => import('@/components/pages/home/WhyUs'), {
   ssr: false,
   loading: () => <SkeletonWhyUs />
 });

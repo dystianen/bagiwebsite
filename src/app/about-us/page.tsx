@@ -1,4 +1,4 @@
-import AboutUs from '@/src/components/pages/AboutUs';
+import AboutUs from '@/components/pages/AboutUs';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

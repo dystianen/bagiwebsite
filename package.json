@@ -10,6 +10,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.10.3",
     "@mantine/charts": "^7.15.3",
     "@mantine/code-highlight": "^7.15.3",
     "@mantine/core": "^7.15.3",
@@ -31,6 +32,7 @@
     "@tiptap/starter-kit": "^2.11.2",
     "clsx": "^2.1.1",
     "cookies-next": "^5.1.0",
+    "critters": "^0.0.25",
     "dayjs": "^1.11.13",
     "motion": "^11.18.0",
     "next": "15.1.4",

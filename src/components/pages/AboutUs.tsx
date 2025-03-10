@@ -1,4 +1,6 @@
 'use client';
+import mission from '@/json/mission.json';
+import ourTeams from '@/json/teams.json';
 import {
   ActionIcon,
   Badge,
@@ -17,8 +19,6 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import mission from '../../json/mission.json';
-import ourTeams from '../../json/teams.json';
 
 export default function AboutUs() {
   const t = useTranslations('AboutUs');

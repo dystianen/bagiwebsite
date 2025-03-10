@@ -1,8 +1,8 @@
+import whyUs from '@/json/whyus.json';
 import { Card, Container, Flex, SimpleGrid } from '@mantine/core';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import whyUs from '../../../../json/whyus.json';
 
 const WhyUs = () => {
   const t = useTranslations('HomePage');
