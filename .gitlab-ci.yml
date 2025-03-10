@@ -16,7 +16,7 @@ install_dependencies:
   stage: install
   image: oven/bun
   script:
-    - bun install --frozen-lockfile
+    - bun install
   artifacts:
     paths:
       - node_modules/
