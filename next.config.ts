@@ -9,10 +9,10 @@ const withBundle = withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' 
 const nextConfig: NextConfig = {
   output: 'standalone',
   experimental: {
-    optimizeCss: true, // Optimasi CSS (pastikan `critters` terinstal)
-    nextScriptWorkers: true // Gunakan worker thread untuk memproses script
+    optimizeCss: true, // Optimasi CSS
+    nextScriptWorkers: true // Worker thread untuk memproses script
   },
-  productionBrowserSourceMaps: false, // Hilangkan source map agar build lebih kecil
+  productionBrowserSourceMaps: false, // Menghilangkan source map agar build lebih kecil
   sassOptions: {
     implementation: require.resolve('sass')
   },
@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
       '@': path.resolve(__dirname, 'src')
     };
 
-    // Hilangkan dependensi yang tidak diperlukan di client-side
+    // Menghilangkan dependensi yang tidak diperlukan di client-side
     if (!isServer) {
       config.resolve.fallback = { fs: false, net: false, tls: false };
     }
