@@ -74,7 +74,7 @@ export default async function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <GoogleAnalytics gaId="G-7F3R2VC5Q5" />
+        {process.env.NODE_ENV === 'production' && <GoogleAnalytics gaId="G-7F3R2VC5Q5" />}
         <MantineProvider theme={theme} defaultColorScheme="dark">
           <NextIntlClientProvider messages={messages}>
             <NextTopLoader showSpinner={false} color={'#1859c5'} />
