@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bagiwebsite.com/#website",
+      "url": "https://bagiwebsite.com/",
+      "name": "BAGIWEBSITE",
+      "description": "BAGIWEBSITE adalah platform yang menyediakan jasa pembuatan website profesional untuk bisnis dan individu.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "BAGIWEBSITE",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bagiwebsite.com/assets/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bagiwebsite.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bagiwebsite.com/#organization",
+      "name": "BAGIWEBSITE",
+      "url": "https://bagiwebsite.com/",
+      "logo": "https://bagiwebsite.com/assets/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/bagiwebsite",
+        "https://www.linkedin.com/company/bagiwebsite",
+        "https://twitter.com/bagiwebsite"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-812-3456-7890",
+        "contactType": "customer service",
+        "availableLanguage": ["Indonesian", "English"]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "BAGIWEBSITE",
+      "image": "https://bagiwebsite.com/assets/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Contoh No.123",
+        "addressLocality": "Jakarta",
+        "addressCountry": "ID",
+        "postalCode": "10110"
+      },
+      "priceRange": "$$",
+      "telephone": "+62-812-3456-7890",
+      "url": "https://bagiwebsite.com/"
+    },
+    {
+      "@type": "Service",
+      "name": "Jasa Pembuatan Website",
+      "provider": {
+        "@type": "Organization",
+        "name": "BAGIWEBSITE"
+      },
+      "serviceType": ["Website Development", "UI/UX Design", "Web Maintenance", "SEO Optimization"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
+      "availableLanguage": ["Indonesian", "English"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bagiwebsite.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Layanan",
+          "item": "https://bagiwebsite.com/layanan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Portofolio",
+          "item": "https://bagiwebsite.com/portofolio"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa itu BAGIWEBSITE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BAGIWEBSITE adalah penyedia layanan pembuatan website profesional untuk bisnis dan individu dengan desain modern dan fitur lengkap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa harga pembuatan website di BAGIWEBSITE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Harga pembuatan website tergantung pada kompleksitas dan fitur yang diinginkan. Silakan hubungi kami untuk mendapatkan penawaran terbaik."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah BAGIWEBSITE menyediakan layanan SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, kami menyediakan layanan optimasi SEO agar website Anda lebih mudah ditemukan di Google."
+          }
+        }
+      ]
+    }
+  ]
+}
