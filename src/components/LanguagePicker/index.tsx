@@ -79,7 +79,7 @@ export default function LanguagePicker() {
         <Skeleton visible={loading} w={'max-content'} h={32}>
           <UnstyledButton className={classes.control} aria-label={selected.label}>
             <Group gap="xs">
-              <Image src={selected.image} width={20} height={20} alt="" aria-hidden />
+              <Image src={selected.image} width={20} height={20} alt={selected.label} aria-hidden />
               {!isMobile && <span className={classes.label}>{selected.label}</span>}
             </Group>
             <IconChevronDown size={16} className={classes.icon} stroke={1.5} />

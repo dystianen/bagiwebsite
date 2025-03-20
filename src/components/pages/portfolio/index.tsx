@@ -39,7 +39,7 @@ const Portfolio = () => {
         <div className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
             src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
-            alt="about-us"
+            alt="portfolio"
             fill
             priority
             className="tw-object-cover tw-object-top"
