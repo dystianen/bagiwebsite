@@ -29,7 +29,7 @@ const Services = () => {
 
   return (
     <>
-      <section className="tw-mt-32">
+      <header className="tw-mt-32">
         <Container size={'xl'}>
           <Flex gap={24} direction={'column'} align={'center'} w={'100%'}>
             <h1 className="tw-text-4xl md:tw-text-6xl lg:tw-text-8xl tw-text-center tw-tracking-[0.4em]">
@@ -49,7 +49,7 @@ const Services = () => {
                 variant="light"
                 color="yellow"
                 title={t('consultation.title')}
-                icon={<IconInfoCircle />}
+                icon={<IconInfoCircle aria-label="Info" />}
               >
                 {t('consultation.content')}
               </Alert>
@@ -57,56 +57,59 @@ const Services = () => {
           </Flex>
         </Container>
         <Divider w={'100%'} mt={'xl'} />
-      </section>
+      </header>
 
-      <section className="tw-my-10 tw-flex tw-w-full">
-        <Container size={'xl'} w={'100%'}>
-          <SimpleGrid cols={{ base: 1, sm: 2, md: 3, lg: 4 }}>
-            {services.map((it, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  duration: 1,
-                  delay: 0.2 * index
-                }}
-                viewport={{ once: true }}
-                className="tw-h-full"
-              >
-                <Card key={index} shadow="md" radius="md" h={'100%'}>
-                  <Stack justify="space-between" h={'100%'}>
-                    <Stack>
-                      <h1 className="tw-text-xl tw-font-semibold">{t(it.name)}</h1>
-                      <List
-                        spacing="md"
-                        className="tw-text-gray-500"
-                        center
-                        icon={
-                          <ThemeIcon color="lime" size={24} radius="xl">
-                            <IconCircleCheck size={16} />
-                          </ThemeIcon>
-                        }
+      <main>
+        <section className="tw-my-10 tw-flex tw-w-full">
+          <Container size={'xl'} w={'100%'}>
+            <SimpleGrid cols={{ base: 1, sm: 2, md: 3, lg: 4 }}>
+              {services.map((it, index) => (
+                <motion.article
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.2 * index
+                  }}
+                  viewport={{ once: true }}
+                  className="tw-h-full"
+                >
+                  <Card shadow="md" radius="md" h={'100%'}>
+                    <Stack justify="space-between" h={'100%'}>
+                      <Stack>
+                        <h3 className="tw-text-xl tw-font-semibold">{t(it.name)}</h3>
+                        <List
+                          spacing="md"
+                          className="tw-text-gray-500"
+                          center
+                          icon={
+                            <ThemeIcon color="lime" size={24} radius="xl">
+                              <IconCircleCheck size={16} aria-label="Check" />
+                            </ThemeIcon>
+                          }
+                        >
+                          {it.features.map((item, i) => (
+                            <List.Item key={i}>{t(item)}</List.Item>
+                          ))}
+                        </List>
+                      </Stack>
+                      <Button
+                        radius={'xl'}
+                        leftSection={<IconBrandWhatsapp aria-label="WhatsApp" />}
+                        onClick={() => handleClickService(t(it.name))}
+                        aria-label={`Pesan layanan ${t(it.name)}`}
                       >
-                        {it.features.map((item, index) => (
-                          <List.Item key={index}>{t(item)}</List.Item>
-                        ))}
-                      </List>
+                        {tg('contact_us')}
+                      </Button>
                     </Stack>
-                    <Button
-                      radius={'xl'}
-                      leftSection={<IconBrandWhatsapp />}
-                      onClick={() => handleClickService(t(it.name))}
-                    >
-                      {tg('contact_us')}
-                    </Button>
-                  </Stack>
-                </Card>
-              </motion.div>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </section>
+                  </Card>
+                </motion.article>
+              ))}
+            </SimpleGrid>
+          </Container>
+        </section>
+      </main>
     </>
   );
 };

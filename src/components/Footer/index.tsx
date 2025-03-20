@@ -46,7 +46,7 @@ const Footer = () => {
               height={30}
               blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
             />
-            <h1 className="tw-font-bold tw-text-xl">BAGIWEBSITE</h1>
+            <h2 className="tw-font-bold tw-text-xl">BAGIWEBSITE</h2>
           </Flex>
           <Grid justify="space-between" gutter={{ base: 'xl' }} align="center">
             <Grid.Col span={{ base: 12, md: 4 }}>

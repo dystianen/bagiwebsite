@@ -1,35 +1,15 @@
 'use client';
+import ReviewsSection from '@/components/pages/home/ReviewsSection';
+import ServicesSection from '@/components/pages/home/ServicesSection';
 import SkeletonWhyUs from '@/components/pages/home/WhyUs/SkeletonWhyUs';
-import ReviewCard from '@/components/ReviewCard';
-import highlightServices from '@/json/highlight_services.json';
 import portfolio from '@/json/portofolio.json';
-import review from '@/json/review.json';
-import {
-  Button,
-  Card,
-  Container,
-  Divider,
-  Flex,
-  Grid,
-  List,
-  Stack,
-  Text,
-  ThemeIcon
-} from '@mantine/core';
+import { Button, Card, Container, Divider, Flex, Grid } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import {
-  IconArrowDown,
-  IconArrowRight,
-  IconBuildings,
-  IconBusinessplan,
-  IconCircleCheck,
-  IconUser
-} from '@tabler/icons-react';
+import { IconArrowDown, IconBuildings, IconBusinessplan, IconUser } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { useRouter } from 'nextjs-toploader/app';
 import { memo, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 
@@ -39,9 +19,7 @@ const WhyChooseUs = dynamic(() => import('@/components/pages/home/WhyUs'), {
 });
 
 const Home = () => {
-  const router = useRouter();
   const t = useTranslations('HomePage');
-  const tg = useTranslations('Global');
   const isMobile = useMediaQuery('(max-width: 62em)');
 
   const refWhyUs = useRef<HTMLInputElement>(null);
@@ -57,10 +35,6 @@ const Home = () => {
   const halfLength = Math.ceil(portfolio.length / 2);
   const firstHalf = portfolio.slice(0, halfLength);
   const secondHalf = portfolio.slice(halfLength);
-
-  const handleMoreDetailServices = () => {
-    router.push('/services');
-  };
 
   const renderProps = isMobile
     ? {
@@ -177,17 +151,17 @@ const Home = () => {
                     >
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconUser size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">{t('individuals')}</h1>
+                        <h5 className="tw-text-lg">{t('individuals')}</h5>
                       </Flex>
                       <Divider orientation="vertical" />
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconBusinessplan size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">{t('bussiness')}</h1>
+                        <h5 className="tw-text-lg">{t('bussiness')}</h5>
                       </Flex>
                       <Divider orientation="vertical" />
                       <Flex direction={'column'} gap={4} align={'center'}>
                         <IconBuildings size={isMobile ? 30 : 40} />
-                        <h1 className="tw-text-lg">{t('companies')}</h1>
+                        <h5 className="tw-text-lg">{t('companies')}</h5>
                       </Flex>
                     </Flex>
                   </Card>
@@ -269,120 +243,16 @@ const Home = () => {
         </Container>
       </section>
 
-      <section ref={refWhyUs} className="tw-my-20 tw-flex tw-items-center tw-w-full">
+      <section
+        ref={refWhyUs}
+        className="tw-my-20 tw-flex tw-items-center tw-justify-center tw-w-full"
+      >
         <WhyChooseUs />
       </section>
 
-      <Card className={'tw-py-8'}>
-        <Container size={'xl'} w={'100%'}>
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1
-            }}
-            viewport={{ once: true }}
-          >
-            <Flex
-              direction={{ base: 'column', md: 'row' }}
-              align={{ base: 'center', md: 'start' }}
-              gap={60}
-            >
-              <Image
-                src={'https://cdn.bagiwebsite.com/assets/images/highlight_services.png'}
-                width={350}
-                height={400}
-                alt="Services"
-              />
-              <Stack align="start" gap="lg">
-                <h1 className="tw-text-2xl md:tw-text-4xl tw-font-semibold">
-                  {t('our_services.title')}
-                </h1>
-                <p className="tw-max-w-2xl tw-text-gray-500">{t('our_services.description')}</p>
+      <ServicesSection />
 
-                <List
-                  spacing="md"
-                  className="tw-text-gray-500"
-                  center
-                  icon={
-                    <ThemeIcon color="lime" size={24} radius="xl">
-                      <IconCircleCheck size={16} />
-                    </ThemeIcon>
-                  }
-                >
-                  {highlightServices.map((item, index) => (
-                    <List.Item key={index}>{t(item)}</List.Item>
-                  ))}
-                </List>
-
-                <motion.div
-                  whileHover={{
-                    scale: 1.1
-                  }}
-                  whileTap={{
-                    scale: 1.1
-                  }}
-                  transition={{
-                    duration: 0.2,
-                    ease: 'easeInOut'
-                  }}
-                >
-                  <Button
-                    radius={'xl'}
-                    px={'xl'}
-                    rightSection={
-                      <motion.div
-                        animate={{
-                          x: [0, 5, 0]
-                        }}
-                        transition={{
-                          duration: 0.8,
-                          repeat: Infinity,
-                          ease: 'easeInOut'
-                        }}
-                      >
-                        <IconArrowRight />
-                      </motion.div>
-                    }
-                    onClick={handleMoreDetailServices}
-                  >
-                    {tg('more_detail')}
-                  </Button>
-                </motion.div>
-              </Stack>
-            </Flex>
-          </motion.div>
-        </Container>
-      </Card>
-
-      <section className="tw-h-[500px] tw-my-10 tw-flex tw-items-center tw-w-full">
-        <Container size={'xl'} w={'100%'}>
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 1
-            }}
-            viewport={{ once: true }}
-            style={{ width: '100%' }}
-          >
-            <Flex direction={'column'} align={'center'} mb={40} gap={16}>
-              <Text className="tw-text-2xl md:tw-text-4xl tw-text-center tw-font-semibold">
-                {t('reviews.reviews_header.title')}
-              </Text>
-              <Text className="tw-max-w-2xl tw-text-center tw-text-gray-500">
-                {t('reviews.reviews_header.description')}
-              </Text>
-            </Flex>
-
-            <Marquee gradient={!isMobile} gradientColor={'var(--mantine-color-body)'}>
-              {review.map((it, index) => (
-                <ReviewCard key={index} name={it.name} rating={it.rating} comment={t(it.comment)} />
-              ))}
-            </Marquee>
-          </motion.div>
-        </Container>
-      </section>
+      <ReviewsSection />
     </>
   );
 };
