@@ -6,7 +6,7 @@
       "@id": "https://bagiwebsite.com/#website",
       "url": "https://bagiwebsite.com/",
       "name": "BAGIWEBSITE",
-      "description": "BAGIWEBSITE adalah platform yang menyediakan jasa pembuatan website profesional untuk bisnis dan individu.",
+      "description": "BAGIWEBSITE is a platform that provides professional website development services for businesses and individuals.",
       "publisher": {
         "@type": "Organization",
         "name": "BAGIWEBSITE",
@@ -26,7 +26,7 @@
       "@id": "https://bagiwebsite.com/#organization",
       "name": "BAGIWEBSITE",
       "url": "https://bagiwebsite.com/",
-      "logo": "https://bagiwebsite.com/assets/logo.png",
+      "logo": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png",
       "sameAs": [
         "https://www.instagram.com/bagiwebsite",
         "https://www.linkedin.com/company/bagiwebsite",
@@ -34,7 +34,7 @@
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+62-812-3456-7890",
+        "telephone": "+62 877-6383-2505",
         "contactType": "customer service",
         "availableLanguage": ["Indonesian", "English"]
       }
@@ -42,26 +42,32 @@
     {
       "@type": "LocalBusiness",
       "name": "BAGIWEBSITE",
-      "image": "https://bagiwebsite.com/assets/logo.png",
+      "image": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Jl. Contoh No.123",
+        "streetAddress": "Jl. H. R. Rasuna Said No.13, RT.7/RW.2, Kuningan, Setiabudi District, South Jakarta City, Special Capital Region of Jakarta 12950",
         "addressLocality": "Jakarta",
         "addressCountry": "ID",
-        "postalCode": "10110"
+        "postalCode": "12950"
       },
       "priceRange": "$$",
-      "telephone": "+62-812-3456-7890",
+      "telephone": "+62 877-6383-2505",
       "url": "https://bagiwebsite.com/"
     },
     {
       "@type": "Service",
-      "name": "Jasa Pembuatan Website",
+      "name": "Website Development Service",
       "provider": {
         "@type": "Organization",
         "name": "BAGIWEBSITE"
       },
-      "serviceType": ["Website Development", "UI/UX Design", "Web Maintenance", "SEO Optimization"],
+      "serviceType": [
+        "Website Development",
+        "Mobile Apps Development",
+        "UI/UX Design",
+        "Web Maintenance",
+        "SEO Optimization"
+      ],
       "areaServed": {
         "@type": "Country",
         "name": "Indonesia"
@@ -80,13 +86,13 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Layanan",
+          "name": "Services",
           "item": "https://bagiwebsite.com/layanan"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Portofolio",
+          "name": "Portfolio",
           "item": "https://bagiwebsite.com/portofolio"
         }
       ]
@@ -96,26 +102,26 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Apa itu BAGIWEBSITE?",
+          "name": "What is BAGIWEBSITE?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "BAGIWEBSITE adalah penyedia layanan pembuatan website profesional untuk bisnis dan individu dengan desain modern dan fitur lengkap."
+            "text": "BAGIWEBSITE is a provider of professional website development services for businesses and individuals, offering modern designs and complete features."
           }
         },
         {
           "@type": "Question",
-          "name": "Berapa harga pembuatan website di BAGIWEBSITE?",
+          "name": "How much does it cost to create a website with BAGIWEBSITE?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Harga pembuatan website tergantung pada kompleksitas dan fitur yang diinginkan. Silakan hubungi kami untuk mendapatkan penawaran terbaik."
+            "text": "The cost of website development depends on the complexity and features required. Please contact us to get the best offer."
           }
         },
         {
           "@type": "Question",
-          "name": "Apakah BAGIWEBSITE menyediakan layanan SEO?",
+          "name": "Does BAGIWEBSITE provide SEO services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ya, kami menyediakan layanan optimasi SEO agar website Anda lebih mudah ditemukan di Google."
+            "text": "Yes, we provide SEO optimization services to make your website more easily found on Google."
           }
         }
       ]
