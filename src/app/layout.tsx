@@ -49,7 +49,7 @@ export async function generateMetadata({
     },
     description: t('desc'),
     openGraph: {
-      images: 'https://cdn.bagiwebsite.com/assets/thumbnail/thumbnail_bagiwebsite.png'
+      images: 'https://cdn.bagiwebsite.com/assets/thumbnail/bagiwebsite.webp'
     }
   };
 }

@@ -32,7 +32,7 @@ const ServicesSection = () => {
             gap={60}
           >
             <Image
-              src={'https://cdn.bagiwebsite.com/assets/images/highlight_services.png'}
+              src={'https://cdn.bagiwebsite.com/assets/images/highlight_services.webp'}
               width={350}
               height={400}
               alt="Services"

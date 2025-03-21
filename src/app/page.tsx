@@ -199,7 +199,7 @@ const Home = () => {
                           alt={it.title}
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
-                          objectFit="contain"
+                          style={{ objectFit: 'contain' }}
                           priority={index === 0}
                           loading={index === 0 ? 'eager' : 'lazy'}
                           placeholder="blur"
@@ -227,7 +227,7 @@ const Home = () => {
                           alt={it.title}
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
-                          objectFit="contain"
+                          style={{ objectFit: 'contain' }}
                           priority={index === 0}
                           loading={index === 0 ? 'eager' : 'lazy'}
                           placeholder="blur"

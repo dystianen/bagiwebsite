@@ -26,11 +26,11 @@ export default function AboutUs() {
 
   const partners = [
     'https://cdn.bagiwebsite.com/assets/images/logo_kelaspintar.svg',
-    'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.png',
-    'https://cdn.bagiwebsite.com/assets/images/logo_idi.png',
-    'https://cdn.bagiwebsite.com/assets/images/logo_pertamina.png',
-    'https://cdn.bagiwebsite.com/assets/images/logo_stms.png',
-    'https://cdn.bagiwebsite.com/assets/images/logo_astra.png'
+    'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.webp',
+    'https://cdn.bagiwebsite.com/assets/images/logo_idi.webp',
+    'https://cdn.bagiwebsite.com/assets/images/logo_pertamina.webp',
+    'https://cdn.bagiwebsite.com/assets/images/logo_stms.webp',
+    'https://cdn.bagiwebsite.com/assets/images/logo_astra.webp'
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function AboutUs() {
         {/* Background Image */}
         <figure className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
-            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
+            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
             blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
             alt="about-us"
             fill
@@ -124,12 +124,12 @@ export default function AboutUs() {
               {ourTeams.map((it, index) => (
                 <Card key={index} shadow="sm" radius="md" p="md">
                   <Card.Section>
-                    <Box h={{ base: 180, md: 300 }} w={{ base: '100%', md: 300 }} pos="relative">
+                    <Box h={{ base: 180, md: 300 }} w={'100%'} pos="relative">
                       <Image
                         src={it.image}
                         alt={it.name}
                         fill
-                        objectFit="cover"
+                        style={{ objectFit: 'cover' }}
                         className="tw-filter tw-grayscale-[40%]"
                         blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                       />

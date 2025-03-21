@@ -26,7 +26,7 @@
       "@id": "https://bagiwebsite.com/#organization",
       "name": "BAGIWEBSITE",
       "url": "https://bagiwebsite.com/",
-      "logo": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png",
+      "logo": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.webp",
       "sameAs": [
         "https://www.instagram.com/bagiwebsite",
         "https://www.linkedin.com/company/bagiwebsite",
@@ -42,7 +42,7 @@
     {
       "@type": "LocalBusiness",
       "name": "BAGIWEBSITE",
-      "image": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png",
+      "image": "https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. H. R. Rasuna Said No.13, RT.7/RW.2, Kuningan, Setiabudi District, South Jakarta City, Special Capital Region of Jakarta 12950",

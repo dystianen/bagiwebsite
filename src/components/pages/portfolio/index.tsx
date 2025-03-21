@@ -37,7 +37,7 @@ const Portfolio = () => {
 
         <figure className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
-            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.jpg"
+            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
             alt="Seorang pebisnis sedang bekerja di depan laptop"
             fill
             priority

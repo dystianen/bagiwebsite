@@ -40,7 +40,7 @@ const Footer = () => {
         <Container p={0} size={'xl'} className="tw-flex tw-flex-col tw-gap-2 tw-w-full">
           <Flex gap={4} align={'center'}>
             <Image
-              src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.png"
+              src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.webp"
               alt="BAGIWEBSITE"
               width={30}
               height={30}

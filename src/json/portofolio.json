@@ -2,91 +2,91 @@
   {
     "title": "Kelas Pintar",
     "desc": "content_kelas_pintar",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/kp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/kp.webp",
     "href": "https://kelaspintar.id"
   },
   {
     "title": "Imagine Store - Shoes",
     "desc": "content_imagine",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ecommerce_shoes.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ecommerce_shoes.webp",
     "href": "https://imagine.bagiwebsite.com"
   },
   {
     "title": "Ivanami Store - Fashion",
     "desc": "content_ivanami",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ivanami.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ivanami.webp",
     "href": "https://ivanamistore.bagiwebsite.com"
   },
   {
     "title": "Landing Page - Staycation",
     "desc": "content_staycation",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/staycation.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/staycation.webp",
     "href": "https://staycation-hotel.vercel.app"
   },
   {
     "title": "Landing Page - Trustlink",
     "desc": "content_trustlink",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/trustlink.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/trustlink.webp",
     "href": "https://www.withtrustlink.com"
   },
   {
     "title": "Battle Tryout - Kelas Pintar",
     "desc": "content_battle_tryout",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/battle-pintar.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/battle-pintar.webp",
     "href": "https://battle-pintar.vercel.app"
   },
   {
     "title": "Absensi Karyawan",
     "desc": "content_absensi",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/absensi.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/absensi.webp",
     "href": "https://absensi.bagiwebsite.com"
   },
   {
     "title": "Ditaman Store - services",
     "desc": "content_ditaman",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ditaman.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/ditaman.webp",
     "href": "https://ditaman.id"
   },
   {
     "title": "SPPBE Dashbord System",
     "desc": "content_sppbe",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/sppbe.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/sppbe.webp",
     "href": "#"
   },
   {
     "title": "Perpustakaan - SIPERPUS",
     "desc": "content_siperpus",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/siperpus.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/siperpus.webp",
     "href": "#"
   },
   {
     "title": "Open Banking App",
     "desc": "content_open_banking",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/open-banking.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/open-banking.webp",
     "href": "#"
   },
   {
     "title": "GMP Coin",
     "desc": "content_gmp",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/gmp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/gmp.webp",
     "href": "#"
   },
   {
     "title": "CariParkir BOTS",
     "desc": "content_cariparkir",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/cp.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/cp.webp",
     "href": "#"
   },
   {
     "title": "Sport Massage",
     "desc": "content_sport_massage",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/massage.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/massage.webp",
     "href": "#"
   },
   {
     "title": "Asy-Syfa’",
     "desc": "content_asy_syifa",
-    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/syfa.png",
+    "img": "https://cdn.bagiwebsite.com/assets/thumbnail/syfa.webp",
     "href": "#"
   }
 ]

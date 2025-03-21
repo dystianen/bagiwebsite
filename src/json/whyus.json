@@ -1,31 +1,31 @@
 [
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/experience.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/experience.webp",
     "title": "professionalExperience.title",
     "description": "professionalExperience.description"
   },
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/services.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/services.webp",
     "title": "comprehensiveServices.title",
     "description": "comprehensiveServices.description"
   },
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/customization.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/customization.webp",
     "title": "customization.title",
     "description": "customization.description"
   },
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/support.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/support.webp",
     "title": "responsiveSupport.title",
     "description": "responsiveSupport.description"
   },
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/competitive.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/competitive.webp",
     "title": "competitivePricing.title",
     "description": "competitivePricing.description"
   },
   {
-    "icon": "https://cdn.bagiwebsite.com/assets/images/guarantee.png",
+    "icon": "https://cdn.bagiwebsite.com/assets/images/guarantee.webp",
     "title": "satisfactionGuarantee.title",
     "description": "satisfactionGuarantee.description"
   }
