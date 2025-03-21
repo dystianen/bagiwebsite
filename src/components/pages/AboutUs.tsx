@@ -26,10 +26,10 @@ export default function AboutUs() {
 
   const partners = [
     'https://cdn.bagiwebsite.com/assets/images/logo_kelaspintar.svg',
-    'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.webp',
-    'https://cdn.bagiwebsite.com/assets/images/logo_idi.webp',
+    // 'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.webp',
+    // 'https://cdn.bagiwebsite.com/assets/images/logo_idi.webp',
     'https://cdn.bagiwebsite.com/assets/images/logo_pertamina.webp',
-    'https://cdn.bagiwebsite.com/assets/images/logo_stms.webp',
+    // 'https://cdn.bagiwebsite.com/assets/images/logo_stms.webp',
     'https://cdn.bagiwebsite.com/assets/images/logo_astra.webp'
   ];
 
@@ -163,7 +163,7 @@ export default function AboutUs() {
 
       {/* Mitra Kami */}
       <section className="tw-flex tw-items-center tw-w-full tw-h-[300px]">
-        <Container size="xl" w={'100%'}>
+        <Container size="sm" w={'100%'}>
           <motion.article
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
