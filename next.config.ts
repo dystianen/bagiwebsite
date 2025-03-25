@@ -9,7 +9,8 @@ const withBundle = withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' 
 const nextConfig: NextConfig = {
   output: 'standalone',
   experimental: {
-    optimizeCss: true // Optimasi CSS
+    optimizeCss: true, // Optimasi CSS
+    nextScriptWorkers: true // Worker thread untuk memproses script
   },
   productionBrowserSourceMaps: false, // Menghilangkan source map agar build lebih kecil
   sassOptions: {
