@@ -2,6 +2,7 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
 
 const withNextIntl = createNextIntlPlugin();
 const withBundle = withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
@@ -42,10 +43,27 @@ const nextConfig: NextConfig = {
       use: ['@svgr/webpack']
     });
 
-    config.optimization.splitChunks = {
-      chunks: 'all', // Memisahkan semua chunk yang memungkinkan
-      minSize: 20000, // Minimum size untuk dipisahkan
-      maxSize: 100000 // Maksimum size sebelum dipisahkan lagi
+    config.optimization = {
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          terserOptions: {
+            compress: {
+              drop_console: true,
+              pure_funcs: ['console.info', 'console.debug']
+            },
+            format: {
+              comments: false
+            }
+          },
+          extractComments: false
+        })
+      ],
+      splitChunks: {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 80000
+      }
     };
 
     return config;
