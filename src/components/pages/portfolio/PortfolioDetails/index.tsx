@@ -35,6 +35,8 @@ const PortfolioDetails = () => {
                   height={300}
                   className="tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-105"
                   blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                  fetchPriority="low"
+                  loading="lazy"
                 />
                 <figcaption className="tw-sr-only">{`Preview dari proyek ${it.title}`}</figcaption>
               </figure>

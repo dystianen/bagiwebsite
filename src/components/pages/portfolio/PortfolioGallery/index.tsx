@@ -34,7 +34,8 @@ const PortfolioGallery = () => {
                     alt={`Tampilan proyek ${it.title}`}
                     fill
                     className="tw-w-full tw-h-auto tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-105"
-                    priority={index < 3}
+                    fetchPriority="low"
+                    loading="lazy"
                     blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                   />
                 </Box>

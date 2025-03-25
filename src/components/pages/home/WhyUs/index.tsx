@@ -42,6 +42,8 @@ const WhyUs = () => {
                     height={427}
                     placeholder="blur"
                     blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                    fetchPriority="low"
+                    loading="lazy"
                   />
                   <h3 className="tw-text-xl tw-font-bold">{t(it.title)}</h3>
                   <p className="tw-text-gray-500">{t(it.description)}</p>

@@ -200,8 +200,9 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           style={{ objectFit: 'contain' }}
-                          priority={index === 0}
-                          loading={index === 0 ? 'eager' : 'lazy'}
+                          fetchPriority="high"
+                          loading="eager"
+                          priority
                           placeholder="blur"
                           blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                         />
@@ -228,8 +229,9 @@ const Home = () => {
                           width={renderProps.widthImage}
                           height={renderProps.heightImage}
                           style={{ objectFit: 'contain' }}
-                          priority={index === 0}
-                          loading={index === 0 ? 'eager' : 'lazy'}
+                          fetchPriority="high"
+                          loading="eager"
+                          priority
                           placeholder="blur"
                           blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
                         />

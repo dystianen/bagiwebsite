@@ -62,6 +62,8 @@ const Footer = () => {
                           width={30}
                           height={30}
                           blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                          fetchPriority="low"
+                          loading="lazy"
                         />
                       </Tooltip>
                     </Link>

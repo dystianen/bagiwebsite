@@ -48,10 +48,12 @@ export default function AboutUs() {
           <Image
             src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
             blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
-            alt="about-us"
-            fill
-            priority
             className="tw-object-cover tw-object-top"
+            alt="about-us"
+            fetchPriority="high"
+            loading="eager"
+            priority
+            fill
           />
           <div className="tw-absolute tw-inset-0 tw-bg-black tw-opacity-40"></div>
         </figure>
@@ -129,6 +131,8 @@ export default function AboutUs() {
                         src={it.image}
                         alt={it.name}
                         fill
+                        fetchPriority="low"
+                        loading="lazy"
                         style={{ objectFit: 'cover' }}
                         className="tw-filter tw-grayscale-[40%]"
                         blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
@@ -182,6 +186,8 @@ export default function AboutUs() {
                   alt={item}
                   h={{ base: 50 }}
                   mr={40}
+                  fetchPriority="low"
+                  loading="lazy"
                 />
               ))}
             </Marquee>

@@ -38,11 +38,13 @@ const Portfolio = () => {
         <figure className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
             src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
-            alt="Seorang pebisnis sedang bekerja di depan laptop"
-            fill
-            priority
-            className="tw-object-cover tw-object-top"
             blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+            className="tw-object-cover tw-object-top"
+            alt="portfolio-bagiwebsite"
+            fetchPriority="high"
+            loading="eager"
+            priority
+            fill
           />
           <figcaption className="tw-hidden">
             Portfolio bisnis dan proyek-proyek yang telah dikerjakan.
