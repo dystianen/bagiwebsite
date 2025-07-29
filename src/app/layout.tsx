@@ -48,6 +48,12 @@ export async function generateMetadata({
       template: '%s | BAGIWEBSITE'
     },
     description: t('desc'),
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('desc'),
+      images: ['https://cdn.bagiwebsite.com/assets/thumbnail/bagiwebsite.webp']
+    },
     openGraph: {
       images: 'https://cdn.bagiwebsite.com/assets/thumbnail/bagiwebsite.webp'
     }
