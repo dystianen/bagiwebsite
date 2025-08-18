@@ -15,17 +15,17 @@ import {
 import { IconBrandWhatsapp, IconCircleCheck, IconInfoCircle } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 
 const Services = () => {
   const tg = useTranslations('Global');
   const t = useTranslations('Services');
 
-  const handleClickService = (keyword: string) => {
+  const handleClickService = useCallback((keyword: string) => {
     window.open(
       `https://api.whatsapp.com/send?phone=+6287763832505&text=Halo, saya ingin memesan layanan ${keyword}!`
     );
-  };
+  }, []);
 
   return (
     <>
