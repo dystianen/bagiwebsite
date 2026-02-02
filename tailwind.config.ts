@@ -10,7 +10,7 @@ export default {
         foreground: 'var(--foreground)'
       },
       backgroundImage: {
-        'pattern-wave': "url('https://cdn.bagiwebsite.com/assets/backgrounds/pattern_wave.svg')"
+        'pattern-wave': "url('https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/backgrounds/pattern_wave.svg')"
       },
       screens: {
         xxs: { max: '24em' } // 400px

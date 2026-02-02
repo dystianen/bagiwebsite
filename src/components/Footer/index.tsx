@@ -8,27 +8,27 @@ const Footer = () => {
   const t = useTranslations('Footer');
   const sosmed = [
     {
-      icon: 'https://cdn.bagiwebsite.com/assets/icons/whatsapp.png',
+      icon: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/icons/whatsapp.png',
       label: 'Whatsapp',
       href: 'https://wa.me/+6287763832505'
     },
     {
-      icon: 'https://cdn.bagiwebsite.com/assets/icons/gmail.png',
+      icon: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/icons/gmail.png',
       label: 'Email',
       href: 'mailto:websitebagi@gmail.com'
     },
     {
-      icon: 'https://cdn.bagiwebsite.com/assets/icons/instagram.png',
+      icon: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/icons/instagram.png',
       label: 'Instagram',
       href: '#'
     },
     {
-      icon: 'https://cdn.bagiwebsite.com/assets/icons/facebook.png',
+      icon: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/icons/facebook.png',
       label: 'Facebook',
       href: '#'
     },
     {
-      icon: 'https://cdn.bagiwebsite.com/assets/icons/linkedin.png',
+      icon: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/icons/linkedin.png',
       label: 'Linkedin',
       href: '#'
     }
@@ -40,11 +40,11 @@ const Footer = () => {
         <Container p={0} size={'xl'} className="tw-flex tw-flex-col tw-gap-2 tw-w-full">
           <Flex gap={4} align={'center'}>
             <Image
-              src="https://cdn.bagiwebsite.com/assets/images/logo_bagiwebsite.webp"
+              src="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_bagiwebsite.webp"
               alt="BAGIWEBSITE"
               width={30}
               height={30}
-              blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+              blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
             />
             <h2 className="tw-font-bold tw-text-xl">BAGIWEBSITE</h2>
           </Flex>
@@ -61,7 +61,7 @@ const Footer = () => {
                           alt={it.icon}
                           width={30}
                           height={30}
-                          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                          blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
                           fetchPriority="low"
                           loading="lazy"
                         />

@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'cdn.bagiwebsite.com',
         pathname: '/assets/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-e2818d6b83cf4b299e69ec9187084345.r2.dev',
+        pathname: '/assets/**'
       }
     ]
   },

@@ -41,7 +41,7 @@ const WhyUs = () => {
                     width={640}
                     height={427}
                     placeholder="blur"
-                    blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                    blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
                     fetchPriority="low"
                     loading="lazy"
                   />

@@ -52,10 +52,10 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t('title'),
       description: t('desc'),
-      images: ['https://cdn.bagiwebsite.com/assets/thumbnail/bagiwebsite.webp']
+      images: ['https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/thumbnail/bagiwebsite.webp']
     },
     openGraph: {
-      images: 'https://cdn.bagiwebsite.com/assets/thumbnail/bagiwebsite.webp'
+      images: 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/thumbnail/bagiwebsite.webp'
     }
   };
 }

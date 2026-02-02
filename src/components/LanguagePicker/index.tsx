@@ -52,7 +52,7 @@ export default function LanguagePicker() {
           width={20}
           height={20}
           alt={item.label}
-          blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+          blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
         />
       }
       onClick={() => onChange(item)}

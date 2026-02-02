@@ -37,8 +37,8 @@ const Portfolio = () => {
 
         <figure className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
-            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
-            blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+            src="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/bussiness_people.webp"
+            blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
             className="tw-object-cover tw-object-top"
             alt="portfolio-bagiwebsite"
             fetchPriority="high"

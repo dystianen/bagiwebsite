@@ -25,12 +25,12 @@ export default function AboutUs() {
   const isMobile = useMediaQuery('(max-width: 62em)');
 
   const partners = [
-    'https://cdn.bagiwebsite.com/assets/images/logo_kelaspintar.svg',
-    // 'https://cdn.bagiwebsite.com/assets/images/logo_pengenumroh.webp',
-    // 'https://cdn.bagiwebsite.com/assets/images/logo_idi.webp',
-    'https://cdn.bagiwebsite.com/assets/images/logo_pertamina.webp',
-    // 'https://cdn.bagiwebsite.com/assets/images/logo_stms.webp',
-    'https://cdn.bagiwebsite.com/assets/images/logo_astra.webp'
+    'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_kelaspintar.svg',
+    // 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_pengenumroh.webp',
+    // 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_idi.webp',
+    'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_pertamina.webp',
+    // 'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_stms.webp',
+    'https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/logo_astra.webp'
   ];
 
   return (
@@ -46,8 +46,8 @@ export default function AboutUs() {
         {/* Background Image */}
         <figure className="tw-relative tw-flex-1 md:tw-h-full">
           <Image
-            src="https://cdn.bagiwebsite.com/assets/images/bussiness_people.webp"
-            blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+            src="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/bussiness_people.webp"
+            blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
             className="tw-object-cover tw-object-top"
             alt="about-us"
             fetchPriority="high"
@@ -135,7 +135,7 @@ export default function AboutUs() {
                         loading="lazy"
                         style={{ objectFit: 'cover' }}
                         className="tw-filter tw-grayscale-[40%]"
-                        blurDataURL="https://cdn.bagiwebsite.com/assets/images/placeholder.svg"
+                        blurDataURL="https://pub-e2818d6b83cf4b299e69ec9187084345.r2.dev/assets/images/placeholder.svg"
                       />
                     </Box>
                   </Card.Section>
